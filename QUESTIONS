@@ -9,3 +9,4 @@ which component in kubernetes will take care of ssl / tls certificates - ingress
 web application firewall
 how to enable waf what all component reuqired in azure ?
 multi stage dockerfile
+services aware in azure ?

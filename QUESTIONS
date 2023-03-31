@@ -1,0 +1,11 @@
+Docker compose ?
+differnec between docker and docker compose
+toleration in kubernetes and taints
+taints and tolerant in kubernetes
+config map and secret differnece
+what is ingress in kubernetes
+which component in kubernetes will take care of ssl / tls certificates - ingress
+/16 subnet contains how much  ip
+web application firewall
+how to enable waf what all component reuqired in azure ?
+multi stage dockerfile

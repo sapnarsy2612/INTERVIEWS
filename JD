@@ -1,0 +1,30 @@
+Experience Required:
+2 - 4 years of experience required
+
+Roles and Responsibilities :
+Building and setting up new development tools and infrastructure
+Mobile or Web deployment.
+Understanding the needs of stakeholders and conveying this to developers
+Working on ways to automate and improve development and release processes
+Ensuring that systems are safe and secure against cybersecurity threats
+Identifying technical problems and developing software updates and ‘fixes’
+Working with software developers and software engineers to ensure that development follows established processes and works as intended
+Planning out projects and being involved in project management decisions.
+Configuration and managing databases such as MySQL, Mongo
+Excellent troubleshooting
+
+Key Skills:
+Should be familiar with configuration and management of data sources like MySQL, MongoDB
+Strong knowledge of Git, versioning, and branching patterns . 
+Hands-on knowledge of at least one open-source tool for configuration management and provisioning of servers like Ansible, Puppet, and Chef.
+Expert in using AWS Services like S3, EC2, VPC, CloudFront, CloudWatch, ECS, EBS, ELB, etc.
+Strong Knowledge in Docker is Must -- Should have strong knowledge in Linux (Apache and Nginx on Debian and Redhat both flavors)
+Hands-on experience within Kubernetes in large scale Public Cloud Environments
+Working Experience in AWS + Azure { Other Cloud are Also Fine }
+Worked on Jenkins, and has Built the CICD Pipelines for various stages and Maintained
+have worked on Handling Dev, Stage, QA, and Prod Environments
+Deployment of Frontend & Backend
+Experience of Docker and Created Docker file for Deploying Applications
+Have Deployed Built Docker Image on EC2 and Can push on Docker hub
+Monitoring the Stack with Third Party Monitoring tools, i.e : Grafana, Prometheus, New Relic, ELK Stack, Datadog
+familiarity with Kubernetes and its Components and can deploy sample Application

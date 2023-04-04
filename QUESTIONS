@@ -10,3 +10,28 @@ web application firewall
 how to enable waf what all component reuqired in azure ?
 multi stage dockerfile
 services aware in azure ?
+How often do we upgrade plugins in jenkins ?
+Free style jobs , pipeline jobs , parameterized jobs , what are all ?
+any parameterized jobs example ?
+from jenkins we want to know job id how to know it ? command to get job id ?
+how to create softlinks ?
+linux disctributions aware of ?
+how to check flavour of linux distribution ?
+scp command ?
+why we need master slave in jenkins ?
+how to manage 1 pipeline to use 1 slave and not master ? command for this task ?
+elastic search ?
+kibana ?
+any monitoring tool ?
+Difference between image and container ?
+Multi stage dockerimage and why to use it ? uses of multi stage docker file ?
+where do we use kubernetes and why we use it ?
+what services worked on in kubernetes ?
+in production what all tools worked on ?
+what kind of artifacts being stored in nexus ?
+how do we deploy artifacts to production ?
+how do we manage monitoring for servers ?
+in kubernetes how do we know pod is failed ?
+how to configure email alert for failed pod in kubernetes ?
+how to setup email notifications for tools ?
+command to get only time and date of list of file ? $ ls -l | tr -s ' ' | cut -d ' ' -f8-

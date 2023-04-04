@@ -1,0 +1,13 @@
+What is terraform ?
+Terraform workspace
+The Terraform plan validates the apply  command difference . 
+Write any terraform file . 
+Jenkins declarative pipeline , groovy script - write any code for pipeline creation . 
+Azure devops - yaml file deployment , write that yaml file . 
+Write any bash script . 
+Terraform state file . 
+If we have created 1 vm manually and we are trying to create the same vm using terraform.
+again then what will happen - where will we get an error in the plant or apply . 
+What are services used in azure 
+Services used in gcp . 
+Load balancer , asg , nsg .

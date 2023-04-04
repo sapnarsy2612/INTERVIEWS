@@ -35,3 +35,7 @@ in kubernetes how do we know pod is failed ?
 how to configure email alert for failed pod in kubernetes ?
 how to setup email notifications for tools ?
 command to get only time and date of list of file ? $ ls -l | tr -s ' ' | cut -d ' ' -f8-
+pv and pvc in kubernetes 
+i have 1 cluster and 5 pod are running - it is connected to pv and pvc , we want 1 more cluster to use same pvc . is it possible . 
+namespace in kubernetes ?
+in 1 namespace and using pvc in volumne and you want another set of pod to use same pvc is it possible ?

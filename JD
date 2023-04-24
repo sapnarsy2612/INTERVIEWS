@@ -1,0 +1,15 @@
+Job Description:
+
+The GCP Cloud/Devops Engineer will be working with the engineering team and focusing on GCP infrastructure and automation. A key part of the role is championing and leading infrastructure as code. The Engineer will work closely with the Manager of Operations and Devops to build, manage and automate our GCP infrastructure.
+
+Qualifications/Responsibilities:
+At least 3+ years of experience building and maintaining GCP infrastructure (VPC, VMs, Firewalls, IAM, Cloud Run, GKE, CloudCDN, CloudStorage)
+1.Design cloud infrastructure that is secure, scalable, and highly available on GCP
+2.Work collaboratively with software engineering to define infrastructure and deployment requirements
+3.Provision, configure and maintain GCP cloud infrastructure defined as code
+4.Troubleshoot problems across a wide array of services
+6.Perform infrastructure cost analysis and optimization
+7.Implement continuous integration/continuous delivery (CI/CD) pipelines when necessary
+8.Good understanding of how to secure GCP environments.
+9.Solid foundation of networking and Linux administration.
+10.Experience with Docker, GitHub, Jenkins and deploying applications on GCP11.Ability to learn/use a wide variety of open source tools.12. Experience in monitoring tools stack like ELK, Prometheus, Grafana, Datadog etc along with cloud native monitoring tools.

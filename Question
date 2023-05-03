@@ -36,3 +36,42 @@ what is horizontal autoscaling ?
 cluster autosclaing ?
 cmd to get logs in kubernetes ?
 namespace in kubernetes ?
+which type of monitoring tools aware ?
+what monitoring used for kubernetes ?
+grafana ?
+introduction ?
+in gcp till what extent you have worked ?
+resource hierarchy used / folder structure ?
+why are we using tags ?
+how can tags be used to integrate with other resources ?
+different type of tags available in gcp ?
+kind of pipeline created ?
+other cicd tool used ?
+cloud build ?
+which one should we use cloud native or self managed cicd toolchain ? what all things to keep in consideration ?
+cost consideration to consider in gcp ?
+iam principal ? list principals ? different principals to which we grant permissions in gcp ?
+geographical scope of vpc? vpc is global or regional ?
+vpc different networks tier ? 
+custom and default mode vpc ?
+subnets are regional or zonal ?
+vm instances ? vm instance is regiobnal / zonal ?
+10 vm instance are running and we want to group them how to do ? vms are in 1 region but in differnet zone ? and all instances have different structure ? how to group them ?
+differnece between managed and unmanaged instance group ?
+can weconvert unmanaged to managed instance group ? why cant we convert ?
+to create new instance group what is needed ? what purpose do we use managed instance group ?
+threshold values how many instance we want in instance group ?
+what kind of project in kubernetes worked on ?
+architecture of kubernetes ? gke architecture ?
+services in kubernetes ?
+sonarqube ? any 5 parameter in sonarqube ?
+to push the code to prodcution which paartemer we have to change in sonaqrube ?
+clusterip ?
+kubernetes and docker swarm difference ?
+ingress network in kubernetes ?
+there is scenario , there is code repo - there is specific file we dont want to copy , how to exclude specific in dockerfile ?
+can pods in different namespace communicate using clusterip ?
+there are muktiple nodes , and there is need of resources , nide with maximum resoirces shoukd be deleted , pod on that specific node should be transefred to other node  as we want to run other program on node ?
+different cluster type in gke ?
+cloud run ?
+

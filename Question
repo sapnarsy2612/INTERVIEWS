@@ -31,3 +31,8 @@ which type of service available in kubernetes ?what are each used for ?
 ingress controller in kubernetes ?
 deployment strategy in kubernetes ?
 canary , blue green , rolling update difference ?
+replicaset ?
+what is horizontal autoscaling ?
+cluster autosclaing ?
+cmd to get logs in kubernetes ?
+namespace in kubernetes ?

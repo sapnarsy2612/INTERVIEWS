@@ -2,5 +2,32 @@ basic intro , day to day task .
 gcp resource hierarchy
 cloud iam
 predefined and primitive roles
-how to give service account access to resources ?
+how to give service account access to specific resources ?
+feature of service account ?
+compute engine ?
+primitive vms in gcp ?
+cloud storage ?
+storage buckets are zonal or regional ?
+blob storage ?
+file storage ?
+which type of serverless services availbable in gcp ?
+standard app engine and flexible app engine ?
+cloud functions ? cloud app engine difference ?
+managed instance group / unmanaged instance group ?
+which type of cicd tools pipelines created ?
+how to integrate jenkins and gitlab ?
+how to integrate jenkins and kubernetes ?
+basic components of dockerfile ?
 serverless services ?
+differnece between entrypoint and cmd in dockerfile ?
+how to migrate 1 jenkins to other jenkins ?
+git cli ?
+git conflict ?
+why does conflict occurs ?
+what is command to register gitlab runner ?
+explain architecture of kubernetes ?
+pause containers ?
+which type of service available in kubernetes ?what are each used for ?
+ingress controller in kubernetes ?
+deployment strategy in kubernetes ?
+canary , blue green , rolling update difference ?

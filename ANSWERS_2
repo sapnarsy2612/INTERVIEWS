@@ -76,3 +76,11 @@ This will enable line numbering for the current file being edited. If you want t
 You can also toggle line numbering on or off by using the following command:
 :set number!
 
+To search for a pattern in vi editor, follow these steps:
+
+Press ESC key to enter command mode.
+Type / followed by the search pattern and press ENTER.
+The cursor will move to the first occurrence of the pattern in the file.
+To search for the next occurrence of the pattern, press n.
+To search for the previous occurrence of the pattern, press N.
+

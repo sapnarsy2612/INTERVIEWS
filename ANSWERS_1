@@ -86,3 +86,16 @@ You can then call the script from the command line and pass arguments like this:
 python my_script.py arg1 arg2
 In this example, arg1 and arg2 will be accessible within the script as sys.argv[1] and sys.argv[2], respectively.
 
+https://levelup.gitconnected.com/5-types-of-arguments-in-python-function-definition-e0e2a2cafd29
+
+def function_name(parameter1, parameter2=default_value, parameter3):
+    # function body
+    return value
+The default value for a parameter must always come after any non-default parameters. So, in the example given, if b has a default value of 0, it must come after the required parameter a. Additionally, all required parameters must come before any optional parameters. Therefore, the correct syntax for this function would be:
+
+def fun(a, c, b=0):
+    # function body
+    return value
+
+Here, a and c are required parameters and b is an optional parameter with a default value of 0.
+

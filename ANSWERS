@@ -20,4 +20,13 @@ The Declarative Pipeline syntax is a more structured and opinionated way of defi
 The Scripted Pipeline syntax is a more flexible and powerful way of defining pipelines. Scripted Pipelines are defined using Groovy, a popular scripting language for the Java platform. Groovy provides a lot of flexibility in how you define your pipelines, allowing you to do things like define functions and use loops and conditionals.
 Both Declarative and Scripted Pipeline syntaxes are supported by Jenkins, and the choice of which one to use depends on the specific requirements of your project and the preferences of your team.
 
+what all types of pipelines can be created ?
+In Jenkins, there are two main types of pipelines that can be created:
+Freestyle Jobs: These are the traditional jobs that you can create in Jenkins. They are highly configurable, and you can add multiple build steps, triggers, and post-build actions to a single job.
+Jenkins Pipeline: Pipeline is a powerful, flexible, and extensible way to define continuous delivery pipelines. With Pipeline, you can define your entire build pipeline in code, including build, test, and deployment stages. You can also define the stages that make up your pipeline, such as build, test, and deploy, and you can define the conditions that trigger each stage.
+Within Jenkins Pipeline, there are two different syntaxes for defining pipelines:
+Scripted Pipeline: This is the traditional, Groovy-based way to define a pipeline in Jenkins. It is highly flexible and provides full programmatic control over the build process, but can be more complex to set up and maintain.
+Declarative Pipeline: This is a newer, YAML-based way to define a pipeline in Jenkins. It is designed to be simpler and easier to read than the Scripted Pipeline syntax, while still providing a high degree of flexibility and extensibility.
+Overall, Jenkins Pipeline is a powerful and flexible tool that allows you to define your entire build, test, and deployment process in code, and there are a variety of ways to define pipelines depending on your needs and preferences.
 
+Sonarqube is used for ?

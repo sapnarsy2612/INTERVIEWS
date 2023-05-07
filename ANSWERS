@@ -140,3 +140,13 @@ ELK Stack: The ELK stack (Elasticsearch, Logstash, Kibana) is a popular open-sou
 Nagios: Nagios is a popular open-source tool for monitoring IT infrastructure. It can be used to monitor various aspects of a CI/CD platform, including server and application availability, resource usage, and performance. Nagios can send alerts when it detects problems, and it can be integrated with other tools like Slack, PagerDuty, and email to notify teams about problems.
 These are just a few examples of the tools that can be used to monitor a CI/CD platform. The choice of tool(s) will depend on the specific needs and requirements of the organization.
 
+at the end of each pipeline which artifacts are generated ?
+At the end of a pipeline, one or more artifacts may be generated depending on the specific pipeline and its purpose. Artifacts are files or packages that are created during the build and deployment process, and they can include things like executable binaries, installers, documentation, and configuration files.
+Some common artifacts that are generated at the end of a pipeline include:
+Deployable packages: These are packages that are created to be deployed to a production environment. Examples include Docker images, WAR files, or ZIP files containing the necessary files and configurations for an application.
+Test results: Test results are often generated as artifacts and can include test reports, code coverage reports, and other metrics generated during the testing process.
+Documentation: Documentation is often generated as an artifact, including user manuals, API documentation, and release notes.
+Build artifacts: These are the files generated during the build process, such as compiled code, libraries, and other dependencies.
+Configuration files: Configuration files are often generated as artifacts and can include environment-specific configurations for applications and services.
+The specific artifacts that are generated at the end of a pipeline will depend on the pipeline's purpose and the needs of the organization.
+

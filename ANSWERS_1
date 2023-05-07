@@ -57,3 +57,6 @@ l[-3:-3] in a list l will always return an empty list [].
 This is because the slice notation start:end specifies a range of indices in a list, where the range includes all indices from start up to (but not including) end.
 When start is greater than or equal to end, the range is empty, so the result is an empty list.
 In the case of l[-3:-3], both start and end are the same index position, which means that the slice range is empty and hence an empty list is returned.
+
+In the list l=[1,2,3,3,4,5], the slice notation l[-3:3] specifies a range of indices that starts from the 3rd last element from the end of the list and ends at the 3rd element from the beginning of the list. Since the starting index is greater than the ending index, this range is empty, and so an empty list [] is returned.
+Therefore, l[-3:3] will result in an empty list: [].

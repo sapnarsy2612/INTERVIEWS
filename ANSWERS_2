@@ -84,3 +84,6 @@ The cursor will move to the first occurrence of the pattern in the file.
 To search for the next occurrence of the pattern, press n.
 To search for the previous occurrence of the pattern, press N.
 
+To go to the last line in vi editor, you can use the following command::$
+This command will take the cursor to the last line of the file. You can also use the shortcut key G to go to the last line of the file. To use this, press the Shift and g keys together in command mode.
+

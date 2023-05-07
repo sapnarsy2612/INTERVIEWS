@@ -66,3 +66,13 @@ Once you have finished typing, press the Esc key to return to the command mode.
 To save the changes made to the file, type :w and press Enter. This will save the file.
 To exit the vi editor, type :q and press Enter.
 If you have made changes to the file and want to save them and exit, you can combine the two commands and type :wq and press Enter.
+
+To see line numbers in vi editor, you can use the following command while in the normal mode:
+:set number
+
+This will enable line numbering for the current file being edited. If you want to disable line numbering, you can use the following command:
+:set nonumber
+
+You can also toggle line numbering on or off by using the following command:
+:set number!
+

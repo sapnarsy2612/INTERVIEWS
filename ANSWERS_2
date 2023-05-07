@@ -89,3 +89,37 @@ This command will take the cursor to the last line of the file. You can also use
 
 In Linux, the first process that gets started is the init process with process ID (PID) 1. The init process is started by the kernel during the booting process and is responsible for starting and managing other processes on the system. The init process also controls the system shutdown and restart process. In recent versions of Linux, the init process has been replaced by systemd or other init systems, but the concept of an initial process with PID 1 remains the same.
 
+A file in a Linux/Unix system is identified by its inode number, which is a unique identifier assigned to it by the filesystem. A hard link is simply another name (i.e., directory entry) for the same inode. This means that both the original file and the hard link refer to the same inode and thus the same data on disk. Any changes made to the data will be reflected in both the original file and the hard link.
+On the other hand, a symbolic link (or soft link) is a special type of file that contains a path to another file. Unlike hard links, which directly reference the same inode, a symbolic link references the path to the file. So, when you access a symbolic link, the system follows the path to the target file and opens it. This means that changes to the target file will affect the symbolic link, but changes to the symbolic link will not affect the target file.
+To create a hard link in Linux, you can use the ln command with the -s option, followed by the name of the file you want to link to and the name of the link you want to create. For example, to create a hard link called link2 to the file file1, you can use the command:
+
+ln file1 link2
+
+To create a symbolic link, you can use the ln command with the -s option, followed by the target file or directory and the name of the link you want to create. For example, to create a symbolic link called link3 to the directory /usr/local/bin, you can use the command:
+
+ln -s /usr/local/bin link3
+
+Create a file named "example.txt":
+echo "This is an example file" > example.txt
+Create a hard link to "example.txt" named "hardlink.txt":
+ln example.txt hardlink.txt
+Verify that the hard link was created:
+ls -l
+Output
+-rw-r--r-- 2 user user 25 May 7 12:00 example.txt
+-rw-r--r-- 2 user user 25 May 7 12:00 hardlink.txt
+Note that the link count for both files is 2, indicating that they are hard links to the same file.
+Create a symbolic (soft) link to "example.txt" named "softlink.txt":
+ln -s example.txt softlink.txt
+Verify that the symbolic link was created:
+ls -l
+
+-rw-r--r-- 2 user user 25 May 7 12:00 example.txt
+-rw-r--r-- 2 user user 25 May 7 12:00 hardlink.txt
+lrwxrwxrwx 1 user user 11 May 7 12:01 softlink.txt -> example.txt
+
+Note that the symbolic link is indicated by the l at the beginning of the permissions string, and the arrow pointing to the original file. Also note that the link count for "example.txt" and "hardlink.txt" is 2, but the link count for "softlink.txt" is 1, indicating that it is a symbolic link.
+
+
+
+    

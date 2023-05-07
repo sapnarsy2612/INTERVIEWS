@@ -17,3 +17,16 @@ print(dir(my_object))
 
 This will print out a list of all the methods available for the class MyClass and for the instance my_object. The output will include all the built-in methods, as well as any methods that you have defined in your class.
 
+In Python, you can use the locals() function to get all the local variables defined in a function. Here is an example:
+def my_function(a, b, c):
+    x = 1
+    y = 2
+    z = 3
+    print(locals())
+
+my_function(10, 20, 30)
+
+The locals() function returns a dictionary that contains all the local variables and their values at the point where it is called. In the above example, when the my_function() is called with arguments 10, 20, and 30, it will print a dictionary that looks like this:
+{'a': 10, 'b': 20, 'c': 30, 'x': 1, 'y': 2, 'z': 3}
+As you can see, the dictionary contains all the local variables defined in the function, as well as the function arguments.
+

@@ -38,3 +38,35 @@ Enhanced developer productivity: By providing quick feedback on code quality iss
 Consistent code quality: By enforcing a set of predefined rules and quality standards, SonarQube helps ensure that the codebase meets a consistent level of quality across all developers and teams.
 Better team collaboration: SonarQube provides detailed reports and metrics that can be shared across teams, facilitating collaboration and knowledge sharing.
 Overall, SonarQube is a powerful tool for improving code quality and reducing technical debt, making it an essential tool in any software development workflow.
+
+IN pipeline if any of stage failed then can user move to next stage ?
+In a pipeline, the behavior of subsequent stages after a failure in a previous stage depends on how the pipeline is configured.
+By default, if a stage fails in a pipeline, the pipeline will immediately stop, and the remaining stages will not be executed. This behavior is designed to prevent the deployment of faulty code or artifacts into production environments.
+However, it is possible to configure the pipeline to continue executing subsequent stages even if a previous stage has failed. This can be useful in cases where a failure in one stage does not necessarily mean that the entire pipeline should be stopped.
+To configure a pipeline to continue after a stage failure, you can use the "ignoreError" option in the stage definition. This will allow the pipeline to continue executing even if the stage fails, and you can add additional logic to handle the error and take appropriate action.
+Overall, whether or not a pipeline can continue after a stage failure depends on the pipeline configuration, and it is up to the pipeline designer to determine the appropriate behavior for their specific use case.
+For example, the following pipeline stage definition will continue executing the pipeline even if the build stage fails:
+
+stage('Build') {
+    steps {
+        // build steps here
+    }
+    post {
+        always {
+            echo 'Build stage completed'
+        }
+        failure {
+            echo 'Build failed, but pipeline will continue'
+            // additional error handling logic here
+            ignoreError true
+        }
+    }
+}
+
+This code block represents a Jenkins pipeline stage definition for the "Build" stage.
+The stage is defined with the name "Build" using the stage() method. Inside the stage, there is a steps block that contains the actual build steps that will be executed. These build steps can include compiling code, running tests, generating artifacts, or any other necessary tasks to build the project.
+After the steps block, there is a post block that defines actions to be taken after the stage has completed. In this case, there are two actions defined:
+An always block that will be executed regardless of whether the stage succeeds or fails. This block simply prints a message to the console indicating that the stage has completed.
+A failure block that will be executed only if the stage fails. This block prints a message indicating that the build failed, but also sets the ignoreError option to true, which allows the pipeline to continue executing even if this stage fails.
+The ignoreError option is a pipeline option that can be set on any stage, and it allows the pipeline to continue executing even if the stage fails. This can be useful in situations where a failure in one stage does not necessarily mean that the entire pipeline should be stopped.
+Overall, this code block represents a simple example of a Jenkins pipeline stage definition, with additional logic to handle failures and allow the pipeline to continue executing even if the build stage fails.

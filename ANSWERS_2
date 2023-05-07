@@ -87,3 +87,5 @@ To search for the previous occurrence of the pattern, press N.
 To go to the last line in vi editor, you can use the following command::$
 This command will take the cursor to the last line of the file. You can also use the shortcut key G to go to the last line of the file. To use this, press the Shift and g keys together in command mode.
 
+In Linux, the first process that gets started is the init process with process ID (PID) 1. The init process is started by the kernel during the booting process and is responsible for starting and managing other processes on the system. The init process also controls the system shutdown and restart process. In recent versions of Linux, the init process has been replaced by systemd or other init systems, but the concept of an initial process with PID 1 remains the same.
+

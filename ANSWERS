@@ -159,3 +159,4 @@ Implement a quality gate: You can implement a quality gate in your pipeline that
 By following these steps, you can generate a report that summarizes the pass rate, failures, stages completed, and known issues in your pipelines. This report can be used to identify areas for improvement and to ensure that your pipelines are running smoothly.
 
 https://qaautomation.expert/2022/12/23/how-to-generate-html-reports-in-jenkins/
+https://www.javatpoint.com/jenkins-reporting

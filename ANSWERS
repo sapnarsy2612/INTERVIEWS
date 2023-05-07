@@ -70,3 +70,73 @@ An always block that will be executed regardless of whether the stage succeeds o
 A failure block that will be executed only if the stage fails. This block prints a message indicating that the build failed, but also sets the ignoreError option to true, which allows the pipeline to continue executing even if this stage fails.
 The ignoreError option is a pipeline option that can be set on any stage, and it allows the pipeline to continue executing even if the stage fails. This can be useful in situations where a failure in one stage does not necessarily mean that the entire pipeline should be stopped.
 Overall, this code block represents a simple example of a Jenkins pipeline stage definition, with additional logic to handle failures and allow the pipeline to continue executing even if the build stage fails.
+
+In pipeline if we want to ignore failure of 1 build and want to move to other job how to do ?
+To ignore the failure of one build and continue to execute other jobs in the pipeline, you can use the "try-catch" block in Jenkins pipeline syntax. The "try-catch" block allows you to execute a block of code and catch any exceptions that are thrown during execution. You can use this block to catch the exception thrown when the build fails, and then continue to execute the other jobs in the pipeline.
+Here's an example of how to use the "try-catch" block to ignore the failure of one build and continue to execute other jobs:
+
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh 'make'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                try {
+                    sh 'deploy'
+                } catch (Exception e) {
+                    echo 'Ignoring deploy failure...'
+                }
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'test'
+            }
+        }
+    }
+}
+
+In this example, the pipeline has three stages: "Build", "Deploy", and "Test". The "Build" stage compiles the code using the "make" command. The "Deploy" stage deploys the build to a test environment using the "deploy" command, but is wrapped in a "try-catch" block to catch any exceptions thrown during deployment. If the "deploy" command fails, the exception is caught, and the message "Ignoring deploy failure..." is printed to the console. The "Test" stage runs the automated tests using the "test" command, regardless of whether the "Deploy" stage succeeded or failed.
+By wrapping the "Deploy" stage in a "try-catch" block, you can ignore the failure of that stage and continue executing the pipeline. However, it's important to note that ignoring build failures can lead to the deployment of potentially faulty code into production environments. As such, it's generally recommended to use caution when ignoring build failures and to only do so when it's safe to continue executing the pipeline without fixing the build failure.
+
+How to run parallel stages in pipelines ?
+To run parallel stages in a Jenkins pipeline, you can use the "parallel" block in pipeline syntax. The "parallel" block allows you to define multiple stages that can be executed in parallel, as long as they don't have dependencies on each other.
+Here's an example of how to use the "parallel" block to run two stages in parallel:
+
+pipeline {
+    agent any
+    stages {
+        stage('Parallel stages') {
+            parallel {
+                stage('Build') {
+                    steps {
+                        sh 'make'
+                    }
+                }
+                stage('Test') {
+                    steps {
+                        sh 'test'
+                    }
+                }
+            }
+        }
+    }
+}
+
+In this example, the pipeline has one stage called "Parallel stages", which contains a "parallel" block with two stages: "Build" and "Test". Each stage contains a single step that executes a shell command using the "sh" step. When the pipeline is executed, the "Build" and "Test" stages will be executed in parallel.
+You can add as many stages as you like to the "parallel" block, as long as they don't have dependencies on each other. If you need to include stages that do have dependencies, you can use the "dependsOn" keyword to specify the dependencies between stages.
+It's important to note that running stages in parallel can increase the overall speed of the pipeline, but it can also increase the load on the Jenkins server. If you have a large number of parallel stages, you may need to consider the resources available on your Jenkins server and adjust your pipeline accordingly.
+
+Tools used to monitor cicd platform ?
+There are several tools that can be used to monitor a CI/CD platform:
+Jenkins Monitoring Plugin: Jenkins has a monitoring plugin that provides real-time monitoring of Jenkins master and slave nodes. The plugin monitors system statistics such as CPU usage, memory usage, disk I/O, and network I/O.
+Prometheus: Prometheus is an open-source monitoring system that can be used to monitor a CI/CD platform. Prometheus collects metrics from different sources, including Jenkins, and provides a time-series database to store the collected data. It also has a built-in dashboard for visualizing the data.
+Grafana: Grafana is an open-source dashboarding tool that can be used to visualize the data collected by Prometheus or other monitoring tools. Grafana has pre-built dashboards for various monitoring tools, including Jenkins, and it can be used to create custom dashboards to monitor specific aspects of the CI/CD platform.
+ELK Stack: The ELK stack (Elasticsearch, Logstash, Kibana) is a popular open-source toolset used for log management and monitoring. It can be used to monitor logs from Jenkins and other components of the CI/CD platform. Elasticsearch is used to store and search logs, Logstash is used to collect, process, and forward logs, and Kibana is used to visualize and analyze the logs.
+Nagios: Nagios is a popular open-source tool for monitoring IT infrastructure. It can be used to monitor various aspects of a CI/CD platform, including server and application availability, resource usage, and performance. Nagios can send alerts when it detects problems, and it can be integrated with other tools like Slack, PagerDuty, and email to notify teams about problems.
+These are just a few examples of the tools that can be used to monitor a CI/CD platform. The choice of tool(s) will depend on the specific needs and requirements of the organization.
+

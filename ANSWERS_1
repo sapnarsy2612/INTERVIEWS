@@ -1,0 +1,6 @@
+WHat is CICD ? 
+CICD stands for Continuous Integration and Continuous Deployment/Delivery. It is a methodology that enables software development teams to rapidly and reliably deliver software changes to production by automating the software delivery process.
+Continuous Integration (CI) refers to the practice of integrating code changes from multiple developers into a shared repository multiple times a day. The code is then built and tested automatically to identify issues early in the development process.
+Continuous Deployment (CD) or Continuous Delivery (CD) is the practice of automatically deploying the code changes to production after it passes through the CI process. This allows developers to get their changes into the hands of users quickly and efficiently.
+CICD is often achieved through the use of automation tools and techniques such as automated testing, build automation, and deployment automation. By automating these processes, development teams can reduce the time and effort required to deliver new software features and updates, while improving the quality and reliability of the software.
+

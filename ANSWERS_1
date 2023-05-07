@@ -60,3 +60,29 @@ In the case of l[-3:-3], both start and end are the same index position, which m
 
 In the list l=[1,2,3,3,4,5], the slice notation l[-3:3] specifies a range of indices that starts from the 3rd last element from the end of the list and ends at the 3rd element from the beginning of the list. Since the starting index is greater than the ending index, this range is empty, and so an empty list [] is returned.
 Therefore, l[-3:3] will result in an empty list: [].
+
+in python we want to add argument externally how to do that ?
+In Python, you can add arguments externally by using the sys.argv list. The sys.argv list contains the command-line arguments passed to the Python script, with the first argument being the name of the script itself.
+Here's an example of how you can use sys.argv to add arguments externally to a Python script:
+import sys
+
+# Get the command-line arguments
+args = sys.argv
+
+# Check if the script was called with at least one argument
+if len(args) > 1:
+    # Access the first argument by index (since the script name is the first argument)
+    arg1 = args[1]
+    print("The first argument is:", arg1)
+
+    # Access additional arguments by their index
+    if len(args) > 2:
+        arg2 = args[2]
+        print("The second argument is:", arg2)
+else:
+    print("No arguments were provided.")
+
+You can then call the script from the command line and pass arguments like this:
+python my_script.py arg1 arg2
+In this example, arg1 and arg2 will be accessible within the script as sys.argv[1] and sys.argv[2], respectively.
+

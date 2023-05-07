@@ -51,3 +51,9 @@ Use a debugger: A debugger is a tool that allows you to step through your code a
 Simplify the code: If you are having trouble locating the problem in a large codebase, try simplifying the code by removing unnecessary code or commenting out large sections of the code. This can help you isolate the problem to a smaller section of code.
 Search online resources: Often, the errors you encounter while debugging have been encountered by others before. Searching online resources such as Stack Overflow or Python documentation can help you find solutions to the specific error you are encountering.
 By following these steps and using a combination of tools and techniques, you can effectively debug your Python code and locate the root cause of the problem.
+
+
+l[-3:-3] in a list l will always return an empty list [].
+This is because the slice notation start:end specifies a range of indices in a list, where the range includes all indices from start up to (but not including) end.
+When start is greater than or equal to end, the range is empty, so the result is an empty list.
+In the case of l[-3:-3], both start and end are the same index position, which means that the slice range is empty and hence an empty list is returned.

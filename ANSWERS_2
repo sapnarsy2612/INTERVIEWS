@@ -1,0 +1,19 @@
+In Python, you can use the built-in dir() function to see all the methods available for a class or an object.
+class MyClass:
+    def __init__(self):
+        self.my_variable = 42
+
+    def my_method(self):
+        print("Hello, World!")
+
+# create an instance of the class
+my_object = MyClass()
+
+# use dir() to see all the methods available for the class
+print(dir(MyClass))
+
+# use dir() to see all the methods available for the object
+print(dir(my_object))
+
+This will print out a list of all the methods available for the class MyClass and for the instance my_object. The output will include all the built-in methods, as well as any methods that you have defined in your class.
+

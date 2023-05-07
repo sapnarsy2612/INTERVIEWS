@@ -30,3 +30,11 @@ Declarative Pipeline: This is a newer, YAML-based way to define a pipeline in Je
 Overall, Jenkins Pipeline is a powerful and flexible tool that allows you to define your entire build, test, and deployment process in code, and there are a variety of ways to define pipelines depending on your needs and preferences.
 
 Sonarqube is used for ?
+SonarQube is a popular open-source tool used for continuous code quality inspection and management. It is primarily used for performing static code analysis, which is a technique for examining source code to detect bugs, vulnerabilities, and other code smells.
+SonarQube can analyze a wide range of programming languages, including Java, C#, JavaScript, TypeScript, Python, Ruby, and others. It checks the code against a set of predefined rules, best practices, and quality standards and provides a comprehensive report highlighting the issues found in the code, along with suggestions for how to fix them.
+Some of the key benefits of using SonarQube include:
+Improved code quality: SonarQube helps identify and eliminate bugs, vulnerabilities, and other code smells, improving the overall quality of the codebase.
+Enhanced developer productivity: By providing quick feedback on code quality issues, SonarQube can help developers catch issues early in the development process and reduce the time spent on bug fixing.
+Consistent code quality: By enforcing a set of predefined rules and quality standards, SonarQube helps ensure that the codebase meets a consistent level of quality across all developers and teams.
+Better team collaboration: SonarQube provides detailed reports and metrics that can be shared across teams, facilitating collaboration and knowledge sharing.
+Overall, SonarQube is a powerful tool for improving code quality and reducing technical debt, making it an essential tool in any software development workflow.

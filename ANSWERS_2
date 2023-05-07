@@ -30,3 +30,19 @@ The locals() function returns a dictionary that contains all the local variables
 {'a': 10, 'b': 20, 'c': 30, 'x': 1, 'y': 2, 'z': 3}
 As you can see, the dictionary contains all the local variables defined in the function, as well as the function arguments.
 
+In Python, you can catch exceptions using the try and except statements. Here is the basic syntax:
+try:
+    # code that might raise an exception
+except ExceptionType:
+    # code to handle the exception
+Here ExceptionType is the type of the exception you want to catch. You can replace it with the specific type of exception you want to catch, such as ValueError, TypeError, etc. You can also catch multiple exceptions by providing a tuple of exception types. Here is an example:
+try:
+    # some code that might raise an exception
+    a = int(input("Enter a number: "))
+    b = int(input("Enter another number: "))
+    result = a / b
+except (ValueError, ZeroDivisionError) as e:
+    # handle the exception
+    print(f"Exception occurred: {e}")
+In the above example, we are catching two types of exceptions: ValueError (raised if the user enters a non-integer input) and ZeroDivisionError (raised if the user enters 0 as the second number). The as keyword is used to assign the exception object to a variable e, which can be used to print the error message.
+

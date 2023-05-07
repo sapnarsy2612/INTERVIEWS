@@ -129,5 +129,13 @@ Note that the second argument to the get() method specifies the default value to
 Yes, this is a valid example of implementing a switch statement in Python using a dictionary. In this example, the function switch_case() takes an argument and returns a value based on the key-value pairs defined in the switcher dictionary using the get() method. If the argument is not found in the dictionary, the function returns the string "invalid number".
 https://www.freecodecamp.org/news/python-switch-statement-switch-case-example/
 
-
+Python has several built-in data types, including:
+Numeric Types: int, float, complex
+Boolean Type: bool
+Sequence Types: list, tuple, range
+Text Type: str
+Set Types: set, frozenset
+Mapping Type: dict
+Binary Types: bytes, bytearray, memoryview
+Each of these data types has its own specific properties and uses in Python.
 

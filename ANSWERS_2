@@ -46,3 +46,10 @@ except (ValueError, ZeroDivisionError) as e:
     print(f"Exception occurred: {e}")
 In the above example, we are catching two types of exceptions: ValueError (raised if the user enters a non-integer input) and ZeroDivisionError (raised if the user enters 0 as the second number). The as keyword is used to assign the exception object to a variable e, which can be used to print the error message.
 
+The package downloaders for the mentioned Linux distributions are:
+RHEL (Red Hat Enterprise Linux): yum (Yellowdog Updater Modified) is the default package downloader for RHEL, which is a command-line utility to install, update, and remove packages.
+CentOS: CentOS also uses yum as its default package downloader, similar to RHEL.
+Ubuntu: Ubuntu uses APT (Advanced Package Tool) as its package downloader. APT is a command-line tool that downloads packages from Ubuntu repositories.
+Debian: Debian also uses APT as its default package downloader, similar to Ubuntu.
+There are also other package downloaders available for these Linux distributions, such as DNF (Dandified YUM) for RHEL, CentOS and Fedora, and Snap for Ubuntu and other Linux distributions.
+

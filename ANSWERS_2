@@ -120,6 +120,13 @@ lrwxrwxrwx 1 user user 11 May 7 12:01 softlink.txt -> example.txt
 
 Note that the symbolic link is indicated by the l at the beginning of the permissions string, and the arrow pointing to the original file. Also note that the link count for "example.txt" and "hardlink.txt" is 2, but the link count for "softlink.txt" is 1, indicating that it is a symbolic link.
 
-
-
-    
+To check the size of a file or directory in Linux, you can use the du (disk usage) command. The syntax is as follows:
+du [OPTIONS] [FILE/DIRECTORY]
+To check the size of a file, simply specify the filename as the argument:
+du filename
+To check the size of a directory, add the -s option to get a summary of the total disk space used by the directory:
+du -s directory
+By default, du shows the size of the file or directory in kilobytes. You can use the -h option to show the size in human-readable format:
+du -h filename
+du -sh directory
+This will show the size in a more readable format, such as "10M" for 10 megabytes.

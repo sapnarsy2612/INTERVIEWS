@@ -13,3 +13,11 @@ Artifact creation: The compiled code is packaged into an artifact, such as a Doc
 Continuous Delivery (CD): The artifact is deployed to a staging environment, where it undergoes further testing and validation.
 User acceptance testing (UAT): The application is tested by users or stakeholders to ensure that it meets the business requirements.
 Production deployment: Once the artifact has been thoroughly tested and validated, it is deployed to production.
+
+In which language we create pipelines ?
+In Jenkins, you can create pipelines using the Jenkins Pipeline plugin. The Jenkins Pipeline plugin supports defining pipelines using either a Declarative Pipeline syntax or a Scripted Pipeline syntax.
+The Declarative Pipeline syntax is a more structured and opinionated way of defining pipelines, designed to make it easier to get started with Jenkins Pipelines. Declarative Pipelines are defined using a simple, human-readable syntax that is based on YAML, and it allows you to define the various stages, steps, and other elements of your pipeline.
+The Scripted Pipeline syntax is a more flexible and powerful way of defining pipelines. Scripted Pipelines are defined using Groovy, a popular scripting language for the Java platform. Groovy provides a lot of flexibility in how you define your pipelines, allowing you to do things like define functions and use loops and conditionals.
+Both Declarative and Scripted Pipeline syntaxes are supported by Jenkins, and the choice of which one to use depends on the specific requirements of your project and the preferences of your team.
+
+

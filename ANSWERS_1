@@ -139,3 +139,9 @@ Mapping Type: dict
 Binary Types: bytes, bytearray, memoryview
 Each of these data types has its own specific properties and uses in Python.
 
+Iterative datatypes in Python are data types that can be iterated over, meaning their elements can be accessed one by one. Examples of iterative data types in Python include:
+Lists - A collection of ordered and changeable elements. It is represented using square brackets [].
+Tuples - A collection of ordered and unchangeable elements. It is represented using parentheses ().
+Strings - A collection of characters. It is represented using quotes ('' or "").
+Sets - A collection of unordered and unindexed elements. It is represented using curly braces {}.
+Dictionaries - A collection of unordered, changeable, and indexed elements in key-value pairs. It is represented using curly braces {} with keys and values separated by a colon (:).

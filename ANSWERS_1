@@ -98,4 +98,3 @@ def fun(a, c, b=0):
     return value
 
 Here, a and c are required parameters and b is an optional parameter with a default value of 0.
-

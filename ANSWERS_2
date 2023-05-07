@@ -57,3 +57,12 @@ There are two modes present in vi editor:
 Insert mode: In this mode, the user can insert or modify text in the file.
 Command mode: In this mode, the user can give commands to the editor such as searching for a pattern, deleting a line, saving the file, etc.
 
+To create a file using the vi editor, follow these steps:
+Open the terminal and type the following command:vi filename
+Replace filename with the name you want to give your file.
+This will open the vi editor in command mode. To start inserting text into the file, press i. This will take you to the insert mode.
+Type the text you want to add to the file.
+Once you have finished typing, press the Esc key to return to the command mode.
+To save the changes made to the file, type :w and press Enter. This will save the file.
+To exit the vi editor, type :q and press Enter.
+If you have made changes to the file and want to save them and exit, you can combine the two commands and type :wq and press Enter.

@@ -1,0 +1,77 @@
+Introduction about yourself . 
+IN CICD how many stages are there ?
+What are your roles in CICD workflow ?
+In which language we create pipelines ?
+There is another script to create pipelines ?
+what all types of pipelines can be created ?
+In pipeline what all stages are availbale ?
+Sonarqube is used for ?
+IN pipeline if any of stage failed then can user move to next stage ?
+In pipeline if we want to ignore failure of 1 build and want to move to other job how to do ?
+How to run parallel stages in pipelines ?
+Tools used to monitor cicd platform ?
+at the end of each pipeline which artifacts are generated ?
+How to generate report to summarize pass rate , failure , what all stages completed , known issues in pipelines ?
+How to generate report to check what all things passed what all failed once pipeline gets completed ?
+How to get detailed report for pipeline in jenkins ?
+How to see entire summary of pipeline like what all test cases has been run on pipeline ?
+WHat is CICD ? 
+What is CD - delivery or deployment difference ?
+Monitoring tool ?
+What all things required to work with grafana ?
+In jenkins how to take backup ?
+How to copy job from 1 jenkins to another jenkins ?
+You have python code and you are getting 1000+ error , how to debug python code - how to know where exactly root cause is ?
+Python programs .
+l[-3:-3] - what does this print .
+in python we want to add argument externally how to do that ?
+Types of arguments in python ?
+fun(a,b=0,c) - is this valid function in python . 
+Syntax for switch statement in python . 
+Types of datatypes in python . 
+iterative datatypes in python .
+modules in python , how to rename module , get module , what are built in modules in python ?
+in python , we have class and functions - i want to see all methods availabel for that class ?
+we have multiple varible in funstion - how to check what all varibles present ?
+how to catch exception in python ?
+What all flavours in linux ?
+package downloader for rhel , centos , ubuntu , debian ?
+how many modes present in vi editor ?
+how to cretae file using vi editor ?
+how to see line number of files in vi ?
+how to search in vi ?
+in vi how to go to last line ?
+in linux what is first process that gets started ?
+hardlink and softlinks ? how to create ?
+command to check size of file or directory ?
+what is du -sh ; s and h in this command ?
+memory status in linux ?
+process that uses more cpu linux ?
+how to redirect in linux ?
+append in linux ?
+how to search particular pattern in 10 files in linux ?
+command to lookin binary ? how to know location of binaries ?
+we have a file and we are not able to run ? how to make files executable ?
+how to check permissions ? 
+ls -ltr ; ltr - stands for  .
+how to check who logged in to linux ?
+how to replace in linux ?
+how to replace first occurence of file with some other parameter ?
+How to check hostname ?
+ip address ?
+network commands in linux ?
+how to check line 6 in file ?
+write shell script so that first and 3 entry will be printed where ip address = sepcified ?
+how to see status code in linux ?
+date to see date , how to know if date command is working properly or not ?
+how to know if copy is successfull ? we have 1000 file to copy how to check if copy is successfull ?
+how to check ip address of any url google.com ? addreess we received is in which format ?
+copy git repo to local - 
+get changes to local frequestly -
+git pull - git fetch difference . 
+how to add changes to staging area. 
+list of branches 
+create branch in git
+working on local branch and we got to know people merged to master and how can we work using master branch and merge our code .
+difference between rebase and git merge .
+program to check palindrome number .

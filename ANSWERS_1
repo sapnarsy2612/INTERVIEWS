@@ -98,3 +98,32 @@ def fun(a, c, b=0):
     return value
 
 Here, a and c are required parameters and b is an optional parameter with a default value of 0.
+
+Python does not have a built-in switch statement like some other programming languages such as C or Java. However, there are some alternative ways to achieve similar functionality in Python:
+If-elif-else statements: This is the most common way to implement switch-like functionality in Python. It involves a series of if-elif-else statements that check a condition and execute a block of code based on the condition.
+def switch_case(argument):
+    if argument == 1:
+        return "one"
+    elif argument == 2:
+        return "two"
+    elif argument == 3:
+        return "three"
+    elif argument == 4:
+        return "four"
+    elif argument == 5:
+        return "five"
+    else:
+        return "invalid number"
+
+Dictionary mapping: Another way to implement switch-like functionality in Python is to use a dictionary to map the switch values to their corresponding actions. You can use the get() method of the dictionary to retrieve the corresponding value based on the key.
+def switch_case(argument):
+    switcher = {
+        1: "one",
+        2: "two",
+        3: "three",
+        4: "four",
+        5: "five"
+    }
+    return switcher.get(argument, "invalid number")
+Note that the second argument to the get() method specifies the default value to be returned if the key is not found in the dictionary.
+

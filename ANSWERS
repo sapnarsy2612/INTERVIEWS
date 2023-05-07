@@ -3,3 +3,13 @@ I am a DevOps/SRE (Site Reliability Engineer) with several years of experience i
 As a DevOps/SRE, my role involves bridging the gap between development and operations teams, ensuring that all parties are working together effectively and efficiently. I am responsible for designing, building, and maintaining the infrastructure that supports our applications, as well as implementing automated processes to streamline our workflows.
 One of the key aspects of my job is monitoring the health and performance of our systems, and making sure that we have the necessary tools and processes in place to detect and respond to any issues that may arise. This involves working closely with our development teams to ensure that our applications are designed with scalability, reliability, and performance in mind.
 In addition to my technical skills, I also possess strong communication and collaboration skills, which are essential for working effectively in a DevOps/SRE environment. I enjoy working in a fast-paced, dynamic environment and thrive on the challenges that come with ensuring that our systems are always up and running.
+
+IN CICD how many stages are there ?
+In a typical CI/CD (Continuous Integration/Continuous Delivery) pipeline, there are several stages that the code goes through before it is deployed to production. The exact number and configuration of stages can vary depending on the organization and specific requirements, but here are some of the common stages:
+Code development: Developers write and test their code on their local machines or in a development environment.
+Version control: The code is then committed to a version control system, such as Git, which allows multiple developers to collaborate on the same codebase.
+Continuous Integration (CI): The code is automatically built and tested every time a developer makes changes and commits them to the version control system. The CI stage ensures that the code can be built and that all unit tests pass.
+Artifact creation: The compiled code is packaged into an artifact, such as a Docker container or a JAR file.
+Continuous Delivery (CD): The artifact is deployed to a staging environment, where it undergoes further testing and validation.
+User acceptance testing (UAT): The application is tested by users or stakeholders to ensure that it meets the business requirements.
+Production deployment: Once the artifact has been thoroughly tested and validated, it is deployed to production.

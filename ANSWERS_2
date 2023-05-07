@@ -53,3 +53,7 @@ Ubuntu: Ubuntu uses APT (Advanced Package Tool) as its package downloader. APT i
 Debian: Debian also uses APT as its default package downloader, similar to Ubuntu.
 There are also other package downloaders available for these Linux distributions, such as DNF (Dandified YUM) for RHEL, CentOS and Fedora, and Snap for Ubuntu and other Linux distributions.
 
+There are two modes present in vi editor:
+Insert mode: In this mode, the user can insert or modify text in the file.
+Command mode: In this mode, the user can give commands to the editor such as searching for a pattern, deleting a line, saving the file, etc.
+

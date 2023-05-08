@@ -167,3 +167,9 @@ datetime: Provides classes for working with dates and times.
 random: Provides functions for generating random numbers and sequences.
 re: Provides regular expression matching operations.
 and many more.
+
+In Linux, you can check the IP address of your system using the ip command. Here's how to use it:
+Open the terminal.
+Type the following command and press Enter:
+ip address
+This command will display detailed information about the network interfaces on your system, including their IP addresses.

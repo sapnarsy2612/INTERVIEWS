@@ -30,3 +30,9 @@ pipeline {
 }
 In this example, the node directive specifies that the Build stage should run on a node with the label my-slave-label. The options directive specifies that Jenkins should keep only the last 10 builds for this pipeline.
 
+In the context of containerization, an image is a template or a blueprint for creating a container. It contains everything required to run an application, including the application code, runtime environment, libraries, dependencies, and configurations. An image is a static, read-only file that cannot be modified once created. It is created using a Dockerfile or by pulling an existing image from a registry.
+On the other hand, a container is an instance of an image that is created at runtime. It is a lightweight, standalone executable package that includes everything needed to run an application, such as the application code, runtime environment, system tools, and settings. A container runs in its own isolated environment, sharing the host OS kernel and resources, but with its own file system, network stack, and process tree. Containers can be started, stopped, and deleted as per the user's requirements.
+In summary, an image is a static, read-only template that defines an application environment, while a container is a runtime instance of an image that runs an application in an isolated environment.
+Example: Let's say you want to run a WordPress website. To do so, you would first create an image that contains the WordPress application code, the necessary dependencies, and configurations. This image would be built using a Dockerfile that specifies the base image, the dependencies, and other necessary configurations. Once the image is built, you can use it to create multiple containers, each running a separate instance of the WordPress website. These containers can be started, stopped, and managed independently, without affecting other containers or the host system.
+
+

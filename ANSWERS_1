@@ -71,3 +71,15 @@ To build this Dockerfile, you can use the following command:
 docker build -t myapp:latest .
 This command will create two images: the build image and the production image. The final image will be the production image, which only contains the application code and the runtime environment.
 
+In Jenkins, a freestyle project is the most basic type of job that you can create. It allows you to define a simple build process by specifying a series of build steps. Here's an example of creating a freestyle job in Jenkins:
+Open Jenkins dashboard and click on "New Item" to create a new job.
+Enter a name for the job and select "Freestyle project" from the list of project types, then click "OK".
+Under the "General" tab, you can configure the basic settings for your job such as the description, workspace location, and other options.
+Under the "Source Code Management" tab, you can select the source code repository you want to use for your build. You can choose from various source control systems like Git, Subversion, Mercurial, etc.
+Under the "Build Triggers" tab, you can specify when and how the job should be triggered. For example, you can set up a schedule to run the job at a specific time, or you can trigger the job when changes are made to the source code repository.
+Under the "Build Environment" tab, you can set up any environment variables or parameters that are required for your build process.
+Under the "Build" tab, you can define the actual build steps for your job. This can include running shell scripts, executing commands, running batch files, etc.
+Once you have defined all the necessary settings for your job, click on "Save" to create the job.
+You can now run the job by clicking on "Build Now". This will trigger the build process and you can see the progress and output of the build in the Jenkins console.
+Freestyle jobs in Jenkins are highly customizable and flexible, and they can be used for a variety of tasks like building, testing, deploying, and more.
+

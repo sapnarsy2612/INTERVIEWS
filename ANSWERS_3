@@ -107,3 +107,11 @@ If you want to see both local and remote branches, you can use the following com
 git branch -a
 This will display a list of all local and remote branches in the repository. The remote branches will be prefixed with the name of the remote repository they belong to (e.g. origin/ for the default remote repository named origin).
 
+To create a new branch in Git, you can use the git branch command followed by the name of the new branch. For example, to create a new branch named "new-feature", you can use the following command:
+git branch new-feature
+This will create a new branch with the name "new-feature" based on the current branch you are on. To switch to the new branch, you can use the git checkout command:
+git checkout new-feature
+Alternatively, you can combine both commands into one using the -b flag:
+git checkout -b new-feature
+This will create a new branch named "new-feature" and switch to it in one command.
+

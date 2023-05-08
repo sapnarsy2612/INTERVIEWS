@@ -115,3 +115,9 @@ Alternatively, you can combine both commands into one using the -b flag:
 git checkout -b new-feature
 This will create a new branch named "new-feature" and switch to it in one command.
 
+
+Both git merge and git rebase are used to integrate changes from one branch into another. However, they do so in different ways.
+When you use git merge, Git creates a new commit that combines the changes from the specified branch into the current branch. This creates a "merge commit" that has two or more parent commits. The merge commit represents the point at which the two branches were merged together.
+On the other hand, git rebase works by applying the changes from one branch on top of another branch. This effectively rewrites the history of the current branch, so that it appears as if the changes were made directly on top of the other branch. This results in a linear history with a cleaner commit history.
+In summary, git merge is a good option when you want to preserve the full history of the changes made in both branches, while git rebase is useful when you want to keep the history linear and cleaner.
+

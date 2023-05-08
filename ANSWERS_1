@@ -83,3 +83,30 @@ Once you have defined all the necessary settings for your job, click on "Save" t
 You can now run the job by clicking on "Build Now". This will trigger the build process and you can see the progress and output of the build in the Jenkins console.
 Freestyle jobs in Jenkins are highly customizable and flexible, and they can be used for a variety of tasks like building, testing, deploying, and more.
 
+Sure, here's an example of a Jenkins pipeline job:
+pipeline {
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        sh 'npm install'
+        sh 'npm run build'
+      }
+    }
+    stage('Test') {
+      steps {
+        sh 'npm run test'
+      }
+    }
+    stage('Deploy') {
+      steps {
+        withCredentials([sshUserPrivateKey(credentialsId: 'my-ssh-creds', keyFileVariable: 'SSH_KEY_FILE', passphraseVariable: '', usernameVariable: 'SSH_USER')]) {
+          sh 'ssh -i $SSH_KEY_FILE $SSH_USER@my-server.com "cd /var/www && git pull origin master && npm install && pm2 restart all"'
+        }
+      }
+    }
+  }
+}
+This pipeline job has three stages: Build, Test, and Deploy. The agent directive specifies that the pipeline can be run on any available agent. In the Build stage, the pipeline runs two shell commands to install npm packages and build the application. In the Test stage, the pipeline runs the tests using the npm run test command. Finally, in the Deploy stage, the pipeline uses SSH to connect to a remote server, updates the code using Git, installs the npm packages, and restarts the Node.js processes using the PM2 process manager.
+This is just a simple example, but Jenkins pipeline jobs can be highly customized and can include conditional logic, error handling, and much more.
+

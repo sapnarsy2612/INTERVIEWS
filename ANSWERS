@@ -64,3 +64,52 @@ spec:
 This toleration specifies that the pod can tolerate the "environment=production" taint with the effect "NoSchedule", which means the pod can be scheduled on the tainted node.
 By using tolerations, you can ensure that pods are only scheduled on nodes that meet certain criteria, such as having specific hardware configurations or running in a certain environment.
 
+In Kubernetes, a ConfigMap is an API object used to store configuration data in key-value pairs. This data can be used to configure an application or a container running inside a pod. A ConfigMap can be created from multiple sources such as files, command-line arguments, environment variables, or even a literal value.
+Here's an example of creating a ConfigMap in Kubernetes:
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-config-map
+data:
+  DB_URL: "my-database-url"
+  DB_USER: "my-database-username"
+  DB_PASSWORD: "my-database-password"
+
+In this example, a ConfigMap named "my-config-map" is created with three key-value pairs, where "DB_URL", "DB_USER", and "DB_PASSWORD" are keys and "my-database-url", "my-database-username", and "my-database-password" are their corresponding values.
+Once the ConfigMap is created, it can be consumed by a pod or deployment using environment variables or command-line arguments. Here's an example of how to consume a ConfigMap in a deployment:
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - name: my-app
+        image: my-image:latest
+        env:
+        - name: DB_URL
+          valueFrom:
+            configMapKeyRef:
+              name: my-config-map
+              key: DB_URL
+        - name: DB_USER
+          valueFrom:
+            configMapKeyRef:
+              name: my-config-map
+              key: DB_USER
+        - name: DB_PASSWORD
+          valueFrom:
+            configMapKeyRef:
+              name: my-config-map
+              key: DB_PASSWORD
+
+In this example, a deployment named "my-app" is created with a single container that uses the "my-config-map" ConfigMap to set the environment variables "DB_URL", "DB_USER", and "DB_PASSWORD". The value of each environment variable is retrieved from the corresponding key in the ConfigMap using the "configMapKeyRef" field.
+

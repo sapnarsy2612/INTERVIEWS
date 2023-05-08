@@ -10,3 +10,7 @@ To tackle this situation, I first analyzed our existing infrastructure and ident
 I collaborated closely with our development and operations teams to ensure a smooth transition and conducted thorough testing at each stage of the migration process. We were able to successfully complete the migration with zero downtime and minimal disruption to our users.
 Through this experience, I learned the importance of meticulous planning, effective communication, and teamwork in tackling complex challenges in a high-pressure environment.
 
+Infrastructure as a Service (IaaS) - provides virtualized computing resources over the internet, such as storage, networking, and computing power. Examples include Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform.
+Platform as a Service (PaaS) - provides a platform for developers to create, run, and manage their applications without the need to manage the underlying infrastructure. Examples include Heroku, Google App Engine, and Microsoft Azure.
+Software as a Service (SaaS) - delivers software applications over the internet, allowing users to access them from any device with an internet connection. Examples include Salesforce, Dropbox, and Google Workspace (formerly G Suite).
+

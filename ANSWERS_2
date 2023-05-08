@@ -1,0 +1,32 @@
+To manage a Jenkins pipeline to use a specific slave instead of the master, you can use the agent directive in your pipeline script to specify the label of the desired slave node.
+Here's an example:
+pipeline {
+    agent {
+        label 'my-slave-label'
+    }
+    stages {
+        stage('Build') {
+            steps {
+                // your build steps here
+            }
+        }
+        // add more stages as needed
+    }
+}
+In this example, the agent directive specifies that the pipeline should run on a node with the label my-slave-label. Jenkins will automatically schedule the pipeline on a slave node that has this label assigned.
+You can also use the node directive to achieve the same result:
+pipeline {
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '10'))
+    }
+    stages {
+        stage('Build') {
+            node('my-slave-label') {
+                // your build steps here
+            }
+        }
+        // add more stages as needed
+    }
+}
+In this example, the node directive specifies that the Build stage should run on a node with the label my-slave-label. The options directive specifies that Jenkins should keep only the last 10 builds for this pipeline.
+

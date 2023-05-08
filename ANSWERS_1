@@ -39,3 +39,16 @@ Configure WAF rules: Azure WAF comes with a set of pre-defined rules, but custom
 Monitor WAF logs: Azure WAF logs can be monitored through Azure Log Analytics or Azure Event Hub to track WAF events and detect potential attacks.
 By configuring Azure WAF, you can enhance the security of your web applications running on Azure and protect them from a range of common web-based attacks.
 
+To enable WAF for an AKS (Azure Kubernetes Service) cluster, you can follow these steps:
+Create an Azure WAF instance:
+Navigate to the Azure portal and create a new Web Application Firewall instance.
+Configure the instance to your requirements, including the pricing tier, instance name, and resource group.
+Create an Azure Application Gateway:
+Navigate to the Azure portal and create a new Application Gateway resource.
+Configure the Application Gateway to use the WAF instance you created in step 1.
+Add listeners, backend pools, and rules as needed to ensure traffic flows to your AKS cluster.
+Configure the AKS Ingress Controller:
+Install the AKS HTTP Application Routing add-on to configure an Ingress Controller in your AKS cluster.
+Configure the Ingress Controller to use the Application Gateway you created in step 2.
+Once the above steps are completed, the WAF will be enabled for your AKS cluster. The Application Gateway will act as a reverse proxy for incoming traffic, and the WAF will inspect the traffic and block any malicious requests based on the rules you defined.
+

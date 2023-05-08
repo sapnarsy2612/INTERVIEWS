@@ -35,4 +35,37 @@ On the other hand, a container is an instance of an image that is created at run
 In summary, an image is a static, read-only template that defines an application environment, while a container is a runtime instance of an image that runs an application in an isolated environment.
 Example: Let's say you want to run a WordPress website. To do so, you would first create an image that contains the WordPress application code, the necessary dependencies, and configurations. This image would be built using a Dockerfile that specifies the base image, the dependencies, and other necessary configurations. Once the image is built, you can use it to create multiple containers, each running a separate instance of the WordPress website. These containers can be started, stopped, and managed independently, without affecting other containers or the host system.
 
+Multi-stage Docker builds are a technique that allows you to create smaller and more efficient Docker images. The idea is to use multiple stages in a single Dockerfile to build your final image, rather than using separate Dockerfiles for each stage.
+The main advantage of using a multi-stage Docker build is that it helps to reduce the size of the final Docker image by removing unnecessary files and dependencies. This results in faster builds, reduced storage costs, and faster deployment times.
+For example, let's say you want to build a Docker image for a Python web application. Here's a multi-stage Dockerfile that shows how you can use multiple stages to build the final image:
+# Stage 1: Build the application
+FROM python:3.8-slim-buster AS build
+
+WORKDIR /app
+
+COPY requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+RUN python setup.py bdist_wheel
+
+# Stage 2: Create the final image
+FROM python:3.8-slim-buster
+
+WORKDIR /app
+
+COPY --from=build /app/dist/*.whl .
+
+RUN pip install --no-cache-dir *.whl
+
+CMD ["python", "app.py"]
+
+In this example, the first stage builds the Python application and packages it into a wheel file. The second stage uses the final Python image and copies the wheel file from the previous stage into the new image. This reduces the size of the final image by only including the necessary files and dependencies.
+Overall, the main benefits of using a multi-stage Docker build are:
+Smaller image sizes
+Faster builds and deployments
+Easier maintenance and versioning of images
+Improved security by reducing the attack surface of the final image.
 

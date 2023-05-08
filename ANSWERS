@@ -160,3 +160,9 @@ By following these steps, you can generate a report that summarizes the pass rat
 
 https://qaautomation.expert/2022/12/23/how-to-generate-html-reports-in-jenkins/
 https://www.javatpoint.com/jenkins-reporting
+
+In the ls command, the -ltr option stands for "list in long format, sorted by modification time in reverse order". Here's what each letter in the option means:
+l: List the files in long format, which displays additional information about the files such as the permissions, owner, group, size, and modification time.
+t: Sort the files by modification time, with the most recently modified files first.
+r: Reverse the order of the sort, so that the oldest files are listed first and the newest files are listed last.
+So when you run the ls -ltr command, it will display the files in the current directory in long format, sorted by modification time in reverse order. The oldest files will be listed first, and the newest files will be listed last.

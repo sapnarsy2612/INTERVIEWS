@@ -65,3 +65,12 @@ This command will also return the IP address of the domain in the output, along 
 dig google.com
 The IP address you receive after running nslookup or dig command is in IPv4 format. IPv4 addresses are a 32-bit numeric address written in decimal format, consisting of four numbers separated by dots, e.g., 192.0.2.1. This format provides a total of 4.3 billion unique addresses.
 
+The main differences between IPv4 and IPv6 are:
+Address Space: IPv4 uses 32-bit addresses and can provide up to approximately 4.3 billion unique IP addresses. IPv6 uses 128-bit addresses and can provide up to approximately 3.4 x 10^38 unique IP addresses.
+Address Format: IPv4 addresses are written in decimal format consisting of four numbers separated by dots (e.g., 192.168.0.1). IPv6 addresses are written in hexadecimal format consisting of eight groups of four characters separated by colons (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
+Header Size: IPv4 headers are 20 bytes long, whereas IPv6 headers are 40 bytes long.
+Fragmentation: IPv4 requires routers to fragment packets if they exceed the Maximum Transmission Unit (MTU) size of the network. IPv6 relies on end-to-end fragmentation to be done by the sender.
+Security: IPv6 includes built-in support for IPSec, a suite of protocols for secure communication, while IPv4 requires separate implementations for security protocols.
+Network Address Translation (NAT): NAT is commonly used in IPv4 networks to share a single public IP address among multiple devices. In IPv6, NAT is not needed as there are enough unique IP addresses available.
+Overall, IPv6 provides a much larger address space, better security, and other improvements over IPv4. However, the transition from IPv4 to IPv6 is a slow process, and many networks still rely heavily on IPv4.
+

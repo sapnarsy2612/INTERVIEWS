@@ -14,3 +14,8 @@ Infrastructure as a Service (IaaS) - provides virtualized computing resources ov
 Platform as a Service (PaaS) - provides a platform for developers to create, run, and manage their applications without the need to manage the underlying infrastructure. Examples include Heroku, Google App Engine, and Microsoft Azure.
 Software as a Service (SaaS) - delivers software applications over the internet, allowing users to access them from any device with an internet connection. Examples include Salesforce, Dropbox, and Google Workspace (formerly G Suite).
 
+Here are 4 storage services in Azure:
+Azure Blob Storage: This is a massively scalable object storage for unstructured data like documents, images, videos, audio, and backups.
+Azure Files: This is a fully managed file share in the cloud that can be accessed via Server Message Block (SMB) or Network File System (NFS) protocols.
+Azure Queue Storage: This is a messaging service used to store and retrieve messages between applications.
+Azure Disk Storage: This is a durable and high-performing managed disks solution for Virtual Machines and other Azure services that require block storage.

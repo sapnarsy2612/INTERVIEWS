@@ -206,3 +206,10 @@ Copy a directory recursively from local to a remote host:
 scp -r mydirectory/ user@remotehost:/path/to/destination/
 Copy a file from one remote host to another remote host:
 scp user1@remotehost1:/path/to/source/myfile.txt user2@remotehost2:/path/to/destination/
+
+In Jenkins, a master-slave architecture is used to distribute the workload and to increase the performance of Jenkins. A Jenkins master is responsible for managing all the jobs and their execution. In a large and complex environment, the master alone may not be able to handle all the workload, especially when there are multiple builds, tests, and deployments happening at the same time.
+This is where Jenkins slave comes into the picture. The slaves are additional machines that can be connected to the Jenkins master to help it in executing the jobs. The master schedules the jobs on the slaves, and the slaves execute the jobs assigned to them. This helps to distribute the workload across multiple machines, which in turn increases the performance and reduces the overall build time.
+For example, suppose you have a Jenkins master server and multiple builds that need to be executed simultaneously. Instead of having all the builds run on the same machine, you can configure multiple Jenkins slaves on different machines and distribute the workload across them. This will help you to reduce the build time and also prevent the master from getting overloaded.
+In addition to that, having multiple slaves also provides fault tolerance. If one slave goes down or is unavailable, the master can automatically assign the job to another available slave, ensuring that the build is not interrupted.
+Overall, the master-slave architecture is an efficient way to manage and execute jobs in Jenkins, especially when dealing with large and complex environments.
+

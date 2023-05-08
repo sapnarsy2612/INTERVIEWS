@@ -160,3 +160,16 @@ Save the job configuration and run the job. When you run the job, you'll be prom
 Here is an example scenario where you might use a parameterized job:
 Let's say you have a job that deploys your application to different environments (e.g. dev, test, prod). You can create a parameterized job that prompts you to select the target environment each time you run the job. You can use this parameter value to set the appropriate configuration settings for the target environment during the deployment process.
 
+In a Jenkins pipeline, you can get the ID of the current job using the env variable JOB_NAME. Here's an example:
+pipeline {
+    agent any
+    stages {
+        stage('Get job ID') {
+            steps {
+                echo "Job ID: ${env.JOB_NAME}"
+            }
+        }
+    }
+}
+This pipeline defines a single stage that outputs the ID of the current job using the echo command and the env variable JOB_NAME. When you run this pipeline, you'll see output like this:
+In this example, the job ID is my-pipeline-job.

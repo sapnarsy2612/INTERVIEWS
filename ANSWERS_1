@@ -151,3 +151,12 @@ You will see a screen asking you to enter values for the parameters. Enter the d
 Jenkins will run the job with the parameters you specified.
 In this example, the job takes three parameters: a string parameter for the greeting message, a boolean parameter to specify whether to send an email after the build, and a choice parameter to select the environment. The job has three stages: the "Greet" stage prints the greeting message, the "Email" stage sends an email if the "SEND_EMAIL" parameter is set to true, and the "Deploy" stage deploys to production if the "ENVIRONMENT" parameter is set to "prod".
 
+Sure, here is an example of a parameterized job in Jenkins:
+First, create a new job by clicking on "New Item" on the Jenkins home page and selecting "Freestyle project".
+On the job configuration page, scroll down to the "Build" section and click on "Add Parameter".
+Select the type of parameter you want to add. For example, if you want to add a string parameter, select "String Parameter" from the dropdown menu.
+Enter a name for the parameter and an optional default value.
+Save the job configuration and run the job. When you run the job, you'll be prompted to enter a value for the parameter you just added.
+Here is an example scenario where you might use a parameterized job:
+Let's say you have a job that deploys your application to different environments (e.g. dev, test, prod). You can create a parameterized job that prompts you to select the target environment each time you run the job. You can use this parameter value to set the appropriate configuration settings for the target environment during the deployment process.
+

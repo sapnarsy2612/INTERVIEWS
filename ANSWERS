@@ -208,3 +208,14 @@ For example, if you want to replace the first occurrence of the string "apple" w
 sed '1s/apple/orange/' fruits.txt > new_fruits.txt
 This will replace the first occurrence of "apple" with "orange" in fruits.txt and save the output to a new file named new_fruits.txt.
 
+In Linux, you can check the hostname of the system by using the hostname command. Here's how to use it:
+Open the terminal.
+Type the following command and press Enter:
+hostname
+This command will display the hostname of the system on the screen.
+Alternatively, you can also check the hostname by looking at the command prompt. By default, the command prompt includes the hostname of the system, along with the current user and working directory. The format of the command prompt is typically:
+[user@hostname current_directory]$
+So the hostname is the string after the @ symbol in the command prompt. For example, if the command prompt looks like this:
+user@mycomputer:~$
+Then the hostname of the system is mycomputer.
+

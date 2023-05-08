@@ -166,3 +166,18 @@ l: List the files in long format, which displays additional information about th
 t: Sort the files by modification time, with the most recently modified files first.
 r: Reverse the order of the sort, so that the oldest files are listed first and the newest files are listed last.
 So when you run the ls -ltr command, it will display the files in the current directory in long format, sorted by modification time in reverse order. The oldest files will be listed first, and the newest files will be listed last.
+
+
+In Linux, you can check who has logged into the system by using the last command. The last command shows a list of all the recent logins to the system, including the date, time, duration, and user.
+Here's how you can use the last command to check who has logged into the system:
+Open the terminal.
+Type the following command and press Enter:
+last
+This command will show you a list of all the recent logins to the system, with the most recent login at the top. The output will include the following information for each login:
+Username: The username of the user who logged in.
+Terminal: The name of the terminal used to log in (e.g., pts/0 for a remote login or :0 for a local login).
+IP address: The IP address of the computer used to log in (if the login was remote).
+Date and time: The date and time the user logged in.
+Duration: The duration of the login session.
+Note that the last command requires root privileges to display information about all users. If you run the last command without root privileges, it will only show information about your own login sessions.
+

@@ -28,9 +28,9 @@ if [ "$expected_year" != "$actual_year" ]; then
   echo "ERROR: date command not working properly"
   exit 1
 fi
-
 This test case sets the expected year to the current year using the date command, and then sets the actual year to a fixed value using the -d option of the date command. It then compares the expected and actual year values, and if they do not match, it indicates that the date command is not working properly and the script will exit with an error.
 You can adjust the format of the date command and the fixed date and time value to test for other specific date and time values as needed.
+
 There are several ways to check if a file copy was successful in Linux:
 Check the return value of the cp command: The cp command returns 0 if the copy was successful and a non-zero value if there was an error. You can check the return value by running echo $? after the cp command. If the value is 0, the copy was successful.
 Compare the source and destination files: After the copy, you can use the diff command to compare the source and destination files. If there are no differences, the copy was successful.
@@ -38,3 +38,4 @@ Check the file size: You can compare the size of the source and destination file
 Check the timestamps: You can check the timestamps of the source and destination files using the ls -l command. If the timestamps match, the copy was successful.
 Use a checksum tool: You can use a tool like md5sum or sha1sum to calculate the checksums of the source and destination files. If the checksums match, the copy was successful.
 When copying a large number of files, you can use a script to automate the checking process. The script can run the above checks on each file and report any errors.
+

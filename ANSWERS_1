@@ -30,3 +30,12 @@ In this example, we're using the NGINX Ingress controller and the cert-manager a
 The tls section of the Ingress resource specifies the domain name(s) for which the SSL/TLS certificate should be issued and the name of the Kubernetes secret that will store the certificate and private key. The rules section specifies the host and path routing for incoming traffic and the backend service that should handle the traffic.
 
 A /16 subnet mask represents 16 bits set to 1 and 16 bits set to 0 in binary format. This means that there are 2^16 (65536) IP addresses in a /16 subnet. However, some of these addresses are reserved for special purposes such as network address and broadcast address, so the actual number of usable IP addresses in a /16 subnet is 2^16 - 2 = 65,534.
+Azure Web Application Firewall (WAF) is a security service offered by Microsoft Azure that provides a layer of protection for web applications running on Azure. WAF helps to protect web applications from common web vulnerabilities, such as SQL injection, cross-site scripting (XSS) attacks, and other web-based exploits. It provides protection by filtering and monitoring incoming HTTP and HTTPS traffic to the web application.
+Azure WAF can be used in front of web applications hosted on Azure App Service, Azure Kubernetes Service (AKS), and other Azure resources. WAF policies can be configured to allow, block, or log traffic based on various criteria, including IP address, HTTP headers, and request content. Azure WAF also supports custom rules to allow for more granular control over the traffic being allowed or blocked.
+Here's an example of how to configure Azure WAF for an Azure App Service:
+Create an Azure WAF policy: This can be done through the Azure Portal or using Azure PowerShell or Azure CLI.
+Associate the WAF policy with the Azure App Service: This can also be done through the Azure Portal or using Azure PowerShell or Azure CLI.
+Configure WAF rules: Azure WAF comes with a set of pre-defined rules, but custom rules can also be created based on the specific needs of the web application.
+Monitor WAF logs: Azure WAF logs can be monitored through Azure Log Analytics or Azure Event Hub to track WAF events and detect potential attacks.
+By configuring Azure WAF, you can enhance the security of your web applications running on Azure and protect them from a range of common web-based attacks.
+

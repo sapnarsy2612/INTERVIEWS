@@ -180,4 +180,18 @@ Syntax: grep "pattern" *.txt
 Example: grep "hello world" *.txt
 This command will search for the pattern "hello world" in all the text files in the current directory and display the lines containing the pattern.
 
-
+In Linux, you can use the which command to locate the binary of a command or program. The which command will search for the binary in the directories specified in the PATH environment variable.
+Syntax: which command
+Example: which ls
+Output: /bin/ls
+This command will output the path of the ls binary, which is /bin/ls.
+To look into the binary file, you can use the hexdump command. The hexdump command is a command-line utility that can be used to display the contents of a binary file in hexadecimal format.
+Syntax: hexdump -C binary_file
+Example: hexdump -C /bin/ls
+This command will display the contents of the /bin/ls binary file in hexadecimal format.
+Note that some system binaries may require root privileges to view. In this case, you can use the sudo command to run the which and hexdump commands as the superuser.
+To know the locations of all the binaries installed on your system, you can use the whereis command. The whereis command will display the location of the binary, source code, and manual pages for a given command.
+Syntax: whereis command
+Example: whereis ls
+Output: ls: /bin/ls /usr/share/man/man1/ls.1.gz
+This command will display the location of the ls binary file and the manual page for the ls command.

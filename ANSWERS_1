@@ -110,3 +110,44 @@ pipeline {
 This pipeline job has three stages: Build, Test, and Deploy. The agent directive specifies that the pipeline can be run on any available agent. In the Build stage, the pipeline runs two shell commands to install npm packages and build the application. In the Test stage, the pipeline runs the tests using the npm run test command. Finally, in the Deploy stage, the pipeline uses SSH to connect to a remote server, updates the code using Git, installs the npm packages, and restarts the Node.js processes using the PM2 process manager.
 This is just a simple example, but Jenkins pipeline jobs can be highly customized and can include conditional logic, error handling, and much more.
 
+Parameterized jobs in Jenkins allow users to pass parameters or arguments to Jenkins jobs. This provides a way to customize the behavior of the jobs at runtime. Here's an example of a parameterized job in Jenkins:
+Open Jenkins and click "New Item" to create a new job.
+Enter a name for the job and select "Pipeline" as the job type.
+In the "Pipeline" section, select "Pipeline script" as the definition.
+Paste the following script in the "Script" section:
+pipeline {
+    agent any
+    parameters {
+        string(name: 'GREETING', defaultValue: 'Hello', description: 'Enter the greeting')
+        booleanParam(name: 'SEND_EMAIL', defaultValue: false, description: 'Send email after build?')
+        choice(name: 'ENVIRONMENT', choices: ['dev', 'test', 'prod'], description: 'Select the environment')
+    }
+    stages {
+        stage('Greet') {
+            steps {
+                echo "${params.GREETING} World!"
+            }
+        }
+        stage('Email') {
+            when {
+                expression { params.SEND_EMAIL == true }
+            }
+            steps {
+                echo "Sending email..."
+            }
+        }
+        stage('Deploy') {
+            when {
+                expression { params.ENVIRONMENT == 'prod' }
+            }
+            steps {
+                echo "Deploying to production..."
+            }
+        }
+    }
+}
+Save the job and run it.
+You will see a screen asking you to enter values for the parameters. Enter the desired values and click "Build".
+Jenkins will run the job with the parameters you specified.
+In this example, the job takes three parameters: a string parameter for the greeting message, a boolean parameter to specify whether to send an email after the build, and a choice parameter to select the environment. The job has three stages: the "Greet" stage prints the greeting message, the "Email" stage sends an email if the "SEND_EMAIL" parameter is set to true, and the "Deploy" stage deploys to production if the "ENVIRONMENT" parameter is set to "prod".
+

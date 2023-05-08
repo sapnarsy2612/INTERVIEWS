@@ -99,3 +99,11 @@ git add example.txt
 You can also use the git add command with a wildcard pattern to add multiple files at once. For example, to add all the files in the current directory that have the .txt extension, you can run:
 git add *.txt
 After you have added the changes to the staging area, you can use the git status command to see the status of your repository, including the changes that are staged and the changes that are not staged. To commit the staged changes, you can use the git commit command followed by a commit message.
+
+To list all branches in a Git repository, you can use the following command:
+git branch
+This will display a list of all local branches in the repository. The branch that you are currently on will be highlighted with an asterisk.
+If you want to see both local and remote branches, you can use the following command:
+git branch -a
+This will display a list of all local and remote branches in the repository. The remote branches will be prefixed with the name of the remote repository they belong to (e.g. origin/ for the default remote repository named origin).
+

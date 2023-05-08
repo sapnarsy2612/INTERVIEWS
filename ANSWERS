@@ -113,3 +113,37 @@ spec:
 
 In this example, a deployment named "my-app" is created with a single container that uses the "my-config-map" ConfigMap to set the environment variables "DB_URL", "DB_USER", and "DB_PASSWORD". The value of each environment variable is retrieved from the corresponding key in the ConfigMap using the "configMapKeyRef" field.
 
+In Kubernetes, a Secret is an object that is used to store sensitive data such as passwords, access tokens, and API keys, and makes it possible to use them securely in a Kubernetes cluster. Secrets are similar to ConfigMaps, but they are specifically designed to store sensitive data.
+Here is an example of creating a Secret in Kubernetes:
+Create a YAML file called my-secret.yaml with the following contents:
+apiVersion: v1
+kind: Secret
+metadata:
+  name: my-secret
+type: Opaque
+data:
+  username: dXNlcm5hbWU=
+  password: cGFzc3dvcmQ=
+
+In this YAML file, we are creating a Secret object named my-secret that contains two pieces of sensitive data: username and password. Note that the data is encoded in base64 format.
+Apply the YAML file to create the Secret in the Kubernetes cluster:
+kubectl apply -f my-secret.yaml
+
+Use the Secret in a Pod by referencing it in a volume:
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+spec:
+  containers:
+  - name: my-container
+    image: my-image
+    volumeMounts:
+    - name: my-secret-volume
+      mountPath: /etc/my-app
+  volumes:
+  - name: my-secret-volume
+    secret:
+      secretName: my-secret
+In this example, we are creating a Pod that uses the my-secret Secret by referencing it in a volume called my-secret-volume. The volume is then mounted at /etc/my-app in the container. This makes the sensitive data available to the container in a secure way.
+

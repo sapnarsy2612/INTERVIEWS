@@ -189,3 +189,20 @@ uname -a
 This command will display the kernel information along with the Linux distribution name.
 These commands can be run on the command line interface of the Linux operating system to know the flavor of the distribution.
 
+The scp command is used to securely copy files between a local and a remote host or between two remote hosts over a network. The syntax for the scp command is as follows:
+scp [options] source_file destination_file
+Here, source_file is the file or directory to be copied, and destination_file is the destination path where the file or directory will be copied to.
+Some common options for scp are:
+-r: recursive copy of directories
+-P: specify the port number to use
+-i: specify the identity file (private key) for authentication
+-v: verbose mode to see more detailed output
+Example usage of the scp command:
+Copy a file from local to a remote host:
+scp myfile.txt user@remotehost:/path/to/destination/
+Copy a file from a remote host to local:
+scp user@remotehost:/path/to/source/myfile.txt /path/to/destination/
+Copy a directory recursively from local to a remote host:
+scp -r mydirectory/ user@remotehost:/path/to/destination/
+Copy a file from one remote host to another remote host:
+scp user1@remotehost1:/path/to/source/myfile.txt user2@remotehost2:/path/to/destination/

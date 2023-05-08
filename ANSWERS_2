@@ -167,3 +167,17 @@ Example: sort < file.txt will sort the content of a file named file.txt.
 Syntax: command1 | command2
 Example: ls | grep file.txt will list the contents of the current directory and filter out the lines containing the string "file.txt".
 By using these redirection operators, you can redirect input and output of a command or a script as per your requirements.
+
+
+In Linux, you can use the grep command to search for a particular pattern in one or multiple files. Here's how you can search for a pattern in 10 files:
+Open the terminal and navigate to the directory containing the files you want to search.
+Use the following command to search for the pattern in all the 10 files:
+Syntax: grep "pattern" file1 file2 file3 file4 file5 file6 file7 file8 file9 file10
+Example: grep "hello world" file1.txt file2.txt file3.txt file4.txt file5.txt file6.txt file7.txt file8.txt file9.txt file10.txt
+This command will search for the pattern "hello world" in all the 10 files and display the lines containing the pattern.
+You can also use wildcard characters like * to search for a pattern in multiple files at once. For example, if you want to search for a pattern in all text files in a directory, you can use the following command:
+Syntax: grep "pattern" *.txt
+Example: grep "hello world" *.txt
+This command will search for the pattern "hello world" in all the text files in the current directory and display the lines containing the pattern.
+
+

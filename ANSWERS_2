@@ -151,3 +151,19 @@ Syntax: ps aux
 htop command: This is an interactive process viewer that displays real-time information about the system, including the processes using the most CPU. It provides more advanced features than top, such as the ability to sort the processes by various criteria.
 Syntax: htop
 By using these commands, you can quickly identify the processes that are consuming more CPU resources and take necessary actions to optimize their usage. You may also consider using system monitoring tools like Nagios, Zabbix, or Prometheus to monitor system performance continuously.
+
+
+In Linux, you can redirect input and output of a command or a script using various redirection operators. Here are some of the commonly used redirection operators:
+> operator: This operator is used to redirect standard output to a file. If the file does not exist, it is created. If it exists, its content is overwritten.
+Syntax: command > file.txt
+Example: ls > file.txt will list the contents of the current directory and redirect the output to a file named file.txt.
+>> operator: This operator is used to append the output of a command to a file. If the file does not exist, it is created. If it exists, the output is appended to it.
+Syntax: command >> file.txt
+Example: echo "Hello world!" >> file.txt will append the text "Hello world!" to the end of a file named file.txt.
+< operator: This operator is used to redirect standard input from a file.
+Syntax: command < file.txt
+Example: sort < file.txt will sort the content of a file named file.txt.
+| operator: This operator is used to redirect the output of one command to the input of another command.
+Syntax: command1 | command2
+Example: ls | grep file.txt will list the contents of the current directory and filter out the lines containing the string "file.txt".
+By using these redirection operators, you can redirect input and output of a command or a script as per your requirements.

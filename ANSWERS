@@ -195,8 +195,16 @@ flags: Optional flags that modify the behavior of the command. The g flag tells 
 Replace old_text and new_text with the text you want to replace and the text you want to replace it with, respectively.
 Note that the sed command will replace all occurrences of the old text with the new text in the file. If you only want to replace a specific occurrence, you can use the sed command with the n flag to display the lines containing the old text, and then manually edit the file.
 
-
-
-
-
+To replace only the first occurrence of a string in a file with another string, you can use the sed command with the s (substitute) option and the 1 (line number) modifier.
+Here's an example command to replace the first occurrence of a string in a file:
+sed '1s/old_string/new_string/' input_file > output_file
+In this command:
+sed is the command to perform stream editing.
+1s specifies that the substitution should be made only on the first line where the pattern is found.
+/old_string/new_string/ is the search and replace pattern.
+input_file is the name of the file to be edited.
+> redirects the output to a new file named output_file.
+For example, if you want to replace the first occurrence of the string "apple" with "orange" in the file fruits.txt, you can use the following command:
+sed '1s/apple/orange/' fruits.txt > new_fruits.txt
+This will replace the first occurrence of "apple" with "orange" in fruits.txt and save the output to a new file named new_fruits.txt.
 

@@ -1,0 +1,18 @@
+Docker Compose is a tool for defining and running multi-container Docker applications. It uses a YAML file to configure the application’s services, networks, and volumes.
+Here's an example of a docker-compose.yml file that defines a simple web application with two services - a web server and a database:
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+  db:
+    image: postgres
+In this example, the version key specifies the version of the Compose file format to use. The services key defines the two services - web and db.
+The web service is built from the Dockerfile in the current directory (.) using the build key. The ports key specifies that the container’s port 5000 should be mapped to the host’s port 5000, allowing the web server to be accessed from outside the container.
+The db service uses an existing image postgres, which is pulled from Docker Hub. This service does not have any ports exposed, so it cannot be accessed from outside the container.
+To run the application defined in this file, navigate to the directory containing the file and run the following command:
+docker-compose up
+This will start the two services defined in the Compose file, and the output from each container will be combined and displayed in the console.
+That's a simple example of how Docker Compose can be used to define and run multi-container Docker applications.
+

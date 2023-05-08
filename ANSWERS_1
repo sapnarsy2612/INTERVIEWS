@@ -198,3 +198,32 @@ Using awk command:
 awk 'NR==6' filename.txt
 This will display the contents of the 6th line of the file filename.txt.
 In both cases, replace filename.txt with the name of the file you want to check.
+
+aa1  2dwd 3 1.3.4.5
+as1 2dww 3 4.5.6.7
+1s dds2 4 5.6.7.8
+write shell script so that first and 3 columne will be printed where last columne contain ip address and   ip address = 5.6.7.8 will be discarded?
+#!/bin/bash
+
+ip_address="5.6.7.8"
+
+# Read each line of input and check if the last column matches the specified IP address
+while read -r column1 column2 column3 ip; do
+    if [[ "$ip" == "$ip_address" ]]; then
+        # If the IP address matches, skip the line
+        continue
+    fi
+    # Print the first and third columns
+    echo "$column1 $column3"
+done < input.txt
+
+Here's how the script works:
+
+The first two lines (#!/bin/bash and ip_address="5.6.7.8") are the same as before.
+The while loop reads each line of input from a file called input.txt.
+The read command splits each line of input into four columns based on the spaces between them.
+The if statement checks if the last column (ip) matches the specified IP address. If it does, the script skips that line using the continue command.
+If the IP address doesn't match, the script prints the first and third columns using the echo command.
+The done statement indicates the end of the while loop.
+When you run the script, it will read each line of input.txt and print the first and third columns of any lines that do not end with the specified IP address. Lines that end with 5.6.7.8 will be discarded.
+You can save the script to a file (e.g., my_script.sh) and make it executable using the chmod +x my_script.sh command. Then, you can run the script using the command ./my_script.sh. Just make sure to replace input.txt with the actual name of the file you want to process.

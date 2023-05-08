@@ -93,3 +93,9 @@ git fetch downloads the latest changes from a remote repository to the local rep
 git pull is a combination of git fetch and git merge. It fetches the changes from the remote repository and merges them into the local branch. This means that the local branch is automatically updated and in sync with the remote branch.
 So, git fetch only updates the local repository, while git pull updates both the local repository and the working tree. If you want to review the changes before merging them into the local branch, it is recommended to use git fetch followed by git merge.
 
+To add changes to the staging area in Git, you can use the git add command followed by the name of the file or files that you want to add.
+For example, to add a file named example.txt to the staging area, you can run the following command:
+git add example.txt
+You can also use the git add command with a wildcard pattern to add multiple files at once. For example, to add all the files in the current directory that have the .txt extension, you can run:
+git add *.txt
+After you have added the changes to the staging area, you can use the git status command to see the status of your repository, including the changes that are staged and the changes that are not staged. To commit the staged changes, you can use the git commit command followed by a commit message.

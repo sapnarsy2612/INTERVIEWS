@@ -69,3 +69,24 @@ Faster builds and deployments
 Easier maintenance and versioning of images
 Improved security by reducing the attack surface of the final image.
 
+Yes, it is possible for multiple pods to use the same PersistentVolumeClaim (PVC) in a namespace in Kubernetes.
+When a PVC is created in a namespace, it can be used by any pod running in that same namespace. To ensure that the pod is able to access the PVC, the pod needs to specify the same persistentVolumeClaim in its volume configuration that was used when creating the PVC.
+Here is an example of a pod configuration in a Kubernetes manifest file that specifies the PVC to use as a volume:
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+spec:
+  containers:
+  - name: my-container
+    image: my-image
+    volumeMounts:
+    - name: my-volume
+      mountPath: /data
+  volumes:
+  - name: my-volume
+    persistentVolumeClaim:
+      claimName: my-pvc
+In this example, the pod named my-pod is configured to use a PVC named my-pvc as its volume. The volumeMounts section specifies where the volume should be mounted in the container, and the volumes section specifies the volume configuration, including the persistentVolumeClaim that should be used.
+If you want another set of pods to use the same PVC, you can simply include the same persistentVolumeClaim configuration in the volume section of those pods' configuration. This way, all pods using the PVC will share the same data stored in the PVC.
+

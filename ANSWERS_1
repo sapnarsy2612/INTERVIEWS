@@ -189,3 +189,12 @@ dig: Another tool for DNS queries, with more advanced options than nslookup.
 host: A simple tool for DNS queries that displays the IP address of a hostname.
 nmap: A powerful network scanner and port scanner that can discover hosts and services on a network.
 These are just a few examples of the many network commands available in Linux. Depending on your specific needs, there may be other commands or tools that are more appropriate for your use case.
+
+To check the contents of a specific line in a file in Linux, you can use the sed command or the awk command. Here are examples of each:
+Using sed command:
+sed -n '6p' filename.txt
+This will display the contents of the 6th line of the file filename.txt.
+Using awk command:
+awk 'NR==6' filename.txt
+This will display the contents of the 6th line of the file filename.txt.
+In both cases, replace filename.txt with the name of the file you want to check.

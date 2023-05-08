@@ -130,3 +130,15 @@ By default, du shows the size of the file or directory in kilobytes. You can use
 du -h filename
 du -sh directory
 This will show the size in a more readable format, such as "10M" for 10 megabytes.
+
+In Linux, you can check the memory status of your system using various commands, some of which are:
+free command: This command displays the amount of free and used memory in the system. You can use it with the -h option to display the output in a human-readable format.
+Syntax: free -h
+top command: This command displays real-time information about the system, including memory usage by processes. You can use the command with the m option to display memory usage.
+Syntax: top -m
+vmstat command: This command displays virtual memory statistics. You can use it with the s option to specify the interval between updates.
+Syntax: vmstat -s
+/proc/meminfo file: This file contains information about memory usage and status. You can use the cat command to view the contents of the file.
+Syntax: cat /proc/meminfo
+These commands and tools can help you monitor the memory usage of your system and diagnose any performance issues related to memory usage.
+

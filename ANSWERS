@@ -19,3 +19,7 @@ Azure Blob Storage: This is a massively scalable object storage for unstructured
 Azure Files: This is a fully managed file share in the cloud that can be accessed via Server Message Block (SMB) or Network File System (NFS) protocols.
 Azure Queue Storage: This is a messaging service used to store and retrieve messages between applications.
 Azure Disk Storage: This is a durable and high-performing managed disks solution for Virtual Machines and other Azure services that require block storage.
+
+In Azure, NSG stands for Network Security Group, which is a fundamental component of the Azure networking model. It acts as a virtual firewall for controlling inbound and outbound network traffic to resources in an Azure Virtual Network. NSGs can be associated with either a subnet or a network interface, and they contain a set of security rules that define how network traffic is allowed or denied.
+NSGs provide a powerful way to filter network traffic and enforce network security policies, such as restricting access to specific ports or IP addresses. They can be used to control access to Azure Virtual Machines, Azure SQL Databases, and other Azure resources. NSGs are also commonly used in conjunction with Azure Application Gateway and Azure Firewall for advanced networking scenarios.
+In summary, NSG is a critical security feature in Azure that provides granular control over network traffic and helps to protect resources from unauthorized access.

@@ -211,3 +211,22 @@ Once you have made the file executable, you can run it by typing its name in the
 Syntax: ./filename
 Example: ./script.sh
 This command will execute the script.sh file in the current directory.
+
+In Linux, you can use the ls command to check the permissions of a file or directory. The ls command lists the contents of a directory and displays the permissions, owner, group, size, and modification time of each file and directory.
+Here's how you can check the permissions of a file or directory:
+Open the terminal and navigate to the directory containing the file or directory whose permissions you want to check.
+Use the following command to list the contents of the directory:
+Syntax: ls -l filename
+Example: ls -l myfile.txt
+This command will list the permissions, owner, group, size, and modification time of the file named myfile.txt.
+Alternatively, you can use the following command to check the permissions of all the files and directories in the current directory:
+Syntax: ls -l
+Example: ls -l
+This command will list the permissions, owner, group, size, and modification time of all the files and directories in the current directory.
+The output of the ls command will display the permissions of the file or directory in the first column, which consists of ten characters. The first character indicates the type of file (e.g., - for a regular file, d for a directory, l for a symbolic link). The next three characters indicate the permissions of the owner, followed by three characters indicating the permissions of the group, and three characters indicating the permissions of others.
+The permissions are represented by the following characters:
+r: read permission
+w: write permission
+x: execute permission
+-: no permission
+For example, the permissions rwxr-xr-- indicate that the owner can read, write, and execute the file, the group can read and execute the file, and others can only read the file.

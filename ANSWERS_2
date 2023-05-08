@@ -90,3 +90,11 @@ spec:
 In this example, the pod named my-pod is configured to use a PVC named my-pvc as its volume. The volumeMounts section specifies where the volume should be mounted in the container, and the volumes section specifies the volume configuration, including the persistentVolumeClaim that should be used.
 If you want another set of pods to use the same PVC, you can simply include the same persistentVolumeClaim configuration in the volume section of those pods' configuration. This way, all pods using the PVC will share the same data stored in the PVC.
 
+In Kubernetes, a Namespace is a way to logically partition resources within a cluster. It provides a scope for names, meaning that the same name can be used for different resources as long as they are in different namespaces. Namespaces can be useful for separating different environments (such as production and development) or different teams within an organization.
+Here is an example of creating a Namespace in Kubernetes using a YAML file:
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: my-namespace
+This YAML file defines a Namespace named my-namespace. Once this file is applied to the Kubernetes cluster using the kubectl apply command, the Namespace will be created and can be used to organize resources within the cluster. For example, if you create a Pod in the my-namespace Namespace, it will only be visible to other resources in the same Namespace.
+

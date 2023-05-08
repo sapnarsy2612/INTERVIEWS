@@ -16,3 +16,12 @@ docker-compose up
 This will start the two services defined in the Compose file, and the output from each container will be combined and displayed in the console.
 That's a simple example of how Docker Compose can be used to define and run multi-container Docker applications.
 
+
+Docker is a containerization platform that allows you to package an application and its dependencies into a container that can run on any system that has Docker installed. Docker Compose is a tool for defining and running multi-container Docker applications.
+The main differences between Docker and Docker Compose are:
+Docker is used to build and manage containers, while Docker Compose is used to define and run multi-container applications.
+Docker is focused on building and running individual containers, while Docker Compose is focused on managing a set of related containers that work together to form an application.
+Docker is a single command-line tool, while Docker Compose requires a separate configuration file to define the relationships between containers.
+Docker Compose allows you to easily configure and manage multi-container applications using a simple YAML file, while Docker requires you to manually specify the command-line options and parameters for each container.
+In summary, Docker is a tool for building and running containers, while Docker Compose is a tool for managing multiple containers that work together to form an application.
+

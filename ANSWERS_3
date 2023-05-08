@@ -121,3 +121,19 @@ When you use git merge, Git creates a new commit that combines the changes from 
 On the other hand, git rebase works by applying the changes from one branch on top of another branch. This effectively rewrites the history of the current branch, so that it appears as if the changes were made directly on top of the other branch. This results in a linear history with a cleaner commit history.
 In summary, git merge is a good option when you want to preserve the full history of the changes made in both branches, while git rebase is useful when you want to keep the history linear and cleaner.
 
+Here's a simple Python program to check if a number is a palindrome or not:
+num = int(input("Enter a number: "))
+
+# Convert the number to a string
+str_num = str(num)
+
+# Reverse the string
+rev_str = str_num[::-1]
+
+# Check if the original number and the reversed number are equal
+if str_num == rev_str:
+    print(num, "is a palindrome")
+else:
+    print(num, "is not a palindrome")
+In this program, we first take input from the user as an integer. Then we convert the number to a string using the str() function. We then reverse the string using slicing [::-1]. Finally, we check if the original number and the reversed number are equal. If they are, we print that the number is a palindrome, otherwise, we print that the number is not a palindrome.
+

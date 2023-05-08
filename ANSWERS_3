@@ -57,3 +57,11 @@ fi
 In this script, cp command is used to copy files from the source directory to the destination directory. The -r option is used to copy directories recursively.
 After the copy command is executed, the script checks the exit status of the command using $?. If the exit status is 0, it means the copy was successful and the script outputs "Copy successful!". If the exit status is not 0, it means the copy failed and the script outputs "Copy failed!".
 
+To check the IP address of a domain like google.com, you can use the nslookup command in Linux:
+nslookup google.com
+This command will return the IP address of the domain in the output. The format of the IP address is a sequence of four numbers separated by dots, for example: 172.217.168.78.
+Alternatively, you can use the dig command:
+This command will also return the IP address of the domain in the output, along with additional information like the DNS server used to resolve the domain name.
+dig google.com
+The IP address you receive after running nslookup or dig command is in IPv4 format. IPv4 addresses are a 32-bit numeric address written in decimal format, consisting of four numbers separated by dots, e.g., 192.0.2.1. This format provides a total of 4.3 billion unique addresses.
+

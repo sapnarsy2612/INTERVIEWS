@@ -88,4 +88,8 @@ Alternatively, you can also use the git rebase command to apply the changes from
 To use git rebase, you can use the following command:
 git rebase origin/main
 This will apply the changes from the remote main branch on top of your local changes. If there are any conflicts, you will need to resolve them manually.
+git pull and git fetch are both used to update a local Git repository with changes from a remote repository, but they work in slightly different ways:
+git fetch downloads the latest changes from a remote repository to the local repository, but it does not automatically update the working tree or merge any changes. This means that the local branch may not be in sync with the remote branch.
+git pull is a combination of git fetch and git merge. It fetches the changes from the remote repository and merges them into the local branch. This means that the local branch is automatically updated and in sync with the remote branch.
+So, git fetch only updates the local repository, while git pull updates both the local repository and the working tree. If you want to review the changes before merging them into the local branch, it is recommended to use git fetch followed by git merge.
 

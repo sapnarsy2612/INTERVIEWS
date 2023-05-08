@@ -173,3 +173,19 @@ pipeline {
 }
 This pipeline defines a single stage that outputs the ID of the current job using the echo command and the env variable JOB_NAME. When you run this pipeline, you'll see output like this:
 In this example, the job ID is my-pipeline-job.
+
+You can check the flavor of the Linux distribution using various commands. Here are a few examples:
+Using lsb_release command:
+You can use the lsb_release command to check the Linux distribution flavor. This command is usually available on most Linux distributions.
+lsb_release -a
+This command will display the LSB (Linux Standard Base) information, including the distribution ID, release number, and codename.
+Using cat /etc/os-release command:
+You can also use the cat command to read the contents of the /etc/os-release file. This file contains information about the Linux distribution.
+cat /etc/os-release
+This command will display information about the Linux distribution, including the name, version, ID, and ID_LIKE.
+Using uname command:
+The uname command can also provide information about the Linux distribution.
+uname -a
+This command will display the kernel information along with the Linux distribution name.
+These commands can be run on the command line interface of the Linux operating system to know the flavor of the distribution.
+

@@ -152,3 +152,56 @@ ConfigMaps are used to manage the configuration data that is used by containeriz
 On the other hand, Secrets are used to store sensitive data such as passwords, API keys, and TLS certificates. Secrets are stored as key-value pairs and are encoded in base64 format to protect the data. They can be accessed by containers through environment variables or by mounting them as files. Secrets are typically used to store data that is required for the application to function, such as passwords for databases or API keys for external services.
 In summary, ConfigMaps are used to store non-sensitive configuration data that is used by containerized applications, while Secrets are used to store sensitive data that is required for the application to function.
 
+
+In Kubernetes, an Ingress is an API object that provides routing rules for external traffic to reach services within the cluster. It acts as a layer 7 (application layer) load balancer that can route traffic to multiple services based on the URL path, hostnames, or other HTTP headers.
+Here is an example of an Ingress resource in Kubernetes:
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+    - host: example.com
+      http:
+        paths:
+          - path: /service1
+            pathType: Prefix
+            backend:
+              service:
+                name: service1
+                port:
+                  name: http
+          - path: /service2
+            pathType: Prefix
+            backend:
+              service:
+                name: service2
+                port:
+                  name: http
+This Ingress resource specifies that traffic to the host example.com with the path prefix /service1 should be routed to the service1 service on port http, and traffic to the path prefix /service2 should be routed to the service2 service on port http. The nginx.ingress.kubernetes.io/rewrite-target annotation specifies that the target URL should be rewritten to / before forwarding to the backend service.
+
+Annotations in Kubernetes are key-value pairs that can be added to objects to store additional information. They are similar to labels, but whereas labels are used to select objects and perform actions on them, annotations are used to store non-identifying information about the object. Annotations are not used by Kubernetes directly, but they can be used by other tools and systems that interact with Kubernetes.
+In the context of Ingress in Kubernetes, annotations can be used to configure additional features of the Ingress controller, such as setting SSL certificates, specifying rewrite rules, or setting timeouts. Here's an example of an Ingress resource with annotations:
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: example-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  rules:
+  - host: example.com
+    http:
+      paths:
+      - path: /example
+        pathType: Prefix
+        backend:
+          service:
+            name: example-service
+            port:
+              name: http
+In this example, we have added two annotations to the Ingress resource. The first annotation, nginx.ingress.kubernetes.io/rewrite-target, tells the Nginx Ingress controller to rewrite the request URI to remove the "/example" prefix. The second annotation, cert-manager.io/cluster-issuer, is used by the Cert Manager tool to automatically request and manage SSL certificates for the Ingress.
+

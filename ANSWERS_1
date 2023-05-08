@@ -52,3 +52,22 @@ Install the AKS HTTP Application Routing add-on to configure an Ingress Controll
 Configure the Ingress Controller to use the Application Gateway you created in step 2.
 Once the above steps are completed, the WAF will be enabled for your AKS cluster. The Application Gateway will act as a reverse proxy for incoming traffic, and the WAF will inspect the traffic and block any malicious requests based on the rules you defined.
 
+A multi-stage Dockerfile is used to reduce the size of the final Docker image by separating the build environment from the runtime environment. This is accomplished by creating multiple stages in the Dockerfile, where each stage is used to perform a specific task.
+Here's an example of a multi-stage Dockerfile that builds a simple Python web application:
+# Build stage
+FROM python:3.9-slim-buster AS build
+WORKDIR /app
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
+COPY . .
+
+# Production stage
+FROM python:3.9-slim-buster AS production
+WORKDIR /app
+COPY --from=build /app /app
+CMD ["python3", "app.py"]
+In this example, we have two stages: the build stage and the production stage. The build stage installs the dependencies and copies the application code into the image. The production stage copies the application code from the build stage, and sets the command to run the application.
+To build this Dockerfile, you can use the following command:
+docker build -t myapp:latest .
+This command will create two images: the build image and the production image. The final image will be the production image, which only contains the application code and the runtime environment.
+

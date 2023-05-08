@@ -175,3 +175,17 @@ ip address
 This command will display detailed information about the network interfaces on your system, including their IP addresses.
 Alternatively, you can also use the ifconfig command to check the IP address. However, the ifconfig command is being deprecated in favor of ip and may not be available on all Linux distributions. To use ifconfig, simply type ifconfig in the terminal and press Enter.
 
+
+Here are some commonly used network commands in Linux:
+ip: Displays and manipulates the network interfaces, routing tables, and more.
+ifconfig: Configures and displays the network interfaces on the system.
+ping: Tests the connectivity between two hosts on a network by sending packets and measuring the response time.
+traceroute: Traces the network path between two hosts and displays the hops along the way.
+netstat: Displays active network connections, listening ports, and routing tables.
+ss: Another command to display active network connections and sockets.
+route: Displays and modifies the system's routing table.
+nslookup: Queries a DNS server to resolve domain names to IP addresses.
+dig: Another tool for DNS queries, with more advanced options than nslookup.
+host: A simple tool for DNS queries that displays the IP address of a hostname.
+nmap: A powerful network scanner and port scanner that can discover hosts and services on a network.
+These are just a few examples of the many network commands available in Linux. Depending on your specific needs, there may be other commands or tools that are more appropriate for your use case.

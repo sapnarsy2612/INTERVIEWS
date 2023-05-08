@@ -142,3 +142,12 @@ Syntax: vmstat -s
 Syntax: cat /proc/meminfo
 These commands and tools can help you monitor the memory usage of your system and diagnose any performance issues related to memory usage.
 
+
+In Linux, you can use the following commands to find the processes that are using more CPU:
+top command: This command displays real-time information about the system, including the processes using the most CPU. By default, the processes are sorted by CPU usage in descending order.
+Syntax: top
+ps command: This command lists the processes running on the system. You can use the aux option to display additional information, including the percentage of CPU usage.
+Syntax: ps aux
+htop command: This is an interactive process viewer that displays real-time information about the system, including the processes using the most CPU. It provides more advanced features than top, such as the ability to sort the processes by various criteria.
+Syntax: htop
+By using these commands, you can quickly identify the processes that are consuming more CPU resources and take necessary actions to optimize their usage. You may also consider using system monitoring tools like Nagios, Zabbix, or Prometheus to monitor system performance continuously.

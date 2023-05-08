@@ -147,3 +147,8 @@ spec:
       secretName: my-secret
 In this example, we are creating a Pod that uses the my-secret Secret by referencing it in a volume called my-secret-volume. The volume is then mounted at /etc/my-app in the container. This makes the sensitive data available to the container in a secure way.
 
+In Kubernetes, ConfigMaps and Secrets are two ways to store and manage configuration data for applications running in containers. The main difference between the two is that ConfigMaps are used to store non-sensitive data such as configuration files, command-line arguments, and environment variables, while Secrets are used to store sensitive data such as passwords, API keys, and TLS certificates.
+ConfigMaps are used to manage the configuration data that is used by containerized applications. This data can be used to configure the application at runtime or to set environment variables that the application can use. ConfigMaps are stored as key-value pairs and can be accessed by containers through environment variables or by mounting them as files.
+On the other hand, Secrets are used to store sensitive data such as passwords, API keys, and TLS certificates. Secrets are stored as key-value pairs and are encoded in base64 format to protect the data. They can be accessed by containers through environment variables or by mounting them as files. Secrets are typically used to store data that is required for the application to function, such as passwords for databases or API keys for external services.
+In summary, ConfigMaps are used to store non-sensitive configuration data that is used by containerized applications, while Secrets are used to store sensitive data that is required for the application to function.
+

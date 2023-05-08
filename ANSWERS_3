@@ -1,0 +1,9 @@
+You can see the status code (also known as exit code) of the last executed command in Linux by running the echo $? command. The $? special shell variable contains the exit status of the last executed command, where 0 indicates success and any non-zero value indicates failure.
+For example, if you run a command like ls file.txt to list a file that doesn't exist, you'll see an error message like ls: cannot access 'file.txt': No such file or directory. If you then run echo $?, you'll see a non-zero status code (probably 2), which indicates that the ls command failed.
+Here's an example session that shows how to use echo $? to see the status code:
+$ ls file.txt
+ls: cannot access 'file.txt': No such file or directory
+$ echo $?
+2
+Note that the $? variable only contains the status code of the last executed command, so if you run multiple commands, you need to check the status code immediately after the command you want to check. If you run another command after that, the value of $? will be updated with the status code of the latest command.
+

@@ -39,3 +39,21 @@ Check the timestamps: You can check the timestamps of the source and destination
 Use a checksum tool: You can use a tool like md5sum or sha1sum to calculate the checksums of the source and destination files. If the checksums match, the copy was successful.
 When copying a large number of files, you can use a script to automate the checking process. The script can run the above checks on each file and report any errors.
 
+Here's an example shell script that copies 1000 files from one directory to another and checks if the copy was successful:
+#!/bin/bash
+
+source_dir="/path/to/source/dir"
+dest_dir="/path/to/dest/dir"
+
+# Copy files from source directory to destination directory
+cp -r $source_dir/* $dest_dir/
+
+# Check if the copy was successful
+if [ $? -eq 0 ]; then
+    echo "Copy successful!"
+else
+    echo "Copy failed!"
+fi
+In this script, cp command is used to copy files from the source directory to the destination directory. The -r option is used to copy directories recursively.
+After the copy command is executed, the script checks the exit status of the command using $?. If the exit status is 0, it means the copy was successful and the script outputs "Copy successful!". If the exit status is not 0, it means the copy failed and the script outputs "Copy failed!".
+

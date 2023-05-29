@@ -1,0 +1,31 @@
+Roles and responsibility as devops engineer ?
+change management process ?
+in jenkins worked on creating trigger 
+jenkins integration with sonarqube 
+pipeline for quality gate in jenkins using sonarqube
+how to send triggers for notification using jenkins ?
+how to integrate jenkins with mail server to trigger email notification 
+upgrade and installation process for jenkins 
+how to upgrade plugin in jenkins 
+how to integrate sonarqube in jenkins pipeline 
+what is name of pipeline for sonarqube job ?
+create pipeline by integrating with sonarqube 
+components of ansible
+different section of ansible file 
+how to create new docker container 
+i want to attach terminal to container while launching it . how to do it ?
+docker swarm . 
+how to upgrade gitlab ?
+git clone ?
+git pull ?
+how to resolve conflict in git ?
+cherrypick in git?
+git hooks ?
+role as sre ?
+observability for our platform ?
+cloud watch in aws ?
+monitoring in cloud ?
+database tool for cicd ?
+deployment on apache server ?
+weblogic ?
+we have deployment of war file on weblogic / apache , once deployment is completed we will get notification that build is failed , what all steps to trouble shoot . 

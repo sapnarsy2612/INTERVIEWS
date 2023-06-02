@@ -91,3 +91,10 @@ Cost-Effective: Cloud Storage offers a flexible and cost-effective pricing model
 Cloud Storage is widely used for a variety of use cases, including backup and restore, data archiving, content distribution, media storage, and serving static assets for websites and applications.
 Overall, Cloud Storage provides a reliable, scalable, and secure solution for storing, accessing, and managing your data in the cloud.
 
+In Google Cloud Platform (GCP), storage buckets in Cloud Storage can be either zonal or regional, depending on how they are configured.
+Zonal Buckets: Zonal buckets are associated with a specific GCP zone. When you create a zonal bucket, the data is stored in a single GCP zone, and the bucket's metadata is replicated across multiple zones within the same region for redundancy. Zonal buckets are suitable when you have specific requirements for data locality or if you want to minimize data egress costs within a particular zone.
+Regional Buckets: Regional buckets are associated with an entire GCP region. When you create a regional bucket, the data is automatically replicated across multiple zones within the selected region. Regional buckets offer higher availability and durability compared to zonal buckets because the data is replicated across multiple zones. They are suitable when you require high availability and redundancy for your data.
+When creating a bucket in Cloud Storage, you can specify whether it should be zonal or regional. By default, buckets are regional, which provides better redundancy and availability. However, if you have specific requirements for data locality or want to optimize costs, you can choose to create a zonal bucket.
+It's important to note that once you create a bucket, you cannot change its configuration from zonal to regional or vice versa. You would need to create a new bucket and migrate the data if you want to change the bucket's configuration.
+When deciding whether to use zonal or regional buckets, consider your specific use case, data replication needs, and any regulatory or compliance requirements that may impact your choice.
+

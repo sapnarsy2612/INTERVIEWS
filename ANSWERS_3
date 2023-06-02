@@ -15,3 +15,9 @@ Once the instance group is created, the instances will be managed as a group, al
 It's important to note that although the instances may have different structures, the instance group operates at a higher level and doesn't require uniformity among the instances. The group is primarily used for managing and orchestrating the instances collectively, rather than enforcing specific structural requirements.
 By grouping the instances, you can streamline management operations, improve scalability, and enable consistent application deployment and maintenance across the group.
 
+VM instance is a zonal resource as it resides within a specific zone.
+A VM instance in Google Cloud Platform (GCP) is indeed a zonal resource as it resides within a specific zone.
+When you create a VM instance, you select a specific zone within a region where the instance will be provisioned. The instance is then tied to that particular zone and cannot be directly accessed or migrated to other zones within the same region.
+Zonal VM instances are closely associated with the specific infrastructure and resources available in the chosen zone. They benefit from low-latency communication with other resources within the same zone and can take advantage of specialized hardware or configurations available in that zone.
+If high availability and fault tolerance are important for your application, it is recommended to distribute your workload across multiple zonal instances or consider using regional managed instance groups that span multiple zones within a region
+

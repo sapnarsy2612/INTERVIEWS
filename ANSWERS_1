@@ -20,3 +20,17 @@ Environment Variables: The ENV instruction sets environment variables within the
 Running Commands: The CMD instruction defines the command to be executed when a container is launched from the Docker image. It can specify the default command and any command-line arguments.
 These are the basic components of a Dockerfile, but there are additional instructions and options available for more advanced use cases. It's important to note that the order of instructions in the Dockerfile matters, as each instruction builds on the previous ones. It's recommended to refer to the official Docker documentation for a complete list of instructions and best practices when writing Dockerfiles.
 
+
+In a Dockerfile, both the ENTRYPOINT and CMD instructions are used to define the command that will be executed when a container is launched from the Docker image. However, there are some key differences between the two:
+ENTRYPOINT:
+The ENTRYPOINT instruction specifies the command that is the primary executable for the container. It sets the default application or process to run when the container starts.
+The ENTRYPOINT instruction is typically used to define a long-running process or the main command of the containerized application.
+If the ENTRYPOINT is defined with an executable and additional arguments, the arguments provided when running the container will be appended to the ENTRYPOINT command.
+Only one ENTRYPOINT instruction is allowed in a Dockerfile, and it replaces any previous ENTRYPOINT instructions.
+CMD:
+The CMD instruction provides default arguments for the ENTRYPOINT or the default command to be executed if no ENTRYPOINT is specified.
+The CMD instruction can be overridden by passing arguments when running the container.
+If the CMD is defined with an executable and additional arguments, the arguments provided when running the container will override the CMD arguments.
+If a Dockerfile has multiple CMD instructions, only the last one will take effect.
+In summary, ENTRYPOINT sets the primary command or executable for the container and allows for additional arguments to be appended, while CMD provides default arguments for the ENTRYPOINT or defines the default command if no ENTRYPOINT is specified. It's common to use ENTRYPOINT for the main application process and use CMD to provide default arguments or options for that process.
+

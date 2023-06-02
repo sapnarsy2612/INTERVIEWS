@@ -227,4 +227,58 @@ Ingress Controllers: To implement Ingress functionality, you need an Ingress con
 Annotations and Customization: Ingress resources support annotations that allow you to customize the behavior of the Ingress controller. Annotations can be used to specify rewrite rules, add custom headers, or configure other advanced settings.
 By utilizing Ingress, you can expose your services to external clients in a controlled and flexible manner. It simplifies the management of external access and provides advanced routing capabilities, SSL/TLS termination, and load balancing.
 Note that Ingress functionality may vary depending on the Kubernetes distribution and the specific Ingress controller implementation used in your cluster.
+Certainly! Here's an example to illustrate the usage of Ingress in Kubernetes:
+Create a Kubernetes Deployment:
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+  labels:
+    app: my-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+        - name: my-app-container
+          image: my-app-image
+          ports:
+            - containerPort: 8080
+Expose the Deployment as a Kubernetes Service:
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-app-service
+spec:
+  selector:
+    app: my-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+Create an Ingress resource to define the routing rules:
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-app-ingress
+spec:
+  rules:
+    - host: myapp.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: my-app-service
+                port:
+                  number: 80
+In this example, we have a Deployment called my-app with three replicas. It is exposed as a Service called my-app-service on port 80, targeting port 8080 of the containers. The Ingress resource my-app-ingress is created with a routing rule that maps the hostname myapp.example.com to the my-app-service backend.
+
 

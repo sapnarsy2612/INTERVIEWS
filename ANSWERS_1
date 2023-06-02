@@ -216,3 +216,15 @@ Make sure to adjust <base_image> with the desired base image for your Docker ima
 By using the .dockerignore file, you can effectively exclude specific files or directories from being copied into your Docker image, helping to reduce the image size and avoid including unnecessary files.
 Remember to run the docker build command from the same directory as the Dockerfile and the .dockerignore file to ensure the exclusion rules are applied correctly during the build process.
 
+In Kubernetes, an Ingress is an API object that provides external access to services within the cluster. It acts as an entry point and handles the routing of incoming traffic to the appropriate services based on rules defined in the Ingress resource. The Ingress resource acts as a layer 7 (HTTP/HTTPS) load balancer and allows you to define routing rules, SSL/TLS termination, and other advanced features.
+Here are some key points about Ingress in Kubernetes:
+External Access: Ingress allows external access to services running within the cluster, eliminating the need to expose each service individually.
+HTTP(S) Routing: Ingress supports HTTP and HTTPS traffic and can perform layer 7 routing based on various criteria such as hostname, path, or request headers.
+Load Balancing: Ingress acts as a load balancer, distributing incoming traffic to multiple backend services based on the defined rules. This helps distribute the load and improve scalability.
+SSL/TLS Termination: Ingress can handle SSL/TLS termination, enabling secure communication between clients and services. It can terminate SSL/TLS connections and forward traffic to backend services over plain HTTP.
+Virtual Hosts and Path-Based Routing: Ingress allows you to define virtual hosts and perform routing based on hostnames or paths. You can have multiple rules within an Ingress resource, each mapping to a different service.
+Ingress Controllers: To implement Ingress functionality, you need an Ingress controller. An Ingress controller is a software or hardware component that runs in the cluster and manages the routing and configuration defined by the Ingress resources. Examples of Ingress controllers include NGINX Ingress Controller, Traefik, and Istio.
+Annotations and Customization: Ingress resources support annotations that allow you to customize the behavior of the Ingress controller. Annotations can be used to specify rewrite rules, add custom headers, or configure other advanced settings.
+By utilizing Ingress, you can expose your services to external clients in a controlled and flexible manner. It simplifies the management of external access and provides advanced routing capabilities, SSL/TLS termination, and load balancing.
+Note that Ingress functionality may vary depending on the Kubernetes distribution and the specific Ingress controller implementation used in your cluster.
+

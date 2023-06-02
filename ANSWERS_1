@@ -107,3 +107,25 @@ spec:
 After pausing a container, you can resume it using the kubectl unpause command or by setting the spec.paused field to false in the pod's YAML definition.
 Please note that pausing containers should be used judiciously and for specific purposes, as it can impact the availability and responsiveness of your applications. It's important to understand the implications of pausing containers and consider any potential impacts on the overall system behavior before using this feature.
 
+Cloud Run is a serverless compute platform provided by Google Cloud Platform (GCP) that allows you to run containerized applications without worrying about managing the underlying infrastructure. It abstracts away the infrastructure and autoscales your application based on incoming requests. Here's an example to illustrate how Cloud Run works:
+Let's say you have a containerized web application built with your preferred language and framework, such as Node.js, Python, or Java. You want to deploy and run this application on Cloud Run.
+Containerize your application:
+Package your web application into a container image using a Dockerfile.
+Ensure that your application listens on a specified port and responds to incoming HTTP requests.
+Deploy your application to Cloud Run:
+Use the Cloud Run command-line interface (CLI) or Cloud Console to deploy your container image.
+Specify the container image and set the desired configuration, such as the maximum number of instances and the amount of allocated memory.
+Autoscaling and request handling:
+Cloud Run automatically manages the scaling of your application based on incoming requests.
+When a request comes in, Cloud Run spins up a new container instance (or uses an existing idle one) to handle the request.
+It scales the number of instances up or down based on traffic patterns, ensuring optimal resource utilization and response times.
+Pay-as-you-go pricing:
+With Cloud Run, you only pay for the actual usage of your application.
+You are billed based on the number of requests, the duration of each request, and the allocated memory for each request.
+Integration with other GCP services:
+Cloud Run integrates seamlessly with other GCP services, such as Cloud Logging, Cloud Monitoring, and Cloud Build.
+You can easily access logs, monitor your application's performance, and incorporate continuous integration and deployment pipelines.
+By using Cloud Run, you can focus on developing and deploying your application without managing the underlying infrastructure. Cloud Run abstracts away the complexities of server provisioning, autoscaling, and load balancing, allowing you to scale your application effortlessly and pay only for what you use.
+Note that Cloud Run also has a fully managed variant called "Cloud Run on GKE" that runs on Google Kubernetes Engine (GKE) for more advanced use cases that require fine-grained control over the infrastructure.
+Overall, Cloud Run offers a flexible and cost-effective platform for running containerized applications in a serverless manner on GCP.
+

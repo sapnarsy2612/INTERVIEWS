@@ -146,3 +146,22 @@ You can monitor the build status, view build logs, and access build artifacts in
 If any issues occur during the build process, you can analyze the build logs to identify and troubleshoot the problems.
 Cloud Build provides a seamless and automated CI/CD workflow, allowing you to build, test, and deploy your applications on GCP. By defining the build steps in the cloudbuild.yaml file and configuring triggers, you can automate the entire process and ensure consistent and reliable deployments of your application.
 
+
+In Google Cloud Platform (GCP), there are several types of tags available that you can use to label and organize your cloud resources. Here are some commonly used tags:
+Resource Tags:
+Resource labels or tags are key-value pairs that you can assign to your GCP resources.
+They provide a way to categorize and organize resources for better management and resource identification.
+Resource tags can be used to filter, search, and group resources based on specific criteria.
+Example: You can assign tags like "environment: production" or "project: my-project" to VM instances, storage buckets, or other GCP resources.
+Network Tags:
+Network tags are used to control network traffic and apply firewall rules to specific resources in GCP.
+By assigning network tags to instances, you can create targeted firewall rules that allow or deny traffic based on the specified tags.
+Network tags are commonly used in conjunction with GCP's firewall rules to define network access policies.
+Example: You can assign a network tag like "web-server" to a set of instances that host your web application and then create a firewall rule allowing HTTP traffic to instances with that tag.
+Identity and Access Management (IAM) Tags:
+IAM tags, also known as IAM labels, are used to organize and manage IAM policies within GCP.
+IAM tags provide a way to group and manage permissions for specific resources or resource hierarchies.
+By assigning IAM tags to IAM policies, you can easily manage and enforce permissions for specific groups or categories of resources.
+Example: You can assign an IAM tag like "data-access" to a group of BigQuery datasets and then define IAM policies that grant read or write access to users or service accounts with that tag.
+These are some of the common types of tags available in GCP. Tags provide a flexible way to organize, manage, and control resources within your GCP projects, allowing you to implement consistent policies and access controls across your infrastructure.
+

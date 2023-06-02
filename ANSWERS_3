@@ -118,3 +118,31 @@ If the build is successful, Cloud Build can deploy the application to Google Clo
 You can monitor the build status and view build logs in the Cloud Build console, allowing you to troubleshoot any issues that may arise during the build process.
 Cloud Build provides a scalable and managed CI/CD solution that simplifies the building and deployment of your applications on Google Cloud Platform.
 
+Let's say you have a web application built with Node.js, and you want to automate the build and deployment process using Cloud Build on Google Cloud Platform (GCP).
+Project Setup:
+Create a new project on GCP.
+Set up a version control repository (e.g., GitHub or Cloud Source Repositories) for your application code.
+Configuration File:
+Create a cloudbuild.yaml file in the root of your application repository.
+Specify the build steps and configuration in the cloudbuild.yaml file.
+Example cloudbuild.yaml file:
+steps:
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['install']
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run', 'build']
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['app', 'deploy']
+In this example, the build steps include installing dependencies using npm, running the build script, and deploying the application using the Google Cloud SDK (gcloud).
+Cloud Build Configuration:
+Enable the Cloud Build API for your project.
+Link your version control repository to Cloud Build and configure the trigger to automatically start a build whenever changes are pushed to the repository.
+Build and Deployment:
+Whenever you push changes to your version control repository, Cloud Build will automatically trigger a build based on the configured trigger.
+Cloud Build fetches the latest code, executes the build steps specified in the cloudbuild.yaml file, and creates build artifacts.
+If the build is successful, Cloud Build can deploy the application to your desired environment, such as Google App Engine or Google Kubernetes Engine.
+Monitoring and Logs:
+You can monitor the build status, view build logs, and access build artifacts in the Cloud Build console or through the command-line interface.
+If any issues occur during the build process, you can analyze the build logs to identify and troubleshoot the problems.
+Cloud Build provides a seamless and automated CI/CD workflow, allowing you to build, test, and deploy your applications on GCP. By defining the build steps in the cloudbuild.yaml file and configuring triggers, you can automate the entire process and ensure consistent and reliable deployments of your application.
+

@@ -9,3 +9,14 @@ Set up triggers: Configure triggers in Jenkins to automatically start builds bas
 Monitor and log: Enable monitoring and logging to track the progress and output of your Jenkins builds and deployments in Kubernetes. This can be done using Jenkins plugins or by integrating with monitoring and logging tools provided by GCP.
 It's important to note that these are high-level steps, and the actual implementation may vary based on your specific setup, requirements, and tool versions. Additionally, there may be alternative plugins or approaches available for integrating Jenkins and Kubernetes, depending on your needs.
 
+
+A Dockerfile is a text file that contains a set of instructions for building a Docker image. It specifies the base image, adds additional dependencies or configurations, and defines the actions to be performed when a container is launched from the image. The basic components of a Dockerfile include:
+Base Image: The first line of a Dockerfile specifies the base image to use. It defines the starting point for the Docker image and can be an official Docker image or a custom image built on top of another base image.
+Working Directory: The WORKDIR instruction sets the working directory within the container where subsequent instructions will be executed. It provides a context for all relative paths in the Dockerfile.
+Copying Files: The COPY instruction is used to copy files and directories from the host machine to the container. It takes two arguments: the source path on the host and the destination path in the container.
+Installing Dependencies: The RUN instruction executes commands inside the container during the build process. It is commonly used to install dependencies, run scripts, or perform any necessary setup steps.
+Exposing Ports: The EXPOSE instruction documents which ports are expected to be published by the container at runtime. It does not actually publish the ports, but it provides information to the user or developer about the container's expected network behavior.
+Environment Variables: The ENV instruction sets environment variables within the container. It allows you to define key-value pairs that can be used by the application running in the container or by subsequent instructions in the Dockerfile.
+Running Commands: The CMD instruction defines the command to be executed when a container is launched from the Docker image. It can specify the default command and any command-line arguments.
+These are the basic components of a Dockerfile, but there are additional instructions and options available for more advanced use cases. It's important to note that the order of instructions in the Dockerfile matters, as each instruction builds on the previous ones. It's recommended to refer to the official Docker documentation for a complete list of instructions and best practices when writing Dockerfiles.
+

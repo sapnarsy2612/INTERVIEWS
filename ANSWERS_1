@@ -47,3 +47,17 @@ Redirect or update external integrations: If there are any external systems or t
 Plan for DNS or URL changes: If the Jenkins instance is accessed via a specific URL or DNS entry, plan for any necessary changes to update the DNS or URL mappings to redirect users to the new Jenkins instance.
 It's important to note that the specific steps and requirements may vary based on your Jenkins setup, including the version of Jenkins and the plugins used. It's recommended to consult the Jenkins documentation and consider conducting a trial migration or testing on a non-production environment before performing the actual migration.
 
+A Git conflict occurs when there are conflicting changes made to the same part of a file by different branches or contributors. Git uses automatic merging to combine changes from different branches, but if Git determines that it cannot merge the changes automatically due to conflicting modifications, it marks the file as having a conflict. Resolving Git conflicts requires manual intervention. Here's an overview of how to handle Git conflicts:
+Identify the conflicts: When you encounter a conflict, Git will provide a message indicating the conflicting file(s). You can use Git commands like git status or git diff to see the specific conflicting lines marked with "<<<<<<<", "=======", and ">>>>>>>". These markers separate the conflicting changes made by different branches or contributors.
+Open the conflicted file(s): Open the conflicted file(s) in a text editor. Inside the file, you will see the conflicting sections marked with the conflict markers mentioned above.
+Resolve the conflicts: Review the conflicting sections and decide how to merge or resolve the conflicts. You have a few options:
+Keep one version: Manually edit the file to remove the conflicting sections and choose to keep either one version of the changes.
+Combine changes: If both versions of the changes are necessary, manually edit the file to merge the conflicting sections, retaining the desired parts from each version.
+Use a merge tool: Git provides the option to use a merge tool to help resolve conflicts. You can configure Git to use a specific merge tool, or you can use external merge tools like KDiff3, Beyond Compare, or P4Merge.
+Save the resolved file: After resolving the conflicts, save the modified file(s) with the resolved changes.
+Stage the changes: Use the git add command to stage the resolved file(s) after resolving the conflicts.
+Commit the changes: Once all conflicts are resolved and the changes are staged, use the git commit command to create a new commit with the resolved changes.
+Repeat for all conflicts: If there are multiple files with conflicts, repeat the above steps for each conflicted file until all conflicts are resolved.
+Push the changes: After resolving conflicts and committing the changes, push the changes to the Git repository using git push to make the resolved changes available to others.
+It's important to communicate and collaborate with other contributors to ensure that conflicts are resolved appropriately and to avoid introducing unintended changes during conflict resolution. Regularly pulling and updating your local repository with the latest changes from the remote repository can help reduce the likelihood of conflicts.
+

@@ -281,4 +281,8 @@ spec:
                   number: 80
 In this example, we have a Deployment called my-app with three replicas. It is exposed as a Service called my-app-service on port 80, targeting port 8080 of the containers. The Ingress resource my-app-ingress is created with a routing rule that maps the hostname myapp.example.com to the my-app-service backend.
 
+Ensure that you have a DNS entry pointing myapp.example.com to the IP address of your Ingress controller. This step depends on your cluster environment and configuration.
+Access the application by navigating to http://myapp.example.com in a web browser. The request will be routed to the my-app-service and distributed among the replicas of the my-app Deployment.
+Remember that the specifics of configuring Ingress, such as the Ingress controller and DNS setup, may vary depending on your Kubernetes distribution and infrastructure. Adjust the example to match your environment accordingly.
+By using Ingress, you can define routing rules, SSL/TLS termination, and other advanced features to control how external traffic is directed to your services running in the cluster.
 

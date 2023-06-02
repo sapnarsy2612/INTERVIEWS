@@ -99,3 +99,22 @@ Suppose you have a small development team working on a web application deployed 
 However, if your organization has specific requirements, complex workflows, or wants complete control over the CI/CD infrastructure, a self-managed toolchain like Jenkins or GitLab CI/CD might be more suitable. This option allows you to customize the CI/CD process and integrate with various tools and services as needed.
 Ultimately, the choice depends on your specific needs, resources, and preferences. It's essential to evaluate the pros and cons of each option and consider factors such as complexity, scalability, integration, cost, security, and compliance before making a decision.
 
+Cloud Build is a cloud-native CI/CD (Continuous Integration/Continuous Deployment) platform provided by Google Cloud Platform (GCP). It allows you to automate the building, testing, and deployment of your applications on GCP.
+Key features of Cloud Build include:
+Build Pipelines: Cloud Build enables you to define and manage build pipelines as code using configuration files, such as cloudbuild.yaml. These pipelines define the series of build steps, including fetching source code, compiling, running tests, and creating build artifacts.
+Integration with Version Control Systems: Cloud Build integrates with popular version control systems like Git and Bitbucket, allowing you to trigger builds automatically whenever changes are pushed to the repository.
+Scalability and Speed: Cloud Build can automatically scale resources to handle large build workloads, ensuring fast and efficient execution of build tasks.
+Custom Build Steps: Cloud Build supports the execution of custom build steps, which can be scripts or commands you define. This flexibility allows you to customize your build process based on your specific requirements.
+Pre-Built Builders: Cloud Build provides pre-built builders for popular programming languages and frameworks. These builders include necessary build tools and dependencies, simplifying the setup and configuration of your build environment.
+Integration with Other GCP Services: Cloud Build integrates with various GCP services, such as Google Container Registry, Google App Engine, Google Cloud Functions, and Google Cloud Storage, enabling seamless deployment and integration with other cloud resources.
+IAM Integration: Cloud Build integrates with Google Cloud's IAM (Identity and Access Management) system, allowing you to manage permissions and access control for builds and deployments.
+By utilizing Cloud Build, you can automate your build and deployment processes, ensure consistent and reproducible builds, and streamline your CI/CD workflows on Google Cloud Platform.
+Example Usage:
+Here's an example of how Cloud Build can be used:
+You define a cloudbuild.yaml configuration file in your project's source code repository, specifying the build steps, dependencies, and environment settings.
+Whenever changes are pushed to the repository, Cloud Build automatically triggers a build based on the defined pipeline in the cloudbuild.yaml file.
+Cloud Build fetches the source code, compiles the application, runs tests, and creates build artifacts based on the specified build steps.
+If the build is successful, Cloud Build can deploy the application to Google Cloud services such as Google Kubernetes Engine (GKE), Google App Engine, or Google Cloud Run.
+You can monitor the build status and view build logs in the Cloud Build console, allowing you to troubleshoot any issues that may arise during the build process.
+Cloud Build provides a scalable and managed CI/CD solution that simplifies the building and deployment of your applications on Google Cloud Platform.
+

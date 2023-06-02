@@ -61,3 +61,30 @@ Repeat for all conflicts: If there are multiple files with conflicts, repeat the
 Push the changes: After resolving conflicts and committing the changes, push the changes to the Git repository using git push to make the resolved changes available to others.
 It's important to communicate and collaborate with other contributors to ensure that conflicts are resolved appropriately and to avoid introducing unintended changes during conflict resolution. Regularly pulling and updating your local repository with the latest changes from the remote repository can help reduce the likelihood of conflicts.
 
+Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. Its architecture is designed to provide a scalable and resilient platform for running containerized workloads. Here is an overview of the key components and architecture of Kubernetes:
+Master Node:Control Plane: The control plane is responsible for managing and coordinating the Kubernetes cluster. It consists of several components:
+API Server: Exposes the Kubernetes API and handles requests from users and other components.
+Scheduler: Assigns pods (a group of one or more containers) to nodes based on resource requirements and constraints.
+Controller Manager: Manages various controllers responsible for maintaining the desired state of the cluster.
+etcd: A distributed key-value store that stores the cluster's configuration data and state.
+Worker Nodes:
+Nodes: Worker nodes, also known as worker machines or minions, are responsible for running the containers and executing the workloads. They are controlled by the master node.
+Kubelet: Runs on each node and communicates with the master node. It manages the containers, mounts volumes, and ensures that the containers are running and healthy.
+Container Runtime: The software responsible for running containers, such as Docker, Containerd, or CRI-O.
+Networking:
+Pod Networking: Each pod gets its unique IP address, and containers within the same pod share the same network namespace. Pods can communicate with each other using their IP addresses.
+Service Networking: Services provide a stable IP address and DNS name for accessing a set of pods. They enable load balancing and service discovery within the cluster.
+Network Plugins: Kubernetes supports various network plugins, such as Calico, Flannel, and Cilium, which provide different networking capabilities and integration options.
+Storage:
+Volumes: Kubernetes supports various types of volumes that provide persistent storage for containers. Volumes can be local or network-based and can be mounted into one or more containers within a pod.
+Persistent Volumes: Persistent Volumes (PV) provide storage resources that exist independently of pods. They are created and managed by the cluster administrator and can be dynamically provisioned or pre-provisioned.
+Persistent Volume Claims: Persistent Volume Claims (PVC) are requests for storage by pods. They consume resources from available Persistent Volumes.
+Deployments and Services:
+Deployments: Deployments define the desired state of a set of pods and handle their deployment, scaling, and updates. They ensure the availability and health of the desired number of pods.
+Services: Services enable network access and load balancing to a set of pods. They provide a stable IP address and DNS name that can be used to access the pods from within or outside the cluster.
+Labels, Selectors, and Annotations:
+Labels: Labels are key-value pairs attached to objects (pods, services, etc.) and are used for grouping and selecting objects.
+Selectors: Selectors are used to specify criteria based on labels to select a set of objects.
+Annotations: Annotations are key-value pairs used to attach metadata to objects. They provide additional information about the objects but are not used for selecting or grouping.
+This is a high-level overview of the architecture of Kubernetes. Kubernetes is highly extensible and can be customized with additional components and plugins to meet specific requirements. Its flexible architecture and robust features make it a popular choice for managing containerized applications at scale.
+

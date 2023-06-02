@@ -29,3 +29,20 @@ By having regional subnets, you can achieve high availability and redundancy for
 It's important to note that the subnets within a VPC network are regional, but the instances themselves are still zonal resources. The instances are associated with a subnet within a region but are deployed in specific zones within that region.
 In summary, subnets are regional resources in GCP, providing a way to logically divide IP address ranges within a region for organizing network traffic and enabling communication between resources deployed in different zones within the same subnet.
 
+In Google Cloud Platform (GCP), there are two modes for creating Virtual Private Cloud (VPC) networks: Custom mode and Default mode.
+Default Mode VPC:
+When you create a GCP project, a default VPC network is automatically provisioned for you in each region.
+The default mode VPC is preconfigured with a subnet in each region and is ready for immediate use.
+It is designed to provide a simple and quick way to get started with GCP resources without needing to create a custom VPC.
+The default mode VPC has a set of predefined firewall rules that allow certain types of inbound and outbound traffic by default.
+The default mode VPC uses auto mode subnets, where subnets are automatically created within each region as needed.
+Custom Mode VPC:
+In custom mode, you have more control and flexibility over the configuration of your VPC network.
+You can create your own VPC network with custom IP address ranges, subnets, and firewall rules.
+Custom mode VPCs allow you to define multiple subnets within a region, each with its own IP address range and routing rules.
+You can also configure routes, VPNs, and peering connections to connect your VPC network with other networks.
+With custom mode VPCs, you have the ability to customize the network architecture to meet your specific requirements.
+However, it requires more configuration and management compared to the default mode VPC.
+When creating a new GCP project, you have the option to use the default mode VPC or create a custom mode VPC based on your needs. The choice between the two depends on factors such as the complexity of your network requirements, security needs, and level of control you require over the network configuration.
+It's worth noting that you can also create additional custom mode VPC networks within a project if needed, allowing you to separate resources and apply different network policies as per your organization's requirements.
+

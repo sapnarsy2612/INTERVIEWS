@@ -66,3 +66,14 @@ A VPC network is a global resource that spans multiple regions and allows you to
 When you create a VPC network, you specify a global IP address range that is divided into subnets across multiple regions. Each subnet is associated with a specific region and can span multiple zones within that region. Instances and other resources are then deployed within those subnets.
 By having a global scope, a VPC network enables connectivity and communication between resources deployed in different regions. It allows you to create distributed architectures, implement multi-region redundancy, and deploy services closer to your users or customers.
 
+In Google Cloud Platform (GCP), an IAM (Identity and Access Management) principal represents a user, a group, or a service account that can be granted permissions to access and interact with GCP resources.
+Here are some common IAM principals in GCP:
+User: An individual user who has a Google Account or a Google Workspace account. Users can be granted various roles and permissions within a GCP project.
+Group: A collection of users defined in Google Groups. By assigning roles to a group, you can grant the same set of permissions to multiple users at once.
+Service Account: A special type of account used by applications, services, and other software to interact with GCP resources programmatically. Service accounts have their own email address and associated private key. They can be granted roles and permissions to access resources.
+Google Workspace Domain: If you are using GCP within a Google Workspace domain, you can grant permissions to the entire domain or specific organizational units (OU) within the domain.
+Google-managed Service Account: Some Google services and APIs have associated service accounts that are managed by Google. These service accounts are created and managed automatically by Google and have pre-defined permissions for specific services.
+When granting permissions in GCP, you can assign roles to these principals to control what actions they can perform on resources. Roles define a set of permissions that determine the level of access a principal has. Examples of roles include Owner, Editor, Viewer, and more fine-grained roles specific to certain services or resources.
+By assigning roles to IAM principals, you can manage and control access to GCP resources, ensuring that only authorized entities have the necessary permissions.
+It's important to carefully manage and review the permissions granted to IAM principals to ensure the security and compliance of your GCP environment.
+

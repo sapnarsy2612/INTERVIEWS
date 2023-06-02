@@ -200,3 +200,19 @@ spec:
 In the pod within namespace2, you can access the service my-service.namespace1.svc.cluster.local to communicate with the pods in namespace1.
 Remember, proper networking and access controls should be in place to ensure secure and controlled communication between pods in different namespaces.
 
+To exclude specific files from being copied into a Docker image during the build process, you can use the Dockerfile's .dockerignore file. The .dockerignore file works similarly to .gitignore and allows you to specify patterns for files and directories to exclude.
+Here's an example to demonstrate how to exclude a specific file in a Dockerfile:
+Create a file named .dockerignore in the same directory as your Dockerfile.
+Open the .dockerignore file and add the filename or pattern of the file you want to exclude. For example, if you want to exclude a file named secret.txt, your .dockerignore file would look like this:
+secret.txt
+Save the .dockerignore file.
+In your Dockerfile, use the COPY instruction to copy the remaining files and directories into the Docker image. The .dockerignore rules will be applied, and the excluded file(s) will not be copied. Here's an example Dockerfile:
+FROM <base_image>
+WORKDIR /app
+COPY . .
+# Rest of the Dockerfile commands
+In this example, the COPY . . command will copy all files and directories in the build context to the /app directory inside the Docker image, excluding the file specified in the .dockerignore file.
+Make sure to adjust <base_image> with the desired base image for your Docker image.
+By using the .dockerignore file, you can effectively exclude specific files or directories from being copied into your Docker image, helping to reduce the image size and avoid including unnecessary files.
+Remember to run the docker build command from the same directory as the Dockerfile and the .dockerignore file to ensure the exclusion rules are applied correctly during the build process.
+

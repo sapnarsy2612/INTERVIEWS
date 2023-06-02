@@ -46,3 +46,18 @@ However, it requires more configuration and management compared to the default m
 When creating a new GCP project, you have the option to use the default mode VPC or create a custom mode VPC based on your needs. The choice between the two depends on factors such as the complexity of your network requirements, security needs, and level of control you require over the network configuration.
 It's worth noting that you can also create additional custom mode VPC networks within a project if needed, allowing you to separate resources and apply different network policies as per your organization's requirements.
 
+In Google Cloud Platform (GCP), VPC (Virtual Private Cloud) networks provide the foundational networking infrastructure for your cloud resources. VPC networks are organized into different network tiers, which determine the level of routing control and functionality available for your network.
+Standard Network Tier:
+The Standard network tier offers basic routing functionality and is the default tier for newly created VPC networks.
+In the Standard network tier, Google manages the routing for your VPC network.
+It provides automatic routing between subnets within the VPC network, as well as connectivity to the internet and other Google services.
+The Standard network tier is suitable for most general-purpose applications and provides a simple and easy-to-use networking setup.
+Premium Network Tier:
+The Premium network tier offers enhanced performance and routing capabilities compared to the Standard tier.
+It leverages Google's global network infrastructure, which includes Google's private network backbone and points of presence (PoPs) around the world.
+The Premium tier provides lower latency and higher throughput for traffic within Google's network.
+It is particularly beneficial for applications that require fast, reliable, and low-latency communication between instances across different regions or zones.
+The Premium tier is available at an additional cost compared to the Standard tier.
+When creating a VPC network in GCP, you have the option to choose between the Standard and Premium network tiers. The choice depends on your application's networking requirements, such as performance, latency, and cost considerations. Most applications can be adequately served by the Standard tier, while applications with stringent latency requirements or requiring global connectivity may benefit from the Premium tier.
+It's important to note that the choice of network tier is made at the VPC network level and applies to all subnets within that network. You cannot mix different network tiers within a single VPC network.
+

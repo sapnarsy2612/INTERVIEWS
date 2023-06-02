@@ -61,3 +61,8 @@ The Premium tier is available at an additional cost compared to the Standard tie
 When creating a VPC network in GCP, you have the option to choose between the Standard and Premium network tiers. The choice depends on your application's networking requirements, such as performance, latency, and cost considerations. Most applications can be adequately served by the Standard tier, while applications with stringent latency requirements or requiring global connectivity may benefit from the Premium tier.
 It's important to note that the choice of network tier is made at the VPC network level and applies to all subnets within that network. You cannot mix different network tiers within a single VPC network.
 
+a VPC (Virtual Private Cloud) network in Google Cloud Platform (GCP) is indeed a global resource.
+A VPC network is a global resource that spans multiple regions and allows you to create subnets in different regions and zones within those regions. It provides a private networking environment for your resources, allowing them to communicate securely with each other.
+When you create a VPC network, you specify a global IP address range that is divided into subnets across multiple regions. Each subnet is associated with a specific region and can span multiple zones within that region. Instances and other resources are then deployed within those subnets.
+By having a global scope, a VPC network enables connectivity and communication between resources deployed in different regions. It allows you to create distributed architectures, implement multi-region redundancy, and deploy services closer to your users or customers.
+

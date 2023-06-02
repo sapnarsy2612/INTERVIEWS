@@ -149,3 +149,22 @@ Now you can access the Service on http://localhost:8080 and communicate with the
 Services in Kubernetes act as an abstraction layer and provide a consistent way to access pods running your application. They allow for load balancing and service discovery, enabling seamless communication between components within the cluster.
 Note: In this example, we used a ClusterIP Service type, which is the default. If you want to expose the Service externally or use other types of Services, you can modify the Service definition accordingly.
 
+The architecture of Google Kubernetes Engine (GKE) involves several key components that work together to manage and orchestrate containerized applications. Here's an overview of the GKE architecture:
+Master Node:
+Control Plane: The control plane, also known as the master node, manages the overall cluster operations. It consists of multiple components, including the Kubernetes API server, etcd for storing cluster data, scheduler, and controller manager. The control plane handles tasks such as scheduling pods, scaling resources, and maintaining the desired state of the cluster.
+Worker Nodes:
+Node Pool: Worker nodes are instances (virtual machines) responsible for running the containerized workloads. They are organized into node pools, which define the configuration and properties of the worker nodes, such as machine type, image, and autoscaling settings.
+Kubernetes Node Agent: Each worker node runs a Kubernetes node agent called kubelet, which communicates with the control plane, manages the node's lifecycle, and ensures the desired state of the pods running on the node.
+Container Runtime: The container runtime, such as Docker or containerd, is responsible for pulling and running container images on the worker nodes. It interacts with the Kubernetes node agent (kubelet) to manage the containers.
+Proxy: The kube-proxy component runs on each worker node and enables network communication between services and pods by configuring network routing and load balancing rules.
+Networking:
+Cluster Network: GKE uses Google Cloud Virtual Private Cloud (VPC) networking to provide networking capabilities for the cluster. Each GKE cluster has its own VPC network, and pods communicate with each other using private IP addresses.
+Load Balancing: GKE integrates with Google Cloud Load Balancing, allowing you to easily expose services externally or internally using various load balancing options, such as HTTP(S) load balancing or TCP/UDP load balancing.
+Ingress: GKE supports Ingress resources, which define rules for routing external traffic to services within the cluster. Ingress controllers, such as Nginx or Google Cloud HTTP(S) Load Balancer, handle the ingress traffic and route it to the appropriate services.
+Storage:
+Persistent Volumes: GKE supports various storage options, including Persistent Volumes (PVs) and Persistent Volume Claims (PVCs). PVs provide persistent storage for stateful applications, and PVCs request storage resources from the underlying storage providers.
+Storage Classes: Storage Classes define different types of storage with specific properties and can be used to dynamically provision Persistent Volumes based on demand.
+Logging and Monitoring:
+Stackdriver: GKE integrates with Google Cloud's Stackdriver logging and monitoring services, providing centralized logging and monitoring capabilities for your cluster. It allows you to collect and analyze logs, monitor resource utilization, set up alerts, and perform troubleshooting tasks.
+GKE simplifies the management of Kubernetes clusters by providing a fully managed environment where Google handles the underlying infrastructure, including the control plane and worker node management. This allows you to focus on deploying and scaling your containerized applications efficiently.
+

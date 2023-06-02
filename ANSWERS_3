@@ -1,0 +1,17 @@
+To group the 10 VM instances that are running in the same region but different zones, you can create an instance group in Google Cloud Platform (GCP) using an instance template. Although the instances have different structures, an instance template allows you to define a common configuration for the group.
+Here's a step-by-step approach to create the instance group:
+Create an Instance Template:
+Define an instance template that specifies the common configuration for the instances. This includes settings such as machine type, boot disk image, network, and any other desired properties.
+The instance template provides a blueprint for creating new instances in the group.
+Create an Instance Group:
+Choose the appropriate instance group type based on your requirements. For example, you can create a Managed Instance Group (MIG) or an Unmanaged Instance Group.
+Specify a name for the instance group and select the region where the instances are located.
+In the instance group creation process, you'll have an option to specify the instance template you created in the previous step.
+Add Instances to the Group:
+Identify the existing VM instances that you want to group together.
+For Managed Instance Groups: Specify the number of instances and any scaling policies during the creation of the instance group. The MIG will automatically manage the group and ensure the desired number of instances are running.
+For Unmanaged Instance Groups: Manually add the instances to the group using the group's configuration. This involves specifying the instance names, zone, and any other necessary details.
+Once the instance group is created, the instances will be managed as a group, allowing you to perform operations on the entire group rather than individual instances. This includes scaling, load balancing, and rolling updates, depending on the type of instance group you chose.
+It's important to note that although the instances may have different structures, the instance group operates at a higher level and doesn't require uniformity among the instances. The group is primarily used for managing and orchestrating the instances collectively, rather than enforcing specific structural requirements.
+By grouping the instances, you can streamline management operations, improve scalability, and enable consistent application deployment and maintenance across the group.
+

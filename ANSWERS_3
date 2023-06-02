@@ -21,3 +21,11 @@ When you create a VM instance, you select a specific zone within a region where 
 Zonal VM instances are closely associated with the specific infrastructure and resources available in the chosen zone. They benefit from low-latency communication with other resources within the same zone and can take advantage of specialized hardware or configurations available in that zone.
 If high availability and fault tolerance are important for your application, it is recommended to distribute your workload across multiple zonal instances or consider using regional managed instance groups that span multiple zones within a region
 
+
+Subnets in Google Cloud Platform (GCP) are regional resources.
+When you create a subnet, you associate it with a specific region rather than a zone. The subnet spans multiple zones within that region, allowing you to deploy resources across different zones while maintaining connectivity within the same subnet.
+A subnet is a logical subdivision of an IP address range within a VPC (Virtual Private Cloud) network. It helps organize and manage network traffic within a specific region. Instances and other resources deployed within a subnet can communicate with each other using their internal IP addresses, regardless of the zone they are located in within the region.
+By having regional subnets, you can achieve high availability and redundancy for your applications. If a zone within the region becomes unavailable, instances and resources in other zones within the same subnet can continue operating without interruption.
+It's important to note that the subnets within a VPC network are regional, but the instances themselves are still zonal resources. The instances are associated with a subnet within a region but are deployed in specific zones within that region.
+In summary, subnets are regional resources in GCP, providing a way to logically divide IP address ranges within a region for organizing network traffic and enabling communication between resources deployed in different zones within the same subnet.
+

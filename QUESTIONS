@@ -1,0 +1,33 @@
+What all things worked in GCP ?
+How to create vm using terraform and gcloud utility in gcp ?
+Different vm instances in gcp 
+Confidential vm service 
+Spot instance . 
+Networking services in gcp
+Shared vpc in gcp
+How to configure shared vpc in gcp ?
+Vpc peering 
+Difference between shared vpc and vpc peering 
+Suppose we have different vpc and both vpc have same cidr range , how to connect both the vpcs 
+Connect on the prem network to gcp when we have 50 mbps . 
+Load balancer ? different type of lb ? How to configure lbs ? 
+neg ?
+Types of cluster in gke 
+Upgrade of gke cluster
+Node pool 
+Suppose we have 3 nodes , we want to remove 1 node. How to do that ?
+configmaps 
+secret 
+pods
+Configuration of 1 pod with dependent containers 
+Namespaces
+Default namespace
+Service in kubernetes
+Different type of service in kubernetes
+How to authenticate to kubernetes locally ? Where are kubernetes creds stored locally ?
+State files in terraform ?
+Where to store these state files in terraform ?
+Suppose we have created a vm using terraform and the vm is deleted from gui what will happen in the next apply? 
+git stash 
+How to push code from local to remote repo . 
+Pull requests in git ?

@@ -1,0 +1,15 @@
+docker network
+docker compose
+how to deploy war file to kubernetes cluster ?
+what standard we have to follow to specify dependency in dockerfile ?
+how to assign permission for applicationsusing dockerfile ?
+command to push image to reposity manager ?
+we have 1 web service which is communicating with our applications , using kubernetes how to restrict ip from internet ?
+we have 1 vm , we want to add 1 more node to kubernetes how to do that ?
+how do controlplane and controller talk to each other ?
+how does master node talk to node in kubernetes ?
+control plane and node communication ?
+cluster and control plane how both communicate ?
+how to configure cluster ?
+can we create multiple cluster in 1 control plane ?
+1 control plane can have how many cluster ?

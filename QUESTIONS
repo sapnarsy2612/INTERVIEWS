@@ -13,3 +13,8 @@ cluster and control plane how both communicate ?
 how to configure cluster ?
 can we create multiple cluster in 1 control plane ?
 1 control plane can have how many cluster ?
+any node entering to cluster will be managed by cluster ?
+os used for image ?
+lifecycle from commit code till release of application ?
+how to deploy db in cicd ?
+db upgrade/ release through jenkins pipeline ?

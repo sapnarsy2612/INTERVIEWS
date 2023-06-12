@@ -39,3 +39,20 @@ different options available while creating snapshot storage ? where does snapsho
 you are unable to ssh to server ? error 255 . 
 where to check whether port opening is done between two vms ?
 what all options present in security group ?
+where we can see instance in gcp ?
+what all options present in compute engine ?
+purpose of service account in gcp 
+basic role in gcp for iam account 
+authentication types in iam 
+you are trying to delete instance what can be reason ?
+mig , i am trying to delete instance from mig but its not happenning what could be reason ?
+node in gke ?
+cluster upgrade in gke .
+how to know its tym to upgrade our gke cluster ?
+how to create alert for specific log - eg when my instance gets down then need alert ?
+what is purpose of load balancer in application ?
+one of instance got down possible ways to recover it ?
+auto deletion date for snapshot ?
+cloud function , cloud run , cloud app engine .
+ssl certificate in gcp 
+as part of dr what all steps you are taking .

@@ -31,3 +31,11 @@ Suppose we have created a vm using terraform and the vm is deleted from gui what
 git stash 
 How to push code from local to remote repo . 
 Pull requests in git ?
+WHat kind of migration you have been involved in ?
+If we are migrating byol and payg - which license to use for compute engine ? licences in gcp 
+if we are doing migration and its not getting success ? repost error in processing ?
+average time for migration ?
+different options available while creating snapshot storage ? where does snapshot gets stored ?
+you are unable to ssh to server ? error 255 . 
+where to check whether port opening is done between two vms ?
+what all options present in security group ?

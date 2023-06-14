@@ -28,4 +28,7 @@ daemonset and deployment
 deployment and statefulset
 persistent volume and persistent volume claim 
 can single persistent volume have multiple persistent volume claim 
+pod to pod service connection between 1 and multiple node ?
+command to check memory usage ?
+command to know cpu architecture ?
 

@@ -1,0 +1,5 @@
+Write a program which runs from 0 to 100 and prints all the numbers in newlines and prints HELLO on numbers divisible by 3, WORLD  on numbers divisible by 5 and HELLO WORLD on numbers divisible by both 3 and 5.
+Given a file find the count of lines containing the word “ABC”
+How will you find the 99th line of a file using only tail and head command ?
+What is the difference between $* and $@
+What is the significance of $#

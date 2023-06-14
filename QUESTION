@@ -24,3 +24,8 @@ different controllers in kubernetes ?
 pod in kubernetes ?
 multi container and init container difference ,
 do we get output for init container . 
+daemonset and deployment 
+deployment and statefulset
+persistent volume and persistent volume claim 
+can single persistent volume have multiple persistent volume claim 
+

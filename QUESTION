@@ -19,3 +19,8 @@ different gke clusters
 kubernetes control plane components 
 where can we find control plane components in server 
 which control plane component is responsible for assigning ip to pod
+worker nodes in kubernetes ?
+different controllers in kubernetes ?
+pod in kubernetes ?
+multi container and init container difference ,
+do we get output for init container . 

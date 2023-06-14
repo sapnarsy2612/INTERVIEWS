@@ -31,4 +31,5 @@ can single persistent volume have multiple persistent volume claim
 pod to pod service connection between 1 and multiple node ?
 command to check memory usage ?
 command to know cpu architecture ?
-
+create text file without opening it ?
+redirect output of 1 linux command to other ?

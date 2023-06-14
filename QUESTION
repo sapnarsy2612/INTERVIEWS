@@ -3,3 +3,19 @@ Given a file find the count of lines containing the word “ABC”
 How will you find the 99th line of a file using only tail and head command ?
 What is the difference between $* and $@
 What is the significance of $#
+difference ci , cd 
+setting up jenkins 
+upgrade jenkins 
+version of jenkins used ?
+deployment method in jenkins ?
+jenkins agents 
+how to add agent in jenkins 
+types of way to authenticate and add jenkins agent / connection 
+how to configure sso with jenkins 
+jenkins pipeline shared libraries 
+multi branch pipeline in jenkins 
+what all things required to configure gke cluster 
+different gke clusters 
+kubernetes control plane components 
+where can we find control plane components in server 
+which control plane component is responsible for assigning ip to pod

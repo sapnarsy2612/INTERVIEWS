@@ -1,1 +1,28 @@
-
+how does cicd pipeline look like 
+whenevr we push code to repo how does jenkins know that it should trigger pipeline ? how to control which branch to trigger 
+what we do with sonarqube result ? how does pipeline know about quality gate ?
+how do we deploy our application ?
+how to migrate to kubernetes for above ?
+how can we access application hosted in pod ?
+how to map dns with lb and pod in kubernetes ?
+ingress in kubernetes ?
+how do we manage env variables in kubernetes ?
+secret in kubeernetes ?
+types of secret in kubernetes ?
+how do we encrypt secret in kubernetes?
+how do we use secret in pods in kubernetes ?
+how to refer yaml file in kubernetes other yaml file ?
+volume mounts in kubernetes ?
+can we mount the file using persistent volume ?
+waf ?
+how to configure waf ?
+what kind of policy we can create in waf ?
+y we use waf ?
+what is api gateway 
+what is vpc
+why subnet is required 
+is it good practice to have multiple subnet ? y 
+can we use differnet vpc for differnet env or differnet subnet ?
+what all things used in terraform ?
+whats the use of state file in terrafomr ?
+2 person are updating same instance in terraform what will happen ?

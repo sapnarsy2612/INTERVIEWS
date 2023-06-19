@@ -26,3 +26,4 @@ can we use differnet vpc for differnet env or differnet subnet ?
 what all things used in terraform ?
 whats the use of state file in terrafomr ?
 2 person are updating same instance in terraform what will happen ?
+How to lock terraform state file ?

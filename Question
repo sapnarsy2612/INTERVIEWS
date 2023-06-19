@@ -53,9 +53,9 @@ cost consideration to consider in gcp ?
 iam principal ? list principals ? different principals to which we grant permissions in gcp ?
 geographical scope of vpc? vpc is global or regional ?
 vpc different networks tier ? 
-custom and default mode vpc ?
-subnets are regional or zonal ?
-vm instances ? vm instance is regiobnal / zonal ?
+custom and default mode vpc ? 
+subnets are regional or zonal ? regional
+vm instances ? vm instance is regiobnal / zonal ? - zonal 
 10 vm instance are running and we want to group them how to do ? vms are in 1 region but in differnet zone ? and all instances have different structure ? how to group them ?
 differnece between managed and unmanaged instance group ?
 can weconvert unmanaged to managed instance group ? why cant we convert ?

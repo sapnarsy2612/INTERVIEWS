@@ -51,7 +51,7 @@ cloud build ?
 which one should we use cloud native or self managed cicd toolchain ? what all things to keep in consideration ?
 cost consideration to consider in gcp ?
 iam principal ? list principals ? different principals to which we grant permissions in gcp ?
-geographical scope of vpc? vpc is global or regional ?
+geographical scope of vpc? vpc is global or regional ? - global 
 vpc different networks tier ? 
 custom and default mode vpc ? 
 subnets are regional or zonal ? regional

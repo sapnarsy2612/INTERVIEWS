@@ -18,3 +18,7 @@ what issues encounter in gke ?
 what can we do when pod gets exit in gke 
 how to check docker logs what command to use 
 we have 10 pods and we have to find out which pod is taking highest cpu and memory how to check that 
+we just need to release image of pod ? how to release container from pod ?
+differnece betweeb docker swarm and kubernetes 
+how to monitor gke cluster
+trouble shooting : we have vm on lb , we have public ip 10.1.1.1 - we have services on port 80 . applictaion server is not public facing . 

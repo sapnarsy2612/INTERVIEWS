@@ -1,0 +1,20 @@
+What all services used in gcp ?
+branching strategy ?
+developer will store all code in which branch ?
+how to make restriction in branches in gitlab ?
+how to export report of sonarqube in gmail ?
+integration in gke ?
+what is minimum requirement to create gke ?
+ingress in gke 
+kube file required to run gke ?
+HOW TO TROUBLESHOOT IF ANY ISSUES OCCUR IN GKE ?
+where to check logs in gke ?
+if our gke is in private netwrok then how to check logs apart from console 
+what monitoring tools used to monitor ?
+instance groups ?
+service account in gcp 
+iam roles and service account difference 
+what issues encounter in gke ?
+what can we do when pod gets exit in gke 
+how to check docker logs what command to use 
+we have 10 pods and we have to find out which pod is taking highest cpu and memory how to check that 

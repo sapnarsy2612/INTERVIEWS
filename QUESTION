@@ -1,1 +1,7 @@
+basic introduction 
+who is responsible for creating infra in azure 
+experience in designing azure infrastructure
+traffic manager and frontdoor in azure 
+vmss
+we have 1 node which is not healthy , and still registered in worker node , how to diagnostic why ibstance in unhealthy , steps to do to schedule the pods which is not scheduled by unhealthy node .
 

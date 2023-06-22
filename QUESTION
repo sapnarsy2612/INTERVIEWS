@@ -4,4 +4,8 @@ experience in designing azure infrastructure
 traffic manager and frontdoor in azure 
 vmss
 we have 1 node which is not healthy , and still registered in worker node , how to diagnostic why ibstance in unhealthy , steps to do to schedule the pods which is not scheduled by unhealthy node .
+taint and tolerations in kubernetes 
+statefulsets 
+persistent volume 
+we have 100 pods and we want to mount 1 volume that which has some file which is has some file which is shared between 100 pods what option is present in azure so that we can have shared mount 
 

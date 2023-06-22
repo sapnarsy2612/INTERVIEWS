@@ -6,3 +6,4 @@ pl used
 web applications used in cicd deployments 
 java and jdk version 
 steps of jenkinsfile
+if linux server storage gets above threshold what to do 

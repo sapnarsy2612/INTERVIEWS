@@ -10,4 +10,8 @@ persistent volume
 we have 100 pods and we want to mount 1 volume that which has some file which is has some file which is shared between 100 pods what option is present in azure so that we can have shared mount ? azure fileshare
 azure fileshare 
 pv pvc 
-there are 2 type of disk ; read write once , read write many ; meaning of both 
+there are 2 type of disk ; readwriteonce , readwritemany ; meaning of both direct conection with 
+we create pvc and we create storage class for fileshare , what is meaning of readwriteonce 
+which ingress controller is used in aks ?
+which lb configured with ingress 
+types of lb in azure 

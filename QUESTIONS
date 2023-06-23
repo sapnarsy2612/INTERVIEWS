@@ -1,0 +1,10 @@
+types of security for vm in azure 
+when vm is created what type of private ip is assigned to it by default 
+dynamic and static ips
+can we change dynamic ip to static ? how
+can we change static ip to dynamic ? how
+if i change my current ip from dynamic to static what affect will it perform on vm 
+domain ?, can i have servers with same hostname in domain 
+when we replicate the server what happens to original server 
+when we replicate server it have same domain , so will the server get domain trust rekationsship error ? how to resolve that . 
+

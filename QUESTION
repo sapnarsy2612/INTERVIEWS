@@ -18,4 +18,5 @@ types of lb in azure - application gateway
 terrraform prpject in azure 
 how to run jenkins on kubernetes 
 how to configure jenkins in such way when new build is triggered pod is scheduled and once build is completed pod should be deleted , if 10 jobs are triggered 10 pod to be created , how jenkins should be deployed ?
+how master and worker node connected , what are ways 
 

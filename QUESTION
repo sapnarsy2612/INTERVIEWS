@@ -14,4 +14,7 @@ there are 2 type of disk ; readwriteonce , readwritemany ; meaning of both direc
 we create pvc and we create storage class for fileshare , what is meaning of readwriteonce 
 which ingress controller is used in aks ?
 which lb configured with ingress 
-types of lb in azure 
+types of lb in azure - application gateway 
+terrraform prpject in azure 
+how to run jenkins on kubernetes 
+how to configure jenkins 

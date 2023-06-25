@@ -12,3 +12,13 @@ we have vm and we have backup configured for that vm , i want to restore vm to n
 log analytics workspace 
 log analytics workspce is going to be deprecated in august what is going to replace it ?
 how can we patch servers using azure portal by automation 
+when setting up backup for vm when can we configure the backup at tym of creation only or later on also 
+suppose i have configured backup for vm in particular recovery service vault but i realise it is wrong recovery service vault can i change it or do i need to have to work with whatever i have configured
+how can we create disk in azure 
+how to create disk from snapshot 
+i have existing server wherein i have to add new disk do i need to stop server and then add disk to server 
+do i need to stop server to expand disk 
+process for expanding disk in azure portal 
+i need to expand the /var from 10gb to 20 gb what are steps ? 
+before i expand disk size can i check if theres available space that can be alloted to var filesystem ? how to do that 
+i need to check if theres any free space that can be allocated to var filesystem 

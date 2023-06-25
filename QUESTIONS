@@ -21,4 +21,15 @@ do i need to stop server to expand disk
 process for expanding disk in azure portal 
 i need to expand the /var from 10gb to 20 gb what are steps ? 
 before i expand disk size can i check if theres available space that can be alloted to var filesystem ? how to do that 
-i need to check if theres any free space that can be allocated to var filesystem 
+i need to check if theres any free space that can be allocated to var filesystem ? how 
+i have linux machine in azure it is joined to domain and i m trying to sign in using domain creds i am unable to login however i m able to login using local creds . getting error access denied ? how to resolve , i have access also . 
+rbac roles 
+i have storage account where i have file share what kind of permission to assign to storage account so that user will be able to view fileshare
+azure monitor 
+how to check metrics for particular vm 
+when i try to view metric for particular vm what time range can we select ? maximum time range metrics can show 
+if i want to resize a server how to do that 
+suppose vm is down what all things to check to troubleshooot
+where to check service availiabilty for azure services ?
+maintainence activity in azure how to check it 
+redeploy option for vm 

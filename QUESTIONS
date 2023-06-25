@@ -6,4 +6,9 @@ can we change static ip to dynamic ? how
 if i change my current ip from dynamic to static what affect will it perform on vm 
 domain ?, can i have servers with same hostname in domain 
 when we replicate the server what happens to original server 
+can we replicate server by creating snapshot in same domain and with same hostname and then later on change hostname 
 when we replicate server it have same domain , so will the server get domain trust rekationsship error ? how to resolve that . 
+we have vm and we have backup configured for that vm , i want to restore vm to new vm , can i add that vm to availability set ?
+log analytics workspace 
+log analytics workspce is going to be deprecated in august what is going to replace it ?
+how can we patch servers using azure portal by automation 

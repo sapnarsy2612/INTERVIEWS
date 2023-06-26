@@ -8,3 +8,7 @@ kubernetes architecture
 how to ensure cloud migration is happened successfully
 how to debug the issues in pipeline 
 why is jenkinsfile used for 
+difference between vm instance and kubernetes cluster 
+difference between virtualization and containerization 
+pros and cons of using kubernetes and vms 
+shared vm 

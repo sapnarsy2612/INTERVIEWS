@@ -12,3 +12,7 @@ difference between vm instance and kubernetes cluster
 difference between virtualization and containerization 
 pros and cons of using kubernetes and vms 
 shared vm 
+how did we develop pipelines based on clients requirement 
+what all things worked in database 
+how load balancer works in kubernetes 
+how to search pattern in all files in multiple directory 

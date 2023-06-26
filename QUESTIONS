@@ -3,21 +3,13 @@ what all things done with ansible
 architecture of jenkins
 how many master and slave nodes there in jenkins
 i want 1 master node on linux and i want 1 slave with windows machine how to configure such architecture
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+what all resources deployed with terraform 
+access level policy in azure
+if user have contribuer level access , i want to provide such access that i can create instances in rg but i cant delete resources 
+kubernetes ? what all work done in kubernetes 
+ingress routing ? 
+how to configure ingress in kubernetes 
+pre reqs for ingress . 
+secrets in kubernetes how to confgure secrets 
+types of services in kubernetes 
+which kubernetes version used in aks . 

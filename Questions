@@ -16,3 +16,8 @@ how did we develop pipelines based on clients requirement
 what all things worked in database 
 how load balancer works in kubernetes 
 how to search pattern in all files in multiple directory 
+how to check logs of particular pod in kubernetes 
+how to get name of pod 
+how to store data in private cloud how to connect services in private cloud 
+difference between terraform and cloud formation 
+2 issues where we mitigated issues for developers 

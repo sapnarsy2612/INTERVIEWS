@@ -6,3 +6,5 @@ Differnece betweeb EXPOSE and PUBLISH
 docker run command 
 -p in docker run
 docker volume
+if we host volume then when we add content to file inside contaoner will it accessible from host also ?
+if we host volume then when we add content to file inside host will it accessible from container also ?

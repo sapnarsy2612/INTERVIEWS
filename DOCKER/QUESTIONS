@@ -5,3 +5,4 @@ Why we use PUBLISH command
 Differnece betweeb EXPOSE and PUBLISH 
 docker run command 
 -p in docker run
+docker volume

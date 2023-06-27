@@ -22,3 +22,4 @@ if u delete pod what happens to information inside it
 pattern pod being assigned to node 
 how to make sure pod get schedule to particular node 
 kubernetes job finish in 20sec sometime it take 5min how to make sure application stop if it exceed more that 40 second 
+kubeconfig file

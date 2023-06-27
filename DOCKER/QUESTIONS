@@ -1,2 +1,5 @@
 Dockerfile for deploymnet of nginx image 
 Dockerfile for deploymnet of java image 
+why we use EXPOSE command 
+Why we use PUBLISH command
+Differnece betweeb EXPOSE and PUBLISH 

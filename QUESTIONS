@@ -5,4 +5,7 @@ how to create pre base image .
 we have application and this app have config.properties , we have sql server and insie this file we have username and password . we have to create image , once image is build we will deploy to container registry . how this value can be changed inside image based on different parameters in dockerfile . 
 how to create different docker images based on different user env but use same image for pre prod prod . 
 create build agent in azure devops . how to add build agent in azure . 
-
+we have to create frontend , we have backend api we have 2 different api , - 2 api will be called only internally how to configure this ?
+how to configure our pod in such a way that it will get connected to azure storage blob . 
+out api needs to be on https we want to configure certificate for our pod how to configure certificate for our pod . 
+how to configure all certificate in key vault or secret and connect it with our clusters pods . 

@@ -1,3 +1,12 @@
 cicd process
 how to deploy application to multiple clients on different application 
 why is docker used 
+biggest challemges faced in your projects ?
+in what contextx have you wrote dockerfile 
+in dockerfile do we specify cmd or entrypoint or both 
+why do we need to give entrypoint priority over cmd . 
+how to deploy db also as docker so that both will be deployed as container 
+how do we deploy docker image to production 
+sometime data in db which is just readonly , instead of having 1 db for staging and 1 for prod i want 1 db to be used by both staging and prod how to do that using container . 
+you have jboss app , i want to have same jboss deployed in staging and prod . in both env i want db container how to do that . how to make both env use same env . 
+

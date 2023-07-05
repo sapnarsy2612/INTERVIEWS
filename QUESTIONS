@@ -1,1 +1,2 @@
-
+we have 2 java apps , and java 1 app is using java 11 and other java app is using java 8 - what kind of dockerfile to be used for this requirements . 
+what will be base image for java 8 and java 11 . 

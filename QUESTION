@@ -9,4 +9,6 @@ how to deploy db also as docker so that both will be deployed as container
 how do we deploy docker image to production 
 sometime data in db which is just readonly , instead of having 1 db for staging and 1 for prod i want 1 db to be used by both staging and prod how to do that using container . 
 you have jboss app , i want to have same jboss deployed in staging and prod . in both env i want db container how to do that . how to make both env use same env . 
-
+how do you implement partitioning of subnets with other tools in cicd 
+how do we backup jenkins workspace logs , how to archive logs in azure storgae from vms . 
+how to move logs to azure storage from vms. 

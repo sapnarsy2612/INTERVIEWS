@@ -7,3 +7,14 @@ web applications used in cicd deployments
 java and jdk version 
 steps of jenkinsfile
 if linux server storage gets above threshold what to do 
+how frequently you deploy the code . 
+what type of application are deployed with cicd 
+what version of java is used for deployments .
+build tool used ?
+which pipeline is used for deployments ?
+branching strategy ?
+cherrypick command in git 
+services used in azure 
+scripting language used ?
+script to sort txt files and then archive the files and move it to other location and unarchive it . 
+if we execute mv command and it doesnt work then what can be the issue . 

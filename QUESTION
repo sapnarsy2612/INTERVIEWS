@@ -18,3 +18,4 @@ services used in azure
 scripting language used ?
 script to sort txt files and then archive the files and move it to other location and unarchive it . 
 if we execute mv command and it doesnt work then what can be the issue . 
+in case any third party api or server is not available how to proceed with happens . 

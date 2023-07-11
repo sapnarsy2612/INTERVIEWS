@@ -4,3 +4,15 @@ users are able to access the web app sometym but it is not accessible in between
 how to connect two subnets in 2 vpcs 
 how to create kubernetes cluster from terraform 
 how to connect on prem servers to azure cloud 
+Most challenging situations in your devops role . 
+You have hello world app running in linux server , minimum set of command which can find the port on which application is running and app logs ile location , how to find port on which app is running . 
+Differnece between process and thread 
+Thread contain process or process contain thread . 
+some example of process in devops 
+shell script example
+suppose we are deleting 1 file command is success but file is still not deleted what can be reason ?
+we have 2 private subnet s1 and s2 , s1 has host1 and s2 has host2 - host2 is hosting app running on 8080 , from host1 we need to check connectivity to host2 for app which is running on 8080 - command to check this . when tried telnet its states connection refused what can be checked in os level in linux to troubleshoot this issue , 
+we have large dockerfile how to reduce image size of dockerfile . 
+we have pod yaml file , it create container , but pod is going in terminated state in 2 mins but we want pod to keep running how to do this ?
+what all things worked in ansible 
+gather facts in ansible 

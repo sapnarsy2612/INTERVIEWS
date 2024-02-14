@@ -1,0 +1,19 @@
+instance metadata
+iam permission boundaries
+why can't we use hash algo for encryption of network traffic
+symmetric vs assymmetric
+terraform import vs data sources
+handl eterraform secrets
+why terraform why not python- bcz terraform has tfstate
+How to list files in linux without ls command : echo **
+cloud understanding and scripting
+deep dive in infra netwroking- docker and k8s
+bar raiser
+How to make sure a resource is not deleted in tereaform
+How can we use external resource (not managed by terraform) inside terrraform
+How to delete specific resource in terraform
+Ebs volume can be attached to how many ec2
+Efs volume can be attached with how many ec2
+How can we make sequence in terraform i.e. first vpc is created then ec2 is created. How can we ensure that
+Different types of ways you can declare a variable in terraform
+How can we allow specific ip to a s3 bucket

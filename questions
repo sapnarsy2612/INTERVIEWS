@@ -1,0 +1,47 @@
+about yourself
+how do we setup cicd in gitlab ? 
+how to write gitlabci-yml file , what all stages do we add ? 
+how does the build and deployment happen ? 
+build stage - what all tasks happen in this ? 
+different stages of maven and difference between all ? 
+mvn insTALL  , msv clean , mvn package , pom.xml , what all files gets created after build , 
+what all things can we add in dependency section in pom.xml , 
+for log4j , what do we need to add in pom.xml to exclude log4j files . 
+jfrog , nexus , difference between both ? 
+grep , grep for case sensitive , sed command , sed stand for ? 
+what is shell script , 
+what do we add at initial of shell script, why we use it /bin/bash , 
+awk command , 
+jenkins architecture , 
+how to specify on which node should we run job , if we want multiple jobs to run on 1 slave then where to configure , 
+docker build , docker run , differnece , 
+what if image doenst exist what can be the issue , 
+how to configure ansible , ansible architecture , do we store credentials in inventory , where do we store credentials or fingerprints in ansible , 
+how do we setup passwordless between servers , 
+what is terraform , for what all takss terrform used , 
+terraform init , terraform validate , terraform plan , terraform apply , 
+is it okay if we dont run terraform init and run terraform plan directly , 
+what happens if we run terraofrm apply multiple times . 
+how to what is inside image - docker exec 
+how to edit alread created image in docker , 
+needs for logging inside docker container , 
+docker expose , 
+entrypont and cmd differnece , 
+how to override commands in docker 
+what is gitlab 
+differencxe vetween central and distributed vcs 
+differnec betweek git pull and git fetch 
+git rebase 
+kubernetes components and architecture 
+deployment and service in kubernetes 
+replicaset , how to make sure pod is healthy 
+kubectl ? 
+multistage dokerfile , multi stage dockerfile , docker compose , 
+best practices for docker , 
+why should we not use root user in dockerfile , 
+how to specify user in dockerfile , 
+what is podman , 
+
+
+
+

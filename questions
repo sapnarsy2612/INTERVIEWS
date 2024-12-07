@@ -1,0 +1,46 @@
+types of load balancer in aws .
+how to access private load balancer . 
+how to protect our application behind load balancers , 
+how to setup waf policies . 
+ECS . 
+difference between hypervisor and docker . 
+docker image ? 
+docker engine 
+how to login to docker container 
+creating docker container ? 
+command to start and stop docker container 
+command to delete or remove container and images in docker 
+different docker container states 
+terraform commands ? 
+terraform state command ? 
+terraform syntax language ? 
+built in provisioners in terraform 
+modules in terraform 
+disadvanges of using terraform state file in local . 
+what all things are stored in main.tf . 
+storage classes in s3 ? 
+how to restore objects from deep archive in s3 , in what all classes will data be converted to in this process ? 
+bucket versioning . 
+encryption in s3 , encryption options available to use 
+bucket in s3 
+limit for data in bucket . object limits in s3 
+what is ec2 , types of instances , types of ebs volumes , file shares 
+if our ec2 has stopped working due to high traffic then what actions should we take . 
+consistency model in s3 
+how to add cpu processors to ec2 
+on spot , reserved , on demand instances . 
+for how many time can we use on spot instances . 
+auto scaling group ? 
+how to setup health check in asg , options for health check , 
+what happen to instance if it is rebooted in asg . 
+options available in asg 
+region / availability zones - explain with examples . 
+softlink / hardlinks in linux 
+what is jenkins 
+how to secure jenkins 
+what is kubernetes 
+pre reqs of using jenkins 
+maven ? maven commands 
+parameter in jenkins 
+types of pipeline in jenkins 
+jenkins job 

@@ -1,0 +1,17 @@
+introduce yourself . 
+cicd flow for k8s and jenkins from start from developers perspective , what all challanges faced and recurring issues . 
+versioning strategy for applications to be deployed .
+who owned whole k8s infra cluster , upgrade , maintainence , 
+where are gitlab runners , are they containerized ?
+write code in python for billing cash register in d mart along with what denomination of change will we provide . 
+what all tasks done in aws ?
+how to auto scaling configured ?
+svn to gitlab migration project ? challanges faced ? what automation done ? 
+terraform experience ? 
+how to integrate rabbitmq in terraform ?
+checkov how is that integrated in terraform ?
+how aks deployment used to work ?
+how many aks clusters you had ?
+replicaset ?
+tls , proxy ?
+script for listing images from pods , namespaces ?

@@ -1,0 +1,28 @@
+What all work done in terraform ? give examples ?
+Running a process 2 hours daily 10 - 12 i want to run it daily what automation should we do ?
+how to kill job via script ?
+how to identify port where application is running ?
+how to delete files older than 30 days greater than 5 gb size across our filesystem using single command 
+find command 
+dellete third column from file 
+remove 15th line in file 
+list hidden files , significance of . and .. .ssh . 
+env variables ?
+run script at start of system ?
+what all modes present in vi 
+copy files from 1 system to another 
+benefits of using rsync over scp . 
+how to debug shell script . 
+we have 2 servers , test connectivity between 2 servers . 
+there is script running fine , we have rename file to .txt what will happen now ?
+how to manage 10 servers in linux . 
+how to copy scripts files from 1 server to 9 servers . 
+where you have used rsync . 
+i want to save cost of vm , vm is run only during day , how to create auto schedule in vm . difference between stopping and deleting instance . how to configure auto shutdown in terraform . 
+how do we deploy application on instance . 
+how to stop instance non business hours using terraform , 
+why we need to store data on vm , what kind of data to be stored , why dont we use storage account for data why to use efs ebs , 
+we have application running on 4 pods , how to login to pod to check logs of pods . 
+how to check logs of pods , 
+azure monitor , log analytics workspace , app insights why used , 
+what kind of monitoring have you setup , 

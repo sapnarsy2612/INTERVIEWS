@@ -75,3 +75,14 @@ create branch in git
 working on local branch and we got to know people merged to master and how can we work using master branch and merge our code .
 difference between rebase and git merge .
 program to check palindrome number .
+what is ssh protocol 
+you are on your terminal and we need to login to instance using ssh how to do it , what r use of keys in ssh , you r not able to login then what all to check . you are not able to login to remote host even after ssh keys then ?
+count of some word in file using linux ?
+what is pipe in linux . 
+what will grep return in output , 
+script to find all files with name file.txt with size greater than 1gb , suppose i want to find directory . 
+/ and // and % in python . 
+if in / we get answer 3.9 then what will be answer in //
+exception handling in python . 
+if we want some block to print even if there is error or not then using try except . 
+list , tuple , set difference . 

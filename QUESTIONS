@@ -26,3 +26,19 @@ we have application running on 4 pods , how to login to pod to check logs of pod
 how to check logs of pods , 
 azure monitor , log analytics workspace , app insights why used , 
 what kind of monitoring have you setup , 
+i have terraform script , how to run it ?
+how do we run terraform manually or via pipeline 
+if our terraform pipeline is stuck no progress there , how to troubleshoot , 
+what is build agent , is it user created or managed by microsoft . 
+i already have resouce how to refer to already created resource in terraofrm 
+how to add more ip address in our subnet . 
+how to do graceful deployment of application . 
+how to login to pod . 
+you have identifies out of 30 2 pods have issue , what will approach to troubleshoot and how to collect diagnostic data . 
+how to indetify on which node pods are hosted . 
+if we identify our pod are running on node which is faulty we want new traffic to not go on node what to do ? 
+what does cordoning does ?how to do that ?
+we have 5 pods , check logs on 3 out of 5 pods . how to check logs parallely . 
+application is not working and loading alot for few users what will be steps for troubleshooting  . 
+
+

@@ -40,5 +40,14 @@ if we identify our pod are running on node which is faulty we want new traffic t
 what does cordoning does ?how to do that ?
 we have 5 pods , check logs on 3 out of 5 pods . how to check logs parallely . 
 application is not working and loading alot for few users what will be steps for troubleshooting  . 
-
-
+how to scale pod count , how to get pod from specific namespace , 
+on regular basis we use 2 pod , but 1 day we have to increase pod to 10 and also restart 2 pods how to do that . 
+want to know if some command is successfull or not , how to do that . 
+know the process id of some process using env variable , 
+how to check if ps ef worked how to check that . 
+how to use source command in linux 
+how much memory is free and how much is being used how to check that 
+how to see top process using cpu based on uids . 
+how to check disk usage on mount point and folders in linux . 
+when i run a shell script as background process , the output shows which . 
+if we want to run certain script at certain time and day of week how to do that . and when we reboot it then ?

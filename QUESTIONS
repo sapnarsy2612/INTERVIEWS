@@ -1,0 +1,16 @@
+what application nature do you support , business use of applications . 
+day to day role . 
+how to raise incident , warning , issue , difference , prioritise incidents . 
+dora metrics , 
+how do u know if there's an incident . 
+where do u get alert 
+what is opsgenie , y u need it ? 
+is it possible to do alerting from kibana , grafana , prometheus . 
+can we achieve alerting from kibana to grafana ? 
+architectural differnece between prometheus and grafana 
+how prometehus works . 
+what database prometheus uses ?
+what is promql 
+monitor java microservices , what do we do to monitor it as part of dashboard ?
+logic to create dashboard for java based applcations in prometehus and grafana ?
+what is mttd and mttr ?

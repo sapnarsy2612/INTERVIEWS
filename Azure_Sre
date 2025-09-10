@@ -1,0 +1,17 @@
+Inform about azure sre experience, all resources worked in azure , and operations in azure as sre . 
+What all resources created and worked with in azure . 
+As a azure sre how your day starts . 
+What tools we use for logs in azure . 
+Log analytics workspace in azure . 
+RTo , rpo ? 
+we have aks , we want to make sure we are matching the rto rpo , how to strategize backup , build and hosting of applications . 
+how to take backup of aks cluster . 
+how to maintain rto , rpo where 12 hr is max data loss we can adhere , how to make sure this . 
+incident analysis as sre in azure . 
+dashboard in azure for monitoring . 
+app service , 
+how to define sre . 
+how to make sure reliable applications are build . 
+make sure repetative issues are carved out . dr strategies . 
+multi agent deployment , scaled set deployment , load balancing types . 
+create proactive ticket and mitigate those as part of sre in azure . 

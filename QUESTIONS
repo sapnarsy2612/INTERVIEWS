@@ -6,6 +6,7 @@ how do u know if there's an incident .
 where do u get alert 
 what is opsgenie , y u need it ? 
 is it possible to do alerting from kibana , grafana , prometheus . 
+y cant we use grafana instead of opsgenie . 
 can we achieve alerting from kibana to grafana ? 
 architectural differnece between prometheus and grafana 
 how prometehus works . 

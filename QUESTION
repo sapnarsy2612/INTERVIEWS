@@ -21,3 +21,4 @@ context propogation in observability ?
 under what condition , the latency would be accurate to how long process take , if i call to service a and i want to know entire time of how much latency is there , how to calculate manually . 
 process that is working asyncronous and synchronously how much time it will take how to calculate , can we view both in observability stack . which one will longer latency in both . 
 what is synchronous and asynchronous requests . 
+how to check latency of the requests for which we r unable to get in dynatrace , how can we add timer to code to check latency . 

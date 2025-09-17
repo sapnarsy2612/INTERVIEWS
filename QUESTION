@@ -12,3 +12,12 @@ what all automation you had worked ?
 why do you want to switch . 
 what all language experience 
 how to pull custom metrics from java application , what all custom metrics can we pull . 
+how is terraform setup done in your infra ? 
+what is purpose of terraform state file . 
+terraform module ? how do we use it , what was last module you created and why ? what business problem solved . 
+hove you used sentino in terraform .how to use it . 
+have you ever observed any process which you are unable to trace ? how to check latency of those apis for which we cant view traces . 
+context propogation in observability ? 
+under what condition , the latency would be accurate to how long process take , if i call to service a and i want to know entire time of how much latency is there , how to calculate manually . 
+process that is working asyncronous and synchronously how much time it will take how to calculate , can we view both in observability stack . which one will longer latency in both . 
+what is synchronous and asynchronous requests . 

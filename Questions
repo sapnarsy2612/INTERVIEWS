@@ -7,4 +7,7 @@ Workload that was deployed on k8s , we want to deploy an application to k8s give
 how was code structure for deployments and development , how is env segregated , how does versioning takes place how testing is done in which env how are those configs taken care ? 
 We have new feature to be added to application in production , what will be workflow for this in gitlab ? 
 in what situation we have to checkout code from which branch in release workflow . 
-1 developer working on 1 feature , now he want to push change to master but now master branch is updated with some other code what steps to take in this case . 
+1 developer working on 1 feature , now he want to push change to master but now master branch is updated with some other code what steps to take in this case . if conflict occur how will we resolve these ? 
+difference between pod & deployment . 
+in k8s , statefulset and deployments difference in which case we use what . 
+when app how to ensure high availiability and reliability in k8s . 

@@ -1,4 +1,6 @@
 Docker compose ?
+You've been given a basic web application that consists of a frontend (a simple Node.js or React app) and a backend API (e.g., Python with Flask or Django), and a database (e.g., PostgreSQL or MongoDB). Write a docker-compose.yml file to define and run this multi-container application. Ensure the services can communicate with each other. The frontend should be accessible from the host machine on port 80.
+
 differnec between docker and docker compose
 toleration in kubernetes and taints
 taints and tolerant in kubernetes

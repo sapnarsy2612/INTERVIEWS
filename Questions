@@ -11,3 +11,23 @@ in what situation we have to checkout code from which branch in release workflow
 difference between pod & deployment . 
 in k8s , statefulset and deployments difference in which case we use what . 
 when app how to ensure high availiability and reliability in k8s . 
+difference between vpc and subnet . 
+i want to ensure any1 from outside unable to reach to instance , but my instance can reach internet . how to make sure this works . 
+eks upgrade ? 
+What is ansible role . 
+How to define on what machine ansible will run . 
+Differnece between private and public subnet with use case . 
+difference ways by which we can restrict traffic to particular machine in cloud . 
+an app is running on eks , when people try to access from outside they are not able to access it , how to troubleshoot it ., its pods able to connect to nginx , nginx is able to connect to application . in application how will we check issue . 
+liveliness probe and readiness probe differnce . in which case will use what . 
+How to build container image . what are ways in which we can secure image . 
+how wll you pass creds env to image at time of running so that it wont be ember within image . 
+Kubernete creds how are they stored 
+image tag , what is use case . 
+ways by which we can provide storage to our containers in k8s  
+Init container use case 
+how does dns works 
+terraform state how to maintain state in production env . 
+terraform provider 
+how to ensure multiple env are maintianed in terraform . 
+how to ensure 2 devs are working on same resource , how to ensure this does not happens in terraform 

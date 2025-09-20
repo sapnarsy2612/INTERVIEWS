@@ -1,4 +1,16 @@
-we have 2 java apps , and java 1 app is using java 11 and other java app is using java 8 - what kind of dockerfile to be used for this requirements . 
+we have 2 java apps , and java 1 app is using java 11 and other java app is using java 8 - what kind of dockerfile to be used for this requirements ? Why is it necessary to have two separate Dockerfiles for this scenario?  
+What are the key differences between the openjdk:11-jdk-slim and openjdk:8-jdk-slim base images?
+Explain the purpose of the WORKDIR, COPY, EXPOSE, and CMD instructions in a Dockerfile.
+Why is it generally recommended to use a -slim or Alpine-based image for production containers? What are the potential trade-offs?
+How would you handle a situation where one application needs a specific operating system library that the other doesn't? * Describe the difference between the COPY and ADD instructions. When would you use one over the other?
+What are some of the key features or changes introduced in Java 9, 10, and 11 that might impact how a Dockerized application runs? 
+How do you handle different JDK versions in a build environment (e.g., Maven or Gradle) before creating the final JAR file for each application?
+Discuss the JVM memory management and how you would set JVM heap options (e.g., -Xmx, -Xms) for each application within the Dockerfile or run command. * Follow-up: How do newer Java versions (10+) handle memory limits in containers compared to older versions (8)?
+How would you manage the build and deployment process for these two applications using a CI/CD pipeline in java 8 and java 11 (e.g., Jenkins, GitHub Actions)?
+What is a multi-stage build, and could it be beneficial for this scenario? If so, how?
+After building the images, how would you run both applications on a single machine using Docker Compose? Provide a simple docker-compose.yml example.
+What is the importance of a .dockerignore file, and what types of files would you include in it for a Java project?
+How would you ensure both applications can communicate with each other if needed? (e.g., if one is an API and the other is a client).
 what will be base image for java 8 and java 11 . 
 do we have base image supported for java 8 if we dont have any base image supported then what will be approach 
 how to create pre base image . 

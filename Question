@@ -1,4 +1,6 @@
 Introduction about yourself . 
+After checking the dashboards and identifying a latency spike, what's your next step? How do you narrow down the potential cause?
+Imagine you suspect the issue is related to a recent deployment. What tools or commands would you use to confirm this, and how would you go about rolling back the change if necessary?
 IN CICD how many stages are there ?
 What are your roles in CICD workflow ?
 In which language we create pipelines ?

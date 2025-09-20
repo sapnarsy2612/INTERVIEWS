@@ -1,4 +1,12 @@
 What all experience you have ?
+Walk me through a challenging incident you've managed from start to finish. I'm interested in how you identified the problem, what tools you used, your communication process with the team and stakeholders, and what you did to prevent the issue from happening again.
+You mentioned using monitoring tools to identify the problem. Can you elaborate on the specific metrics or alerts that first caught your attention? How do you distinguish between a genuine alert and a false positive?
+What was your communication strategy during the incident? Who did you communicate with, and what information did you prioritize sharing at different stages of the incident?"
+Let's talk about the post-mortem process. How did you ensure a blameless culture during the review, and what were the key takeaways from the incident that led to long-term improvements?"
+"How do you approach capacity planning for a new service? What metrics would you track, and what kind of stress testing would you perform to ensure it can handle expected load? How to do load testing .
+How do you handle a situation where a developer wants to push a change to production that you believe is high-risk? What steps would you take to mitigate the risk while still enabling the business to move forward?
+Imagine we're a week away from a major product launch. What are the key SRE activities and checks you would perform to ensure production readiness?
+Walk me through your on-call philosophy. What's your approach to managing on-call fatigue, and how do you ensure that the team is prepared for unexpected pages
 core difference between a traditional operations role and a Site Reliability Engineer?
 What have attracted you to apply to this position ?
 What do you see yourself in 2 years ?

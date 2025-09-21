@@ -1,29 +1,264 @@
 how does cicd pipeline look like 
+How would you implement a blue/green deployment strategy within a CI/CD pipeline? What are the pros and cons?
+What's the difference between continuous delivery and continuous deployment? When would you choose one over the other?
+How do you ensure the security of a CI/CD pipeline?
+Describe a time you had to troubleshoot a failed CI/CD pipeline. What was the issue and how did you resolve it?
+How would you handle a rollback in a CI/CD pipeline if a new release causes a critical production issue?
+Explain the concept of "Infrastructure as Code" and how it fits into a modern CI/CD pipeline.
+What tools would you use to build a CI/CD pipeline, and how would you integrate them?
+How would you design a CI/CD pipeline for a microservices architecture? What are the unique challenges?
 whenevr we push code to repo how does jenkins know that it should trigger pipeline ? how to control which branch to trigger 
+Explain the key differences between a declarative and scripted pipeline in Jenkins, and how each handles branch-specific logic.
+How would you configure a Jenkins job to automatically trigger a build only for pull requests, and what are the benefits of this approach?
+Describe a scenario where you would use SCM polling instead of a webhook, and what the trade-offs would be.
+How do you ensure a pipeline is not triggered on a commit to a feature branch unless it's a pull request?
+What are the advantages of using a Jenkinsfile stored in the repository itself, rather than configuring the pipeline directly in the Jenkins UI?
+How would you use a stage-specific when condition to build a Docker image only on a main branch push but run unit tests on every branch?
+Beyond code pushes, what other events could a webhook from a Git repository trigger in a Jenkins pipeline?
 what we do with sonarqube result ? how does pipeline know about quality gate ?
+How would you handle a situation where the SonarQube analysis takes too long, slowing down the CI/CD pipeline?
+What is the "New Code" concept in SonarQube, and why is it crucial for an effective quality gate?
+How would you set up different quality gates for different projects (e.g., a critical backend service versus a simple static website)?
+Describe a time you had to troubleshoot a failing quality gate. What was the issue, and how did you resolve it?
+How can you integrate SonarQube analysis for pull requests to provide early feedback to developers?
+What metrics would you include in a quality gate for a mission-critical service, and why?
 how do we deploy our application ?
+Which deployment strategy would you choose for a critical, high-traffic e-commerce website, and why?
+How would you automate a rollback for a failed rolling update?
+Explain the role of a load balancer in a blue/green deployment.
+Describe a situation where a canary deployment would be the most effective strategy.
+What are some key metrics you would monitor during a rolling update to ensure the deployment is healthy?
+How do feature flags (or feature toggles) work with different deployment strategies, and what problem do they solve?
+How would you handle database schema changes when using a blue/green or canary deployment strategy to avoid downtime or data corruption?
 how to migrate to kubernetes for above ?
+How would you handle stateful applications and database migration during a move to Kubernetes? What are the challenges?
+What is the initContainer pattern in Kubernetes, and when would you use it to solve a migration problem?
+Explain the concept of "pet vs. cattle" as it relates to migrating to a Kubernetes-native architecture.
+Describe the steps you would take to migrate a monolithic application to Kubernetes using the Strangler Fig pattern. What are the benefits?
+How would you design a multi-cluster Kubernetes environment for high availability and disaster recovery, and how would you handle cross-cluster traffic?
+What are the key differences between Kubernetes-native deployment tools like Helm or Kustomize, and why would you choose one over the other?
 how can we access application hosted in pod ?
+When would you use a ClusterIP Service, and how would you access the application it exposes from your local machine for debugging purposes?
+Explain the key differences between a LoadBalancer Service and an Ingress object. When would you choose one over the other?
+How would you configure TLS/SSL termination for an application in Kubernetes? Would you do it at the Ingress layer or directly on the Pods? What are the pros and cons of each?
+Describe how service discovery works in Kubernetes. How do Pods find and communicate with each other without hard-coding IP addresses?
+What are Network Policies, and how would you use them to secure communication between different microservices within a cluster?
 how to map dns with lb and pod in kubernetes ?
+What's the difference between a ClusterIP Service and a LoadBalancer Service in terms of DNS resolution and accessibility?
+How would you use Kubernetes Ingress to map multiple DNS subdomains (e.g., api.example.com and web.example.com) to different Services and their underlying Pods, all using a single LoadBalancer?
+Explain the concept of a headless Service and a scenario where you'd use it instead of a regular Service for DNS. What's the resulting DNS record for the Pods?
+How can you automate the process of creating DNS records for a new LoadBalancer IP without manual intervention? What open-source tools or projects are available for this?
+What happens to the DNS records of a Pod when it is terminated and a new one is created by a Deployment? How does Kubernetes handle this without manual intervention?
 ingress in kubernetes ?
+What's the difference between a LoadBalancer Service and an Ingress object? When would you choose one over the other?
+How would you set up SSL/TLS termination for an application using an Ingress controller? Describe the resources you would need.
+What is a default backend in the context of an Ingress, and why is it important to configure one?
+Explain how you would implement a canary deployment using an Ingress controller. What annotations or features would you use?
+How do Ingress controllers handle high availability and load balancing?
+Describe a scenario where you would need to use both a LoadBalancer Service and an Ingress in a production environment.
 how do we manage env variables in kubernetes ?
+What's the key difference between using a ConfigMap and a Secret to manage environment variables? When would you use one over the other?
+How would you handle a situation where an application needs both non-sensitive configuration and sensitive credentials? Can you combine ConfigMaps and Secrets in a single Deployment?
+Explain a scenario where you would use the Downward API to inject a Pod's metadata into an application.
+What are the security implications of using environment variables to pass secrets? What's a more secure alternative, and why?
+How do you manage configuration for multiple environments (e.g., dev, staging, prod) without duplicating your manifest files? What tools or patterns would you use?
 secret in kubeernetes ?
+What's the difference between a Secret and a ConfigMap? When would you use one over the other?
+How would you secure a Kubernetes cluster's secrets beyond the default base64 encoding? What are some best practices?
+Explain how you would rotate a critical secret (like a database password) in a production environment without causing any downtime for your applications.
+What is external-secrets, and why might you use it instead of native Kubernetes Secrets?
+How would you troubleshoot a Pod that is failing to start because it can't access a Secret? What are the common causes for this issue?
+Describe the risks of exposing a Secret's data as an environment variable versus mounting it as a file. Which method do you prefer for production, and why?
 types of secret in kubernetes ?
 how do we encrypt secret in kubernetes?
+What is the Opaque secret type, and when would you choose to use it over a more specific type like TLS or docker-registry?
+How does a Service Account Token secret get a pod access to the Kubernetes API? Explain the role of the Kubelet in this process.
+Describe the process of a pod pulling a private container image. What role does the docker-registry secret and the imagePullSecrets field play?
+You have a critical web application that needs to be accessible via HTTPS. How would you use a TLS secret and an Ingress resource to secure it?
+What are the security implications of using base64 encoding for secret data? How can you ensure true security for your Kubernetes secrets?
 how do we use secret in pods in kubernetes ?
+What are the security trade-offs of using a Secret as an environment variable versus a mounted volume? Which method is generally recommended for production, and why?
+How would you rotate a database password stored in a Secret without causing a service interruption for a running application?
+Explain the purpose of imagePullSecrets. How does a Pod use this to pull a private container image from a registry?
+What is the Service Account Token secret, and how does it relate to Pods accessing the Kubernetes API?
+How would you configure role-based access control (RBAC) to restrict which users or service accounts can read specific Secrets in a namespace?
 how to refer yaml file in kubernetes other yaml file ?
+What's the difference between Helm and Kustomize? When would you choose one over the other for managing application manifests?
+Explain how you would use labels and selectors to logically group and reference related resources, such as a Deployment and a Service.
+How does a tool like Skaffold simplify the development-to-deployment loop for a Kubernetes application?
+Describe a scenario where a single multi-document YAML file is a good choice for deployment.
+What are the challenges of managing a complex application with dozens of YAML files, and how do tools like Helm or Kustomize solve these problems?
 volume mounts in kubernetes ?
+What's the difference between an emptyDir volume and a Persistent Volume? When would you use each?
+
+How would you configure a pod to share data between two different containers within the same pod?
+
+Explain the concept of Persistent Volumes (PV) and Persistent Volume Claims (PVC). Why are they a better approach for managing storage than using hostPath?
+
+How would you troubleshoot a pod that is failing to start due to a volumeMount error?
+
+What are the security implications of using a hostPath volume?
+
+How does a StorageClass fit into the Kubernetes storage ecosystem?
 can we mount the file using persistent volume ?
+How do you create a PersistentVolume (PV) and a PersistentVolumeClaim (PVC) to mount a file from an NFS server?
+
+What's the difference between mounting a file and a directory in a pod using a PV?
+
+How does a StorageClass simplify the process of using Persistent Volumes?
+
+What are the different access modes (e.g., ReadWriteOnce, ReadOnlyMany) for a Persistent Volume, and how do they affect file mounting?
+
+How can you use a Persistent Volume to share a single configuration file among multiple pods?
+
+What are some common troubleshooting steps if a pod fails to mount a Persistent Volume?
+
+How do you resize a Persistent Volume?
 waf ?
+How does a WAF differ from an Intrusion Prevention System (IPS)?
+
+What is the difference between a network-based, host-based, and cloud-based WAF?
+
+How do you choose the right WAF for your organization?
+
+What are the limitations and potential drawbacks of using a WAF?
+
+How can a WAF help with compliance standards like PCI DSS?
+
+What is the role of machine learning and AI in modern WAFs?
 how to configure waf ?
+How does a WAF's learning mode help in creating an effective security policy?
+
+What are some common false positives in WAFs, and how do you troubleshoot them?
+
+How can DevOps teams integrate WAF configuration and management into their CI/CD pipeline?
+
+What role does threat intelligence play in a WAF's rule-based security model?
+
+How can you use WAFs to protect against API-specific attacks and what are the key differences between a WAF and a WAAP (Web Application and API Protection) solution?
 what kind of policy we can create in waf ?
+How can machine learning and behavioral analysis enhance WAF policies?
+
+What is the role of threat intelligence feeds in a WAF policy, and how often should they be updated?
+
+How do you manage false positives in a WAF policy, and what is the impact of not doing so?
+
+What is the difference between a global WAF policy and a per-site or per-URI policy?
+
+How do WAF policies help in achieving compliance certifications like PCI DSS?
+
+What is the process of integrating WAF policy management into a CI/CD pipeline for a DevOps environment?
 y we use waf ?
+How does a WAF's rate limiting feature protect against DDoS attacks?
+
+What is virtual patching, and why is it a critical feature of a WAF?
+
+How do WAFs help in reducing the attack surface of a web application?
+
+Can a WAF completely eliminate the need for secure coding practices?
+
+How do you measure the effectiveness of a WAF? What metrics are important?
+
+What is the difference between a WAF and a Reverse Proxy? Are they mutually exclusive?
 what is api gateway 
+What is the difference between an API Gateway and a traditional reverse proxy?
+
+How do API Gateways help in a microservices architecture?
+
+What is the role of an API Gateway in API security?
+
+How can you implement rate limiting and throttling with an API Gateway?
+
+What are the benefits of using a cloud-based API Gateway versus a self-hosted one?
 what is vpc
+How do subnets function within a VPC, and what is the difference between a public and private subnet?
+
+What is VPC Peering, and why is it used?
+
+How does a VPC differ from a VPN (Virtual Private Network)?
+
+What is the role of security groups and Network ACLs in a VPC?
+
+How can you connect a VPC to your on-premises network?
+
+What are the benefits of using a VPC versus a public cloud without a VPC?
 why subnet is required 
+What is the difference between a public and private subnet?
+
+How do you configure a subnet to be highly available across different data centers?
+
+What is the role of a subnet mask in defining a subnet?
+
+How do Network ACLs and security groups work to secure subnets?
+
+What are the best practices for sizing a subnet in a cloud environment?
+
+How does an Internet Gateway or NAT Gateway enable communication between subnets and the internet?
 is it good practice to have multiple subnet ? y 
+What are public and private subnets, and what is the key difference in their routing?
+
+How do Network Access Control Lists (ACLs) and security groups work together to secure resources within and between subnets?
+
+What are the best practices for subnet sizing in a cloud environment?
+
+How does an Internet Gateway (IGW) or NAT Gateway facilitate communication between subnets and the internet?
+
+How can you achieve high availability and fault tolerance by using subnets across different Availability Zones?
 can we use differnet vpc for differnet env or differnet subnet ?
+How do you connect multiple VPCs for a multi-VPC architecture, and what is the difference between VPC Peering and a Transit Gateway?
+
+What is a shared services VPC, and why would you use one?
+
+How can you automate the deployment of a multi-VPC environment using Infrastructure as Code (IaC)?
+
+What is the cost implication of using a single VPC versus a multi-VPC architecture?
+
+How do IAM roles and policies differ in a single VPC vs. a multi-VPC environment?
 what all things used in terraform ?
+How does the Terraform state file manage the lifecycle of resources?
+
+What is the difference between a local and remote state file, and why is remote state management considered a best practice?
+
+How does Terraform handle dependencies between resources?
+
+What is the difference between terraform plan, terraform apply, and terraform destroy?
+
+How can you use modules to improve code reusability and maintainability?
+
+What is Terraform Cloud and how does it differ from the open-source CLI?
 whats the use of state file in terrafomr ?
+What are the risks of a corrupted or lost Terraform state file?
+
+How can you manage a state file with a team to prevent conflicts?
+
+What is the difference between local and remote state, and why is remote state the industry best practice?
+
+How do you import existing infrastructure into a Terraform state file?
+
+What is state locking, and why is it important for remote state?
+
+How does Terraform handle sensitive data in the state file?
 2 person are updating same instance in terraform what will happen ?
+What are the risks of using a local state file in a multi-user environment?
+
+How can you manually force-unlock a Terraform state file? When is this necessary?
+
+What is the difference between a remote backend and a local backend in Terraform?
+
+How does the terraform plan command use the state file to determine what changes to make?
+
+What are some common remote backend services that support state locking?
+
+What is the role of version control (like Git) in a collaborative Terraform workflow?
 How to lock terraform state file ?
+How does state locking differ from version control (like Git) in a Terraform workflow?
+
+What is the process for manually unlocking a Terraform state file, and when would you need to do this?
+
+How do you set up a DynamoDB table for state locking?
+
+What are the key benefits of using Terraform Cloud for state management and locking?
+
+What are the risks of not using state locking in a collaborative environment?
+
+How do you manage sensitive data in a state file that is stored in a remote backend?

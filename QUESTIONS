@@ -3,3 +3,44 @@ benefits of devops
 azure services related to devops 
 what is repos 
 what is pipeline
+What are the steps to implement a DevOps culture in an organization? 
+What are some of the most common tools used in a DevOps pipeline?
+What are the best practices for a successful DevOps implementation?
+What's the difference between DevOps and Agile? 
+What is a CI/CD pipeline? 
+What is Infrastructure as Code (IaC)? 
+What does a DevOps engineer do, and what skills are needed? 
+How does security fit into the DevOps model? 
+What are some of the emerging trends in DevOps? 
+How do Azure DevOps services integrate with each other? 
+What's the difference between Azure DevOps Services and Azure DevOps Server? 
+How does Azure DevOps compare to other CI/CD tools like Jenkins or GitHub Actions?
+What is the role of YAML in Azure Pipelines? 
+How does a team get started with Azure DevOps? 
+What is the pricing model for Azure DevOps? 
+What is the difference between Git and GitHub? 
+What is a "branch" in a repository, and why is it important? 
+How do developers "clone," "push," and "pull" from a repository? 
+What's the difference between a local and a remote repository? 
+What are some of the popular platforms for hosting repositories besides GitHub? 
+How do repositories fit into the DevOps CI/CD pipeline?
+What are the key stages of a typical CI/CD pipeline?
+How does a pipeline automate the software delivery process? 
+What are the common tools used to build a pipeline? 
+What's the difference between Continuous Delivery and Continuous Deployment? 
+What are the benefits of using "pipeline as code"? 
+How do you ensure a pipeline is secure? 
+How do you handle different environments (e.g., development, staging, production) within a single pipeline? 
+What are the most common challenges in implementing a pipeline?
+How does a CI/CD pipeline differ from a data pipeline? 
+What is the role of containers (like Docker) and container orchestration (like Kubernetes) in a modern pipeline?
+
+
+
+
+
+
+
+
+
+

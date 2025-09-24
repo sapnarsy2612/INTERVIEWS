@@ -90,175 +90,103 @@ Describe a scenario where a single multi-document YAML file is a good choice for
 What are the challenges of managing a complex application with dozens of YAML files, and how do tools like Helm or Kustomize solve these problems?
 volume mounts in kubernetes ?
 What's the difference between an emptyDir volume and a Persistent Volume? When would you use each?
-
 How would you configure a pod to share data between two different containers within the same pod?
-
 Explain the concept of Persistent Volumes (PV) and Persistent Volume Claims (PVC). Why are they a better approach for managing storage than using hostPath?
-
 How would you troubleshoot a pod that is failing to start due to a volumeMount error?
-
 What are the security implications of using a hostPath volume?
-
 How does a StorageClass fit into the Kubernetes storage ecosystem?
 can we mount the file using persistent volume ?
 How do you create a PersistentVolume (PV) and a PersistentVolumeClaim (PVC) to mount a file from an NFS server?
-
 What's the difference between mounting a file and a directory in a pod using a PV?
-
 How does a StorageClass simplify the process of using Persistent Volumes?
-
 What are the different access modes (e.g., ReadWriteOnce, ReadOnlyMany) for a Persistent Volume, and how do they affect file mounting?
-
 How can you use a Persistent Volume to share a single configuration file among multiple pods?
-
 What are some common troubleshooting steps if a pod fails to mount a Persistent Volume?
-
 How do you resize a Persistent Volume?
 waf ?
 How does a WAF differ from an Intrusion Prevention System (IPS)?
-
 What is the difference between a network-based, host-based, and cloud-based WAF?
-
 How do you choose the right WAF for your organization?
-
 What are the limitations and potential drawbacks of using a WAF?
-
 How can a WAF help with compliance standards like PCI DSS?
-
 What is the role of machine learning and AI in modern WAFs?
 how to configure waf ?
 How does a WAF's learning mode help in creating an effective security policy?
-
 What are some common false positives in WAFs, and how do you troubleshoot them?
-
 How can DevOps teams integrate WAF configuration and management into their CI/CD pipeline?
-
 What role does threat intelligence play in a WAF's rule-based security model?
-
 How can you use WAFs to protect against API-specific attacks and what are the key differences between a WAF and a WAAP (Web Application and API Protection) solution?
 what kind of policy we can create in waf ?
 How can machine learning and behavioral analysis enhance WAF policies?
-
 What is the role of threat intelligence feeds in a WAF policy, and how often should they be updated?
-
 How do you manage false positives in a WAF policy, and what is the impact of not doing so?
-
 What is the difference between a global WAF policy and a per-site or per-URI policy?
-
 How do WAF policies help in achieving compliance certifications like PCI DSS?
-
 What is the process of integrating WAF policy management into a CI/CD pipeline for a DevOps environment?
 y we use waf ?
 How does a WAF's rate limiting feature protect against DDoS attacks?
-
 What is virtual patching, and why is it a critical feature of a WAF?
-
 How do WAFs help in reducing the attack surface of a web application?
-
 Can a WAF completely eliminate the need for secure coding practices?
-
 How do you measure the effectiveness of a WAF? What metrics are important?
-
 What is the difference between a WAF and a Reverse Proxy? Are they mutually exclusive?
 what is api gateway 
 What is the difference between an API Gateway and a traditional reverse proxy?
-
 How do API Gateways help in a microservices architecture?
-
 What is the role of an API Gateway in API security?
-
 How can you implement rate limiting and throttling with an API Gateway?
-
 What are the benefits of using a cloud-based API Gateway versus a self-hosted one?
 what is vpc
 How do subnets function within a VPC, and what is the difference between a public and private subnet?
-
 What is VPC Peering, and why is it used?
-
 How does a VPC differ from a VPN (Virtual Private Network)?
-
 What is the role of security groups and Network ACLs in a VPC?
-
 How can you connect a VPC to your on-premises network?
-
 What are the benefits of using a VPC versus a public cloud without a VPC?
 why subnet is required 
 What is the difference between a public and private subnet?
-
 How do you configure a subnet to be highly available across different data centers?
-
 What is the role of a subnet mask in defining a subnet?
-
 How do Network ACLs and security groups work to secure subnets?
-
 What are the best practices for sizing a subnet in a cloud environment?
-
 How does an Internet Gateway or NAT Gateway enable communication between subnets and the internet?
 is it good practice to have multiple subnet ? y 
 What are public and private subnets, and what is the key difference in their routing?
-
 How do Network Access Control Lists (ACLs) and security groups work together to secure resources within and between subnets?
-
 What are the best practices for subnet sizing in a cloud environment?
-
 How does an Internet Gateway (IGW) or NAT Gateway facilitate communication between subnets and the internet?
-
 How can you achieve high availability and fault tolerance by using subnets across different Availability Zones?
 can we use differnet vpc for differnet env or differnet subnet ?
 How do you connect multiple VPCs for a multi-VPC architecture, and what is the difference between VPC Peering and a Transit Gateway?
-
 What is a shared services VPC, and why would you use one?
-
 How can you automate the deployment of a multi-VPC environment using Infrastructure as Code (IaC)?
-
 What is the cost implication of using a single VPC versus a multi-VPC architecture?
-
 How do IAM roles and policies differ in a single VPC vs. a multi-VPC environment?
 what all things used in terraform ?
 How does the Terraform state file manage the lifecycle of resources?
-
 What is the difference between a local and remote state file, and why is remote state management considered a best practice?
-
 How does Terraform handle dependencies between resources?
-
 What is the difference between terraform plan, terraform apply, and terraform destroy?
-
 How can you use modules to improve code reusability and maintainability?
-
 What is Terraform Cloud and how does it differ from the open-source CLI?
 whats the use of state file in terrafomr ?
 What are the risks of a corrupted or lost Terraform state file?
-
 How can you manage a state file with a team to prevent conflicts?
-
 What is the difference between local and remote state, and why is remote state the industry best practice?
-
 How do you import existing infrastructure into a Terraform state file?
-
 What is state locking, and why is it important for remote state?
-
 How does Terraform handle sensitive data in the state file?
 2 person are updating same instance in terraform what will happen ?
 What are the risks of using a local state file in a multi-user environment?
-
 How can you manually force-unlock a Terraform state file? When is this necessary?
-
 What is the difference between a remote backend and a local backend in Terraform?
-
 How does the terraform plan command use the state file to determine what changes to make?
-
 What are some common remote backend services that support state locking?
-
 What is the role of version control (like Git) in a collaborative Terraform workflow?
 How to lock terraform state file ?
 How does state locking differ from version control (like Git) in a Terraform workflow?
-
 What is the process for manually unlocking a Terraform state file, and when would you need to do this?
-
 How do you set up a DynamoDB table for state locking?
-
 What are the key benefits of using Terraform Cloud for state management and locking?
-
 What are the risks of not using state locking in a collaborative environment?
-
 How do you manage sensitive data in a state file that is stored in a remote backend?

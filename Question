@@ -87,4 +87,16 @@ script to find all files with name file.txt with size greater than 1gb , suppose
 if in / we get answer 3.9 then what will be answer in //
 exception handling in python . 
 if we want some block to print even if there is error or not then using try except . 
+Explain the key differences between the except block and the finally block in Python's exception handling structure.
+Can a try block exist without an except block? If so, when would this be useful, and how does the finally block behave in this scenario?
+Describe a real-world scenario (e.g., file handling, database connection) where the finally block is essential for preventing resource leaks.
+Write a Python program that opens a file, attempts to write to it, and ensures the file is closed, regardless of whether a PermissionError or any other error occurs.
+How does a finally block interact with a raise statement inside a try or except block? Give a code example to illustrate your point.
 list , tuple , set difference . 
+Which of the data structures is generally more memory-efficient and why?
+Describe a scenario where using a tuple is a better choice than a list, and explain why its immutability is a key advantage in that context.
+When would you use a set instead of a list or a tuple to solve a problem? Provide a specific example.
+How would you convert a list to a set and then back to a list? What's the effect of this conversion?
+Explain the concept of "hashable" objects and how it relates to tuples and sets. Why can't a list be an element of a set?
+Given two lists, list1 and list2, how would you efficiently find all the elements that are in list1 but not in list2?
+Imagine you're building a system to track user sessions. Which data structure would you use to store a user's unique session IDs and why? How would this choice impact the performance of operations like checking if a user ID is already present?

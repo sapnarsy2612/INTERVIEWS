@@ -18,3 +18,20 @@ os used for image ?
 lifecycle from commit code till release of application ?
 how to deploy db in cicd ?
 db upgrade/ release through jenkins pipeline ?
+How does the pipeline ensure Data Definition Language (DDL) statements (like ALTER TABLE) are transactional for databases like MySQL (which don't support it by default) to prevent a partially failed deployment?
+How do you structure a database migration script to be truly idempotent, and how would you include a rollback stage in the Jenkins Pipeline (and why is a forward-only fix often preferred)?
+Should the final set of migration scripts be stored as an artifact in an artifact repository (like Nexus or Artifactory), and if so, how would the Jenkins Pipeline manage and consume that artifact?
+How can the pipeline incorporate a step to detect and report "schema drift"—i.e., manual, unscripted changes made directly to the production database—before a deployment?
+What is the most secure way to inject sensitive database credentials (username/password/connection string) into the migration command executed by the Jenkins agent? (Focus on using the Jenkins Credentials Plugin).
+How should database user permissions be configured for the Jenkins deployment process to ensure the least privilege? (e.g., a special deployment user that can only run DDL/DML but not select data).
+What steps are needed in the pipeline to ensure a complete audit trail of who approved the deployment, when it ran, and what changes were applied to the production database for compliance purposes?
+How can a Jenkins Pipeline be adapted to support a blue/green deployment strategy specifically for the database, given that you can't just swap a database instantly? (Focus on backward compatibility steps).
+What pipeline steps are necessary to execute a zero-downtime database migration, including coordinating the schema changes with the parallel application code release?
+How can the pipeline prevent two different feature branches from attempting to deploy conflicting database changes to the same shared QA environment simultaneously? (Hint: Lockable Resources Plugin).
+How do you handle environment-specific variables like schema name or tablespace within the same set of migration scripts across different environments (Dev, QA, Prod)?
+How does the pipeline ensure that once the schema is upgraded in a test environment, a comprehensive suite of integration tests is run against the new schema before moving to the next environment?
+How should a pipeline handle scripts that perform data migrations (e.g., moving data between columns or tables) to ensure data integrity, and what checks can be added to the pipeline to verify the data integrity post-migration?
+
+
+
+What steps are needed in the pipeline to ensure a complete audit trail of who approved the deployment, when it ran, and what changes were applied to the production database for compliance purposes?

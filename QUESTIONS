@@ -31,7 +31,4 @@ How can the pipeline prevent two different feature branches from attempting to d
 How do you handle environment-specific variables like schema name or tablespace within the same set of migration scripts across different environments (Dev, QA, Prod)?
 How does the pipeline ensure that once the schema is upgraded in a test environment, a comprehensive suite of integration tests is run against the new schema before moving to the next environment?
 How should a pipeline handle scripts that perform data migrations (e.g., moving data between columns or tables) to ensure data integrity, and what checks can be added to the pipeline to verify the data integrity post-migration?
-
-
-
 What steps are needed in the pipeline to ensure a complete audit trail of who approved the deployment, when it ran, and what changes were applied to the production database for compliance purposes?

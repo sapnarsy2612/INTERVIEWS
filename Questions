@@ -1,0 +1,34 @@
+Prioritization (Bias for Action, Deliver Results): You have three high-priority tickets open:
+Ticket A: A customer's production system is completely down (Severity 1).
+Ticket B: A critical internal project deadline is today, and you are behind schedule on your part.
+Ticket C: A long-term, high-value customer has a non-critical but persistent issue that requires deep investigation.
+How would you prioritize your next two hours, and what steps would you take for each?
+
+At what point do you escalate, and what key information do you need to gather before escalating to a senior engineer or a development team?
+
+How do you communicate the lack of progress to the customer while maintaining their trust?
+
+How do you propose a solution to permanently reduce the time spent on this recurring issue? (Think automation, better documentation, self-service tools). What data would you present to your manager to justify your proposed solution?
+
+A frustrated customer emails you an aggressive response, blaming your company for their system failure and demanding an immediate resolution. What is your immediate response to the customer? (Choose tone and content). What internal steps do you take before providing the next technical update?
+
+What command would you use to find a specific error message in a large log file, and how would you display only the lines immediately following the error? (e.g., grep with context options).
+
+Explain the difference between the ps -ef and ps aux commands.
+
+A process is consuming 95% of the CPU. What sequence of commands would you use to identify the process, analyze its state, and safely terminate it if necessary?
+
+A customer reports they can't connect to their server via SSH. List the steps, in order, you would take to troubleshoot this issue, from the client side to the server side.
+
+Explain the difference between the TCP 3-way handshake and the UDP protocol. When is one preferred over the other in a support context?
+
+What is the purpose of a firewall and a load balancer in a typical three-tier application architecture?
+
+A customer's application running on an EC2 instance is experiencing intermittent high latency. What are the first three CloudWatch metrics you would check on the EC2 instance and what might each metric indicate?
+
+Explain the concept of Security Groups and Network Access Control Lists (NACLs) in AWS VPC, and their primary difference in terms of traffic control.
+
+If a customer reports their static website hosted on S3 is intermittently inaccessible, what are common S3-related configuration checks you would perform? (e.g., bucket policy, public access, region).
+
+How do you ensure high availability for a database using Amazon RDS? (Mention Multi-AZ).
+

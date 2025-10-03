@@ -41,6 +41,7 @@ There is poor network performance when connecting to webserver which tool should
 Whcih reason would not cause a slow server performnace issue 
 When host is not running any services on port what message will get displayed 
 Explain the difference between horizontal and vertical scaling. Which one does the cloud favor and why?
+Give detailed aws auto scaling scenario and how to use it , also give detail on how to use it in emr ?
 
 
 

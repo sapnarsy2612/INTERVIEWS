@@ -40,6 +40,7 @@ What do 400 status code mean
 There is poor network performance when connecting to webserver which tool should be used to troubleshoot the netwrok latency and packet loss 
 Whcih reason would not cause a slow server performnace issue 
 When host is not running any services on port what message will get displayed 
+Explain the difference between horizontal and vertical scaling. Which one does the cloud favor and why?
 
 
 

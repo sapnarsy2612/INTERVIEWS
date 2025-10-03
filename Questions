@@ -1,0 +1,50 @@
+how to troubleshoot too many open file error 
+maximum partition size supported on disk that is partition using mgr partition style . 
+root user created file aws with permission rex which must not be opened by anyone except root and another user john how can this be done. 
+page fault occur when requested page is 
+key value database property . 
+When trying to access website users are experiencing high latency what approach is best to determin where latemncy is coming from 
+mechanism to protect data at rest . 
+Ways to connect to remote server . 
+Where are docker volumes stored on linux . 
+Cmmadn that identify which container are running in docker . 
+advantage of container over virtualization . 
+Kubectl command to copy folder from local to pod in namespace . 
+Command that summarizes the count of network connection and their state . 
+when chmod 744 filename command is used to set permission for file which interpretation is correct 
+command that get detailed information about cpu . 
+Whaich number is associated with SIGKILL 
+When host is not running any services on port what message will get displayed , 
+role of kubeproxy 
+Controllers in k8s 
+Action to take while troubleshooting a pos in crashback loop status 
+Tool used to investigate slow performance  
+YOu are unable to ssh into linux server and have been advised icmp is disbaled how should you test connectivuty from client to server . '
+In which mode can SElinux run 
+What initial root file system is mounted in linux before the real root file system is available . 
+If value in offset field of ip header is 100 then what is fragment size . '
+on which layer are payload encryption and decryption performed . 
+purpose of using TCP RESET flag 
+Which arp packet is sent to announced changed MAC address 
+During poor network perfromance when connecting to webserver which tool should be used to troubleshoot network latency and packet loss 
+By which mechanism is tcp flow control achieved . 
+Tool used to test network throughpit performance 
+Tool used to check open port . 
+What fo icmp message with code 3 and type 3 signify 
+Which tool provide information about network path and RTT 
+Which Characteristic about TTL values are important 
+Which services use both tcp and udp 
+Which of following will list destination MAC address 
+Signal strenth on wireless connection is dropping previoiulsy the network was working fine and no changes have been made to networm config which cause if most likely 
+What do 400 status code mean 
+There is poor network performance when connecting to webserver which tool should be used to troubleshoot the netwrok latency and packet loss 
+Whcih reason would not cause a slow server performnace issue 
+When host is not running any services on port what message will get displayed 
+
+
+
+
+
+
+
+

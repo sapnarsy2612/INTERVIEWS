@@ -45,6 +45,8 @@ Give detailed aws auto scaling scenario and how to use it , also give detail on 
 Two Sum: Given an array of integers and a target value, find two numbers in the array that add up to the target. Focus: Utilizing a Hash Map for O(n) time complexity.
 Find the Missing Number: Given an array containing n distinct numbers taken from 0,1,2,…,n, find the one that is missing from the array. Focus: Using the sum formula or XOR operation for O(n) time and O(1) space.
 Find the contiguous subarray (containing at least one number) which has the largest sum. (Kadane's algorithm). Focus: Dynamic Programming or Greedy approach.
+A user reports they can't access a critical internal application. How do you proceed?
+How would you troubleshoot a system that intermittently loses network connectivity?
 
 
 

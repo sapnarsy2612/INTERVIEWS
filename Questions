@@ -58,6 +58,7 @@ Explain the process of DNS resolution.
 What are threads and processes in an operating system, and how do they differ? How would you debug an application with a suspected deadlock?
 Describe a scenario where you had to optimize a Linux/Unix system's performance.
 Write a script (e.g., in Python, Bash, or Perl) to automate a common support task, such as checking logs on multiple servers for a specific error pattern and compiling a report.
+Write a query to find the top N customers based on a specific metric, or explain the difference between ACID and BASE properties.
 
 
 

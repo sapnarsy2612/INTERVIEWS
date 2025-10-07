@@ -52,6 +52,10 @@ Describe the three pillars of AWS Well-Architected Framework most relevant to a 
 What is the role of a Load Balancer in a distributed system, and how would you troubleshoot issues like high latency or uneven traffic distribution?
 Explain the difference between a Security Group and a Network Access Control List (NACL).
 How would you monitor a fleet of EC2 instances for unusual spikes in resource utilization and automatically mitigate the issue?
+Walk through the process of a web request from a client's browser to an application server (OSI model and core protocols).
+How would you troubleshoot a server that is intermittently dropping SSH connections? Name specific Linux commands you would use.
+Explain the process of DNS resolution.
+What are threads and processes in an operating system, and how do they differ? How would you debug an application with a suspected deadlock?
 
 
 

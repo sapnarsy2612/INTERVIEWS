@@ -1,0 +1,13 @@
+What is gitlab 
+how gitlab CICD work 
+What is gitlab runner 
+Difference between gitlab and github 
+Gitlab branching strategy 
+purpose of gitlabciyaml file 
+How to handle merge conflict in gitlab 
+What are gitlab cicd pipeline 
+Purpose of gitlab issues 
+Tags in gitlab 
+HOw to deploy k8s app using github action and argocd 
+explain gitops workflow in k8s using argocd and github actions 
+HOw to manage secret for k8s deployment in gitops usign github action and argocd 

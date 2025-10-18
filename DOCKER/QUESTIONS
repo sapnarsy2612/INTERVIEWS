@@ -8,3 +8,7 @@ docker run command
 docker volume
 if we host volume then when we add content to file inside contaoner will it accessible from host also ?
 if we host volume then when we add content to file inside host will it accessible from container also ?
+Dockerfile for node.js application with multu-stage build 
+Difference between COPY and AND in docker 
+Debug container that has exited 
+Handle secret 

@@ -1,4 +1,17 @@
 What is terraform ?
+What is the core difference between the terraform plan and terraform apply commands?
+Explain the purpose of the Terraform State file (terraform.tfstate). Why is state management so crucial?
+What is a Terraform Provider, and what is its role in the provisioning process?
+Differentiate between Terraform (an infrastructure provisioning tool) and configuration management tools like Ansible, Chef, or Puppet.
+What is the HashiCorp Configuration Language (HCL)? Is it declarative or imperative?
+What is the significance of the terraform init command?
+Explain Terraform Modules. Why are they essential for large-scale infrastructure?
+How do you handle sensitive data (like database passwords or API keys) within your Terraform configuration?
+What are remote backends? Give an example of a remote backend and explain its benefits.
+How does Terraform handle resource dependencies? Explain the difference between implicit and explicit dependencies.
+What are Terraform workspaces, and when would you use them versus just using separate directories/configurations?
+Explain the concept of Drift Detection in Terraform and how you would address it.
+What is the purpose of Data Sources in Terraform? Give an example of when you would use one.
 Terraform workspace
 The Terraform plan validates the apply  command difference . 
 Write any terraform file . 

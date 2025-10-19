@@ -12,6 +12,13 @@ How does Terraform handle resource dependencies? Explain the difference between 
 What are Terraform workspaces, and when would you use them versus just using separate directories/configurations?
 Explain the concept of Drift Detection in Terraform and how you would address it.
 What is the purpose of Data Sources in Terraform? Give an example of when you would use one.
+How would you import existing infrastructure (that wasn't originally created by Terraform) into your state file?
+What is State Locking, and why is it necessary for team collaboration?
+Describe a time a terraform apply failed. How did you troubleshoot and recover from it?
+You need to deploy the same set of resources (e.g., a web server, a database, and a security group) to three different AWS regions. How would you structure your Terraform code to be as DRY (Don't Repeat Yourself) as possible?
+A resource was manually modified in the cloud console after deployment (e.g., an EC2 instance size was changed). What will happen when you run terraform plan? How can you fix the issue?
+Your team needs to enforce a policy that all S3 buckets must be encrypted. How can you integrate Policy as Code with Terraform to prevent non-compliant deployments?
+Explain how you would structure a CI/CD pipeline for your Terraform code, including the main stages and commands used.
 Terraform workspace
 The Terraform plan validates the apply  command difference . 
 Write any terraform file . 

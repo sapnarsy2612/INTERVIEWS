@@ -60,3 +60,34 @@ you strength , your weakness
 script to restart java process on multiple servers ,. 
 why are you looking for change . 
 last used script , logic behind that and business value for that . 
+if there is oom error so what kind of automation struture we will use for k8s to monitor mitigate resolve on large scale ? 
+give high level detail of all python automation work you did along with each detailed code . folder structure also . 
+give high level detail of all bash automation work you did along with each detailed code . 
+give high level detail of all gitlab pipeline automation work you did along with each detailed code . 
+give high level detail of all jenkins automation work you did along with each detailed code . 
+how to add cron in jenkins pipeline script . 
+automation of infra where you have terraform . 
+approach where you have to validate terraform with current state file . 
+terraform components . 
+Automation done as part of DR of jenkins , gitlab , nexus , sonarqube . 
+AWS runbook task for streaming logs . give detailed task and scripts . 
+What all automation done as part of k8s and docker . 
+RBAC - give detail about this , what all types of rbac are there . 
+OOPs concept in detail , method overriding , encapsulation . etc . inheritance and types . 
+OPtimization of sftp servers what all tasks done as part of that . - give detailed explanation . 
+Give detail about how incident management is handled . how you lead incident as first responder . 
+suppose you have an api , which all users are able to access , but 1 user is unable to access , what will be the troubleshooting steps , will you check any setting that be enabled as part of deplyment parameter . 
+what all commands you use in linux for daily basis . 
+
+write script to fetch paris from below file , 
+ID Name Age City
+1 John 25 London
+2 Maya 30 Paris
+3 Raj 28 Mumbai
+
+azure functions give detail what all task done in this give in detail , aws function also . with script . 
+give detail about joins in database every detail . 
+how to setup prometheus , grafana from scrath . create dashboards from scratch , how is it setup in your place . give every detail you know . 
+datadog what all things you know , give details about each . 
+how do you create alerts in tools give each details . 
+aws step functions , give each detail what you have done with each technality and scripts . 

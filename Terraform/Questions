@@ -1,3 +1,4 @@
 create an Amazon CloudFront Distribution that serves content from an Amazon S3 bucket, using an Origin Access Control (OAC) for secure access - use terraform for this . 
 setting up an AWS Directory Service AD Connector using terraform . 
 configures the deployment of multiple AWS WorkSpaces for a list of specific Active Directory users, referencing an existing WorkSpaces Directory ID and customizing parameters like the bundle, volume sizes, and an auto-stop running mode. using terraform 
+use terraform to provision and configure an AWS Directory Service of type AD Connector. 

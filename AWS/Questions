@@ -1,4 +1,4 @@
 An application in account A needs access to s3 bucket in account B . How to configure this . 
 Your ec2 instance in private subnet need to download packages without NAT gateway , what alternative exits 
 Setup geolocation based routing in AWS services 
-
+how to check who create aws ec2

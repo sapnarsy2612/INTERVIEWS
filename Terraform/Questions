@@ -1,0 +1,2 @@
+create an Amazon CloudFront Distribution that serves content from an Amazon S3 bucket, using an Origin Access Control (OAC) for secure access - use terraform for this . 
+setting up an AWS Directory Service AD Connector using terraform . 

@@ -1,0 +1,24 @@
+Define and differentiate between SLI, SLO, and SLA. Provide an example set for a web service (e.g., latency, availability).
+Explain the concept of an Error Budget and how it is used to manage the trade-off between reliability and feature development.
+What is "toil" in SRE? Give an example of toil you've successfully automated and the tooling you used.
+Describe the key characteristics of a blameless post-mortem and why this approach is crucial. What elements must a good post-mortem include?
+How do you approach designing a system for both high scalability and high reliability?
+Describe the stages of a typical CI/CD pipeline and explain the purpose of each stage. What are the benefits of a Blue/Green deployment versus a Canary release?
+Compare and contrast a declarative IaC tool (like Terraform) with a procedural configuration management tool (like Ansible).
+How would you integrate security checks (DevSecOps) into your CI/CD pipeline? (e.g., static code analysis, secret management).
+Explain the core principles of GitOps. How does it change the way infrastructure and applications are deployed?
+What are the Four Golden Signals of monitoring? Give a specific metric you'd track for each for an API service.
+What makes a good alert? Contrast symptom-based alerting (user-facing impact) with cause-based alerting (system internals). Which is generally preferred for SRE and why?
+A service's P99 latency has spiked, but its error rate is stable. Outline your troubleshooting steps. Which tools would you use?
+Why is centralized log aggregation essential? Briefly describe an architecture you've used for this (e.g., using a combination of agents, shippers, and a centralized store).
+Describe the role of a runbook during an incident. What constitutes a high-quality runbook?
+You notice a server's CPU utilization is consistently high. What Linux commands would you use to diagnose the issue and pinpoint the problematic process or thread?
+Briefly explain the difference between TCP and UDP. In what scenario would you choose one over the other for a critical application?
+Explain the difference between Layer 4 (L4) and Layer 7 (L7) load balancing. Which would you use to distribute traffic based on the URL path, and why?
+Differentiate between a process and a thread. Which typically shares memory, and what are the implications for a multi-threaded application?
+Detail the steps of a DNS lookup for a user accessing www.example.com.
+How do you approach educating developers on operational best practices and making them more aware of the production environment?
+Describe a time you had to balance the need for quick feature delivery with the need for system stability.
+How do you manage the stress and fatigue associated with being on-call? What steps can a team take to make the on-call rotation more sustainable?
+Tell me about a production incident you were involved in where you made a mistake. What did you learn, and what changes did you propose to prevent a recurrence?
+How do you decide when to use a managed cloud service (e.g., AWS RDS) versus deploying and managing an open-source equivalent (e.g., self-hosted PostgreSQL)?

@@ -2,3 +2,13 @@ create an Amazon CloudFront Distribution that serves content from an Amazon S3 b
 setting up an AWS Directory Service AD Connector using terraform . 
 configures the deployment of multiple AWS WorkSpaces for a list of specific Active Directory users, referencing an existing WorkSpaces Directory ID and customizing parameters like the bundle, volume sizes, and an auto-stop running mode. using terraform 
 use terraform to provision and configure an AWS Directory Service of type AD Connector. 
+configures how AWS WorkSpaces interacts with an existing directory service, likely an AWS Directory Service AD Connector using terraform . 
+defines how to deploy multiple Amazon WorkSpaces virtual desktops for a set of users using terraform 
+Use terraform for alb and nlb creation . 
+use of dynamic block in terraform 
+creating a listener for an Application Load Balancer (ALB) or a Network Load Balancer (NLB) in AWS in terraform . 
+Terraform resource for an AWS Load Balancer Target Group . 
+AWS lb target group attachement , 
+Create nlb using terraform . 
+Create aws iam policy using terraform . 
+How to create ec2 instance using terraform . 

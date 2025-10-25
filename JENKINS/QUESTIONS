@@ -35,3 +35,18 @@ Explain the concept of Global Tool Configuration in Jenkins and how jobs utilize
 In the context of scaling, why is it considered a best practice to execute builds on agents (slaves) instead of the Jenkins controller (master)?
 How have you used Jenkins to facilitate Infrastructure as Code (IaC) workflows (e.g., integrating with Terraform or Ansible)?
 What are Multibranch Pipelines, and how do they automate the creation of jobs for new branches and pull requests?
+What is the fundamental difference between Declarative Pipeline and Scripted Pipeline?
+Why would you choose a Declarative Pipeline over a Scripted Pipeline for a new project?
+In which scenarios would the flexibility of a Scripted Pipeline be absolutely necessary?
+Explain the key sections/blocks of a Declarative Pipeline (e.g., pipeline, agent, stages, steps, post).
+What is the role of the agent directive in a Jenkins Pipeline, and what are the different ways you can define it? (e.g., any, none, label, specifying a specific image like docker).
+How do you handle parameters and environment variables within a Jenkinsfile?
+How can you implement parallel execution of stages/steps in a Jenkins Pipeline?
+Describe how you would implement a conditional execution of a stage (e.g., only running deployment on the main branch).
+What is a Shared Library in Jenkins, and why is it beneficial for pipelines?
+Explain the difference between a step and a stage in a pipeline context.
+How do you manage secrets (credentials) securely within a Jenkins Pipeline?
+What are the typical steps you would include in the post section of a Declarative Pipeline?
+How do you handle error conditions or failed steps in a Pipeline (e.g., using try/catch in Scripted or failure block in post in Declarative)?
+What is the groovy sandbox in Jenkins, and how does it relate to pipeline security?
+What is a "Multibranch Pipeline," and when would you use it?

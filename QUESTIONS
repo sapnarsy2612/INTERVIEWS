@@ -1,5 +1,5 @@
 What all work done in terraform ? give examples ?
-Running a process 2 hours daily 10 - 12 i want to run it daily what automation should we do ?
+Running a process 2 hours daily 10 - 12 i want to run it daily what automation should we do ? How will you confirm that the process actually started successfully at 10:00 AM? How will you be notified if the process fails to start or crashes during execution? Does the process generate logs, and if so, where are they stored? 
 how to kill job via script ?
 how to identify port where application is running ?
 how to delete files older than 30 days greater than 5 gb size across our filesystem using single command 

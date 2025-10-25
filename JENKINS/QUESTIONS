@@ -5,3 +5,33 @@ INF and ENV variable differece ?
 y to use parameters when we have INF 
 how to integrate jenkins with sso / ldap
 jenkins slaves 
+What are the main types of Jenkins jobs (e.g., Freestyle, Pipeline, Multi-configuration/Matrix, Folder) and when would you choose one over another?
+Explain the key differences between a Freestyle project and a Pipeline job (using a Jenkinsfile).
+How do you parameterize a Jenkins job, and what are the common use cases for build parameters?
+Describe the steps you would take to configure a job to pull source code from a Git repository and only build changes from a specific branch.
+How do you use post-build actions or the post section in a declarative pipeline, and give an example of a common post-build task?
+What is the Jenkins workspace, and how is it managed across different build runs or jobs?
+Differentiate between Declarative and Scripted Pipeline syntax in Jenkins. What are the pros and cons of each?
+Explain the concepts of Agent, Stage, and Step within a Jenkins Pipeline.
+What is the purpose of the Jenkinsfile, and where should it be stored?
+How do you implement parallel execution for tests within a Jenkins Pipeline? Provide an example of a stage structure that uses parallelism.
+What are Jenkins Shared Libraries, and how do they promote code reuse and maintainability across multiple jobs?
+How do you handle sensitive data like passwords or API keys (secrets) within a Pipeline job securely? (Mention the Credentials plugin or specific steps like withCredentials).
+What are the various ways to trigger a Jenkins job, and when is each method appropriate? (e.g., Poll SCM, Webhooks, Build after other projects, Build periodically).
+Explain the functionality and common configuration of Poll SCM vs. a Webhook integration (like with GitHub or GitLab). Which is generally preferred for a high-frequency CI environment, and why?
+How do you use the cron-like syntax in Jenkins for the "Build periodically" trigger? Provide an example for scheduling a build every Monday at 3:00 AM.
+How would you programmatically trigger a downstream job from a successful upstream job, and what information (e.g., build parameters) would you typically pass along?
+How do you archive artifacts in a Jenkins job, and why is artifact archival an important step?
+What does it mean to fingerprint a build artifact in Jenkins? Why would you use this feature?
+How do you configure Jenkins to publish build results (e.g., test reports from JUnit or code coverage reports)?
+Describe how you would clean up the workspace before or after a build.
+A Jenkins job starts failing intermittently. What is your step-by-step troubleshooting approach?
+How do you configure a Jenkins Pipeline to retry a failed step (like a flaky integration test) before marking the entire build as failed?
+How can you implement an approval gate or manual intervention step in a Pipeline before proceeding to a sensitive stage like production deployment?
+What is the significance of the Console Output in a Jenkins build? What key information do you look for when a build fails?
+What are your best practices for keeping your Jenkinsfile clean, readable, and maintainable?
+How do you configure a Jenkins job to run on a specific agent/node, and how does Jenkins select an agent when no preference is set?
+Explain the concept of Global Tool Configuration in Jenkins and how jobs utilize tools defined there (e.g., Maven, JDK).
+In the context of scaling, why is it considered a best practice to execute builds on agents (slaves) instead of the Jenkins controller (master)?
+How have you used Jenkins to facilitate Infrastructure as Code (IaC) workflows (e.g., integrating with Terraform or Ansible)?
+What are Multibranch Pipelines, and how do they automate the creation of jobs for new branches and pull requests?

@@ -50,3 +50,46 @@ What are the typical steps you would include in the post section of a Declarativ
 How do you handle error conditions or failed steps in a Pipeline (e.g., using try/catch in Scripted or failure block in post in Declarative)?
 What is the groovy sandbox in Jenkins, and how does it relate to pipeline security?
 What is a "Multibranch Pipeline," and when would you use it?
+What is the primary purpose of using parameters in a Jenkins job or pipeline?
+How do you enable a Jenkins job to accept parameters?
+Name three common types of parameters in Jenkins and give a scenario for each.
+In a Jenkins Pipeline (Jenkinsfile), which specific directive is used to define parameters?
+How do you access the value of a parameter (e.g., a parameter named BRANCH_NAME) within a Declarative Pipeline step (like a shell script)?
+Explain the difference between a built-in Choice Parameter and the dynamic functionality provided by the Active Choices Plugin. When would you use the latter?
+You need to pass a large block of configuration data to a job. Which parameter type is most suitable, and how is it accessed inside a shell step?
+How can you make the selection in one parameter field dynamically change the options available in a second parameter field? (Relates to the Active Choices Plugin's Reactive parameters).
+Describe how to pass a parameter value from an upstream Jenkins job to a downstream job. (This involves using the Parameterized Trigger Plugin or similar functionality).
+What is the difference between a parameter defined in the Jenkins UI configuration for a Freestyle job and a parameter defined in the parameters { ... } block of a Jenkinsfile?
+Why is it a security risk to use a String Parameter for sensitive information like passwords or API keys? What is the preferred and more secure alternative in Jenkins?
+In terms of best practices, what should you always consider when defining a parameter, especially for critical jobs like deployment? (Hint: Think about safety/ease of use).
+How would you enforce validation on a String parameter (e.g., ensure it matches a specific format like a Git commit hash or a major.minor.patch version) before the main build steps run?
+Imagine a complex pipeline with 15 parameters. How can you group or organize them for a better user experience on the "Build with Parameters" screen? (Relates to plugins like Parameter Separator or organizing logic in the Jenkinsfile).
+A parameter's value needs to be used to control conditional execution of a stage. How would you implement this using the when directive in a Declarative Pipeline?
+What is a POM? Explain its significance and list some of the key elements it contains.
+Explain the "Convention over Configuration" principle in Maven.
+What are the three build lifecycles in Maven? Name the main phases of the Default Lifecycle.
+Differentiate between a Maven Phase and a Maven Goal. How are goals bound to phases?
+What are Maven Repositories? Describe the three types and how Maven searches them for dependencies.
+Explain the concept of transitive dependencies. How does Maven handle them?
+What is Dependency Mediation?
+List and explain the different Dependency Scopes in Maven (e.g., compile, provided, runtime, test, system, import).
+How do you resolve a dependency conflict in Maven? What is Dependency Exclusion?
+What is a Maven Snapshot? Explain the difference between a Snapshot version and a Release version.
+What is a Maven Plugin? Name two common plugins and their purpose (e.g., Surefire, Compiler).
+What are Maven Profiles? Why and how would you use them in a project? List ways to activate a profile.
+How would you run only a specific test class or method using a Maven command?
+How can you define and refer to properties in your $\text{pom.xml}$?
+Explain the standard Maven project directory structure (e.g., src/main/java, src/test/java).
+Explain the difference between Ant and Maven.
+What is Super POM?
+How can you create a multi-module project in Maven?
+Why is Java a mandatory prerequisite for Jenkins?
+What is the default port on which Jenkins runs after a successful installation, and how would you change it?
+Where is the initialAdminPassword located after the first-time installation of Jenkins?
+Explain the difference between installing Jenkins using a native system package (like apt or yum) versus running the generic .war file.
+What is the primary factor that dictates the recommended hardware for a Jenkins server (Controller/Master)?
+Explain the concept of the 'Jenkins Home Directory' ($JENKINS_HOME) and what critical information it stores.
+When setting up a Distributed Build Architecture (Master-Agent), what is the key prerequisite for a machine to become a Jenkins Agent (Node)
+Before creating a Jenkins job to build a Java application using Maven, what tool must be installed on the Jenkins server or agent?"
+How does Jenkins primarily interact with a Source Code Management (SCM) system like Git?
+What is the prerequisite for integrating Docker into a Jenkins pipeline

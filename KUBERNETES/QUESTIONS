@@ -23,3 +23,29 @@ pattern pod being assigned to node
 how to make sure pod get schedule to particular node 
 kubernetes job finish in 20sec sometime it take 5min how to make sure application stop if it exceed more that 40 second 
 kubeconfig file
+Explain the Kubernetes architecture. What are the main components of the Control Plane (Master Node) and the Worker Node?
+What is a Pod, and why is it the smallest deployable unit in Kubernetes?
+Explain the relationship between Pods, Nodes, and Clusters.
+What is the role of etcd in a Kubernetes cluster?
+What is the purpose of Kubelet and Kube-proxy?
+How do kubectl and the API Server interact?
+What are Namespaces, and why are they used?
+What is a Deployment, and how does it relate to a ReplicaSet?
+Explain the difference between a Deployment and a StatefulSet. When would you use one over the other?
+Describe the different types of health checks (probes) available: Liveness, Readiness, and Startup Probes.
+How does Horizontal Pod Autoscaler (HPA) work? What metrics can it use?
+How would you perform a rolling update and a rollback in Kubernetes?
+What is a Service in Kubernetes, and what problem does it solve?
+Describe the different Service types in Kubernetes (ClusterIP, NodePort, LoadBalancer, ExternalName).
+What is Ingress, and why is it needed? How does it differ from a LoadBalancer Service?
+Explain the basic networking model in Kubernetes (e.g., how do Pods communicate across different nodes?).
+Explain PersistentVolume (PV) and PersistentVolumeClaim (PVC).
+What are ConfigMaps and Secrets, and how do they differ?
+How are Secrets typically handled to enhance security beyond just base64 encoding?
+How do you troubleshoot a Pod that is in a CrashLoopBackOff state?
+What is a Custom Resource Definition (CRD), and how does it extend Kubernetes?
+Explain the concept of Taints and Tolerations.
+How do you secure a Kubernetes cluster? Mention concepts like RBAC (Role-Based Access Control) and Network Policies.
+How would you handle logging and monitoring in a production Kubernetes cluster?
+
+

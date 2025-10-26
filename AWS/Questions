@@ -15,3 +15,15 @@ How does traffic flowing between two virtual machines in the same AZ compare in 
 If you launch two instances in the same Availability Zone, is your application truly highly available? Why or why not? What SPOF would still exist?
 While not a Region or AZ, how do Edge Locations (or Content Delivery Networks like CloudFront) relate to Regions, and what problem do they solve regarding application latency?
 Can all cloud services be deployed at the AZ level? Give an example of a Regional service and a service that is AZ-specific (e.g., in AWS, a VPC is regional, but an EC2 instance is AZ-specific).
+What is the primary difference between a Launch Configuration and a Launch Template in the context of an ASG?
+Explain the role of the three capacity settings: Minimum, Maximum, and Desired capacity. How are they related?
+Describe the different types of scaling policies available and when you would choose one over another.
+What is the purpose of the Cooldown Period in an ASG, and how can a poorly configured cooldown period lead to "scaling thrashing"?
+How would you configure an ASG to handle a predictable traffic pattern, such as a large traffic spike every Monday morning?
+Your application is behind an Application Load Balancer (ALB). What health check mechanism would you configure in the ASG, and why?
+Explain a situation where you would use a Lifecycle Hook. How does it enhance the deployment or termination process?
+How can you use a Mixed Instances Policy within an ASG to optimize for cost while maintaining performance and availability?
+An instance failed an EC2 status check but the ASG did not replace it. What are some possible reasons for this behavior?
+Describe the process of a blue/green deployment strategy using two different ASGs.
+
+

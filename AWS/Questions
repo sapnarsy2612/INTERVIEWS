@@ -25,5 +25,12 @@ Explain a situation where you would use a Lifecycle Hook. How does it enhance th
 How can you use a Mixed Instances Policy within an ASG to optimize for cost while maintaining performance and availability?
 An instance failed an EC2 status check but the ASG did not replace it. What are some possible reasons for this behavior?
 Describe the process of a blue/green deployment strategy using two different ASGs.
-
+Health Checks & Lifecycle: Explain the difference between EC2 Health Checks and ELB Health Checks within the context of an ASG. Which one does the ASG use to determine if an instance is healthy?
+Lifecycle Hooks: What is the purpose of Lifecycle Hooks in an ASG, and provide a use case for implementing one during a scale-out event.
+Grace Period: What is the Health Check Grace Period, and why is it important when configuring an Auto Scaling Group?
+Scaling Policies: Compare and contrast Target Tracking Scaling, Step Scaling, and Simple Scaling policies. When would you choose one over the others?
+Scaling Metrics: What are some common custom metrics you might use for scaling an application, and how do you integrate them with CloudWatch and the ASG?
+Termination Policy: How does the Termination Policy work, and why might you customize it instead of using the default one?
+Instance Refresh: Explain the concept of Instance Refresh and why you would use it instead of manually terminating instances for an application update.
+Warm Pools: How can using a Warm Pool improve the scaling experience for a demanding application, and what is the trade-off?
 

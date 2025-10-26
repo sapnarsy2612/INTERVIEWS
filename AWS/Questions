@@ -91,6 +91,15 @@ Placement Groups: What is a Cluster Placement Group, and in which highly CPU-int
 Immutability Principle: Discuss the concept of immutable infrastructure in the context of scaling EC2. How does this architecture change the approach to "adding CPU" compared to the direct instance resize method?
 AWS Services for Compute: If you have a task that is highly parallelizable and very short-lived (e.g., a burst of computational work), would you still use EC2, or would another AWS compute service be a better fit for cost-effectiveness and auto-scaling? (Answer: AWS Lambda or AWS Fargate.)
 Nitro vs. Older Generations: What is the significance of the AWS Nitro System in modern EC2 instance performance, particularly concerning CPU and I/O overhead?
-
-
-
+What is the current consistency model for Amazon S3? How does this differ from its previous model?
+Define "strong consistency" in the context of a distributed system like S3.
+How does the current strong consistency model impact data modification operations like overwriting an existing object or deleting an object? (It's now strongly consistent, unlike the previous eventual consistency for these actions).
+Explain the term "eventual consistency." In what distributed systems scenarios might it still be an acceptable or necessary trade-off?
+Imagine you have a process that PUTs a new object into S3, and immediately a Lambda function is triggered to read it. How does S3's strong consistency guarantee affect the reliability of this workflow?
+A legacy application relied on a custom delay/retry mechanism to handle S3's old eventual consistency for object overwrites. If you migrate this application to the current S3, what is the impact on this custom logic? Should it be removed?
+How does S3's strong consistency for LIST operations simplify the process of building a data lake inventory or a file cataloging system?
+Describe a situation where a developer might still incorrectly assume eventual consistency despite the update. How would you debug that assumption?
+Discuss the engineering challenges AWS likely overcame to provide strong consistency across all regions and for all S3 operations, without a performance or availability impact.
+In the context of S3 versioning, how does strong consistency ensure that a GET request for the latest object version always retrieves the most recent data written?
+How does S3's strong consistency relate to its durability and availability promises? Do these guarantees trade off with one another in S3's current implementation?
+Compare the consistency model of Amazon S3 with that of another AWS service, such as Amazon DynamoDB (which offers both eventually consistent and strongly consistent reads).

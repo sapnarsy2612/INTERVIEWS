@@ -33,4 +33,15 @@ Scaling Metrics: What are some common custom metrics you might use for scaling a
 Termination Policy: How does the Termination Policy work, and why might you customize it instead of using the default one?
 Instance Refresh: Explain the concept of Instance Refresh and why you would use it instead of manually terminating instances for an application update.
 Warm Pools: How can using a Warm Pool improve the scaling experience for a demanding application, and what is the trade-off?
+What is the primary purpose of health checks in an AWS Auto Scaling Group?
+What are the two main types of health checks you can configure for an ASG, and what's the fundamental difference between them?
+Explain the Health Check Grace Period and why it's necessary. What happens if it's set too low?
+If an instance passes the EC2 status checks but fails the ELB target group health check, what is the instance's fate if the ASG health check type is set to ELB?
+What mechanism is used for implementing a Custom Health Check in an ASG?
+Scenario: You have a web application behind an ALB and an ASG using ELB health checks. Newly launched instances are repeatedly marked as unhealthy and terminated before they can serve traffic. How would you troubleshoot and fix this?
+Scenario: An instance in your ASG fails the ELB health check because the application is returning HTTP 500 errors, but the EC2 status checks remain healthy. The ASG is not replacing the instance. What is the most likely configuration error?
+How would you design a health check for an ASG that runs batch processing jobs rather than a web application, where traditional ELB health checks aren't applicable?
+You notice a large volume of logs indicating an ASG is terminating and launching new instances frequently, but the average CPU utilization is low. What could be the issue, and how might it relate to health checks?
+Advanced: Can you configure an ASG to use health checks from multiple Application Load Balancers/Target Groups? If so, how does the ASG interpret the combined health status?
+
 

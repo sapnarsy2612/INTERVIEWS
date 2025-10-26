@@ -8,3 +8,10 @@ AWS lb target group explain
 maintainence window in aws . 
 AWS eventbridge scheduler . 
 AWS instance scheduler . 
+Explain the difference between achieving High Availability and Disaster Recovery using the concepts of Regions and Availability Zones. When would you need to use a second Region versus a second AZ?
+A company requires $99.99\%$ uptime. Describe a resilient architecture you would implement, specifying how you'd use both Regions and AZs for your database and application servers.
+What is Data Sovereignty or Data Residency, and how does the choice of a Region directly impact a company's compliance with these regulations (e.g., GDPR in Europe)?
+How does traffic flowing between two virtual machines in the same AZ compare in cost and latency to traffic flowing between two virtual machines in different AZs of the same Region? How does it compare to traffic between two different Regions?
+If you launch two instances in the same Availability Zone, is your application truly highly available? Why or why not? What SPOF would still exist?
+While not a Region or AZ, how do Edge Locations (or Content Delivery Networks like CloudFront) relate to Regions, and what problem do they solve regarding application latency?
+Can all cloud services be deployed at the AZ level? Give an example of a Regional service and a service that is AZ-specific (e.g., in AWS, a VPC is regional, but an EC2 instance is AZ-specific).

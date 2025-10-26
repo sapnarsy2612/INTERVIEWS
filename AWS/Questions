@@ -113,5 +113,36 @@ Auto Scaling Configuration: "What scaling policy and metric would you use for an
 Load Balancer Choice: "Would you use an Application Load Balancer (ALB) or a Network Load Balancer (NLB) for a typical HTTP/HTTPS web application, and why is that relevant in preventing EC2 overload?"
 Cost Optimization vs. Availability: "If you have a known, predictable daily traffic spike, would you prefer a Scheduled Scaling action or a Dynamic Scaling policy, and what is the cost/availability trade-off for each?"
 Non-Compute Solutions: "Other than adding more EC2 compute capacity, name two different architectural changes you could implement to reduce the load on your EC2 instance during a high-traffic event (think about caching and data flow)."
+What is the difference between stopping and terminating an EC2 instance?
+Explain the role of an Amazon Machine Image (AMI).
+What is a Security Group, and how does it differ from a Network Access Control List (NACL)?
+What are the primary performance metrics for EBS SSD-backed volumes versus HDD-backed volumes?
+When would you choose an $M$ family instance over a $C$ family instance?
+Your EC2 instance needs a static public IP address that persists after a stop/start cycle. How do you achieve this?
+Describe a scenario where you would use an $io2$ EBS volume instead of a $gp3$ volume.
+You need a shared file system accessible by three EC2 instances in different Availability Zones (AZs). Which service would you use, and why?
+An application requires extremely fast, temporary storage for caching. Which EC2 storage option would you recommend, and what is its main drawback?
+How do you ensure data on an EBS volume is backed up?
+Explain the concept of 'bursting' in T-type instances.
+How does an EBS snapshot work, and why is the first snapshot typically slower than subsequent ones?
+Describe how you would design a highly available, fault-tolerant web application using EC2, an ELB (Elastic Load Balancer), and Auto Scaling.
+What is an EC2 Placement Group, and when would you use a 'Cluster' placement group?
+You are running a critical database on an EC2 instance. The disk I/O latency is spiking. What steps would you take to troubleshoot and resolve this issue?
+How do you provision a Windows file share for a fleet of Windows EC2 instances? What are the pros and cons of this solution compared to a self-managed NFS server on EC2?
+Explain the difference between EBS Multi-Attach and using Amazon EFS for shared storage.
+What is the maximum size of a single object you can store in S3?
+If the maximum size for a single PUT operation is 5 GB, how do you successfully upload a 20 GB file to S3?
+Is there a hard limit on the total number of objects you can store in an S3 bucket? Explain the scalability model.
+What is the default limit for the number of S3 buckets per AWS account, and how can you exceed it?
+S3 is generally highly performant, but what is a key limit related to request rate that could potentially cause throttling (503 Slow Down) in a high-traffic bucket, and how is it mitigated architecturally?
+(Hint: The answer involves object key naming and prefixes.)
+How does Multipart Upload not only allow for larger files but also improve upload performance and reliability?
+If you have a massive dataset with billions of small objects, what best practice related to key naming should you follow to ensure optimal performance for GET and LIST operations?
+Describe a scenario where having a large number of buckets might be a better architectural choice than having a single bucket with a large number of prefixes.
+You are designing a data lake that will grow to petabytes of data. Would you use a single S3 bucket or multiple? Justify your decision considering scalability and management features like versioning and policies.
+A user is attempting to upload a 6 GB file but is getting an error. What's the most likely reason, and what is the technical solution?
+How would you use Lifecycle Policies in relation to object size or age to optimize storage costs? Give an example.
+How does S3's Eventual Consistency model (for certain operations like DELETE) relate to object limits, and how might it affect an application trying to list or retrieve objects immediately after an update?
+Beyond size, what is a limitation regarding object metadata, and why is this a design consideration for applications that rely heavily on object tags or custom metadata?
 
 

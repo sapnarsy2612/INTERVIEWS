@@ -61,6 +61,20 @@ How can you use pricing history or Spot Placement Score (AWS) to improve the cha
 Describe the trade-off between setting a low-bid maximum price and having a higher interruption rate. (Note: Bidding is less common now, focus more on the price limit vs. on-demand price).
 Beyond the core compute cost, what other costs should you factor in when calculating the total savings from using Spot Instances?
 You notice a particular Spot Instance type has a high interruption rate in a specific region/zone. What architectural changes would you recommend?
-
-
-
+Define and differentiate On-Demand, Reserved, and Spot Instances in the context of cloud compute services (like AWS EC2).
+What is the primary benefit of using a Reserved Instance (RI) compared to an On-Demand instance?
+What is the main risk associated with using a Spot Instance, and what type of workload is best suited to tolerate this risk?
+If cost savings is the goal, rank the three instance types from least to most cost-effective.
+What is the typical minimum commitment period for a Reserved Instance?
+How does the pricing model for On-Demand instances work?
+Scenario: You have a stateful database that must be available 24/7 for the next three years. Which instance type is the most appropriate, and why?
+Scenario: You need to run a large-scale, non-urgent data processing job that can be interrupted and resumed later. Which instance type offers the best cost-efficiency for this task?
+Scenario: A development team needs to spin up a temporary testing environment for two hours. What's the ideal instance type?
+What are some examples of workloads that are poorly suited for Spot Instances?
+How would you determine the optimal size and number of Reserved Instances to purchase for an existing infrastructure, considering fluctuations in demand?
+Explain the difference between a Standard Reserved Instance and a Convertible Reserved Instance (in AWS). Which one offers more flexibility?
+Describe the mechanism for interrupting a Spot Instance. What is the typical notification period given before termination?
+What are Savings Plans (an alternative/evolution of RIs in AWS), and how do they differ from traditional Reserved Instances?
+How do you implement a Spot Fleet or an Auto Scaling Group to mitigate the risk of Spot Instance termination?
+If you have a large portfolio of Reserved Instances, how would you manage their utilization and renewal to ensure continuous cost optimization?
+Explain the concept of Regional Reserved Instances vs. Zonal Reserved Instances. What impact does this choice have on flexibility?

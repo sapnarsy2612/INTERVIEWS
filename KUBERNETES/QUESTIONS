@@ -47,5 +47,5 @@ What is a Custom Resource Definition (CRD), and how does it extend Kubernetes?
 Explain the concept of Taints and Tolerations.
 How do you secure a Kubernetes cluster? Mention concepts like RBAC (Role-Based Access Control) and Network Policies.
 How would you handle logging and monitoring in a production Kubernetes cluster?
-
+In k8s project i got crashbackloop error while i was in prod issue how can i troubleshoot it . 
 

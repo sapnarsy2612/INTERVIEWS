@@ -144,5 +144,29 @@ A user is attempting to upload a 6 GB file but is getting an error. What's the m
 How would you use Lifecycle Policies in relation to object size or age to optimize storage costs? Give an example.
 How does S3's Eventual Consistency model (for certain operations like DELETE) relate to object limits, and how might it affect an application trying to list or retrieve objects immediately after an update?
 Beyond size, what is a limitation regarding object metadata, and why is this a design consideration for applications that rely heavily on object tags or custom metadata?
+What is the global requirement for S3 bucket names?
+Explain the difference between an S3 Bucket and an S3 Object.
+What is the maximum size for a single S3 object?
+How does S3 achieve its famous 11 nines (99.999999999%) of durability?
+What is S3's data consistency model for new objects (PUT) versus object overwrites/deletes?
+Compare and contrast S3 Bucket Policies and IAM Policies for controlling access to a bucket. Which takes precedence?
+How do you prevent users from accidentally or maliciously deleting a bucket or all its objects?
+Detail the different Server-Side Encryption (SSE) options available for S3 (SSE-S3, SSE-KMS, SSE-C). When would you choose one over the others?
+What are S3 Access Points, and when would you use them instead of directly accessing the bucket?
+Describe a process for quickly auditing an entire organization's S3 buckets to check for public access configurations.
+Explain the purpose of an S3 Lifecycle Policy. Provide an example rule for cost reduction.
+When would you choose S3 Standard-IA versus S3 One Zone-IA? What is the trade-off?
+Describe how S3 Intelligent-Tiering works and its key benefit.
+How can S3 Versioning impact your storage costs, and what mechanism helps manage these costs?
+What are the different retrieval options and costs associated with S3 Glacier and S3 Glacier Deep Archive?
+How do you use S3 Cross-Region Replication (CRR), and what are its primary use cases?
+Explain the process of hosting a static website using an S3 bucket. What are the limitations compared to a traditional web server?
+What are S3 Event Notifications, and how can you use them to trigger a serverless workflow (e.g., image processing)?
+How can you use S3 Transfer Acceleration to improve data ingestion performance?
+Describe a situation where you would use an S3 Pre-Signed URL.
+What are S3 Batch Operations, and what is a practical use case for them?
+
+
+
 
 

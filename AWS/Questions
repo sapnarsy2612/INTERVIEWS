@@ -78,3 +78,19 @@ What are Savings Plans (an alternative/evolution of RIs in AWS), and how do they
 How do you implement a Spot Fleet or an Auto Scaling Group to mitigate the risk of Spot Instance termination?
 If you have a large portfolio of Reserved Instances, how would you manage their utilization and renewal to ensure continuous cost optimization?
 Explain the concept of Regional Reserved Instances vs. Zonal Reserved Instances. What impact does this choice have on flexibility?
+Vertical vs. Horizontal Scaling: What is the difference between vertical scaling and horizontal scaling in AWS, and when would you choose one over the other for a CPU-intensive workload?
+Scaling EC2 Capacity: Beyond changing the instance type, what is a more automated, highly available method for handling consistently high CPU demand, and what AWS service facilitates this? (Answer: Horizontal scaling using EC2 Auto Scaling Groups.)
+Instance Family Selection: If a database instance consistently shows high CPU usage but low memory usage, which EC2 instance family (e.g., M, C, R) would you recommend migrating to, and why? (Answer: Compute-Optimized (C-family) instances.)
+Downtime Mitigation: The process of changing an instance type requires downtime. How can you minimize this downtime or achieve a scale-up with near-zero downtime in a production environment? (Hint: Look at blue/green deployment or launch-and-migrate strategies.)
+EC2 and Licensing: How can the "Specify CPU options" feature (setting core count and threads per core) be used when launching a new, larger EC2 instance, and what is the primary cost-saving motivation for using it?
+Troubleshooting High CPU: You receive an alarm indicating that a critical EC2 instance has 90% CPU utilization. Outline your immediate troubleshooting steps.
+Burst Performance: Explain how Burstable Performance Instances (like T-family) manage CPU credits, and what happens when an instance running in Standard mode runs out of credits. When would you use Unlimited mode?
+Choosing Metrics: When setting up an Auto Scaling policy to scale out based on CPU usage, what is the key CloudWatch metric you would monitor, and what is a reasonable threshold to trigger a scale-out action?
+Right-Sizing: Describe a systematic process for right-sizing an EC2 instance to ensure optimal performance without over-provisioning resources. What AWS service can provide recommendations?
+Placement Groups: What is a Cluster Placement Group, and in which highly CPU-intensive, high-throughput scenarios would you utilize it alongside a powerful instance family?
+Immutability Principle: Discuss the concept of immutable infrastructure in the context of scaling EC2. How does this architecture change the approach to "adding CPU" compared to the direct instance resize method?
+AWS Services for Compute: If you have a task that is highly parallelizable and very short-lived (e.g., a burst of computational work), would you still use EC2, or would another AWS compute service be a better fit for cost-effectiveness and auto-scaling? (Answer: AWS Lambda or AWS Fargate.)
+Nitro vs. Older Generations: What is the significance of the AWS Nitro System in modern EC2 instance performance, particularly concerning CPU and I/O overhead?
+
+
+

@@ -103,3 +103,15 @@ Discuss the engineering challenges AWS likely overcame to provide strong consist
 In the context of S3 versioning, how does strong consistency ensure that a GET request for the latest object version always retrieves the most recent data written?
 How does S3's strong consistency relate to its durability and availability promises? Do these guarantees trade off with one another in S3's current implementation?
 Compare the consistency model of Amazon S3 with that of another AWS service, such as Amazon DynamoDB (which offers both eventually consistent and strongly consistent reads).
+Initial Response: "Your pager goes off at 3 AM saying a critical web server EC2 instance is unreachable due to a traffic spike. What are your first three steps?"
+Distinguishing Failure: "How do you differentiate between a System Status Check failure and an Instance Status Check failure, and what does each imply about the root cause?"
+Burstable Instances: "If the instance in question was a T3 type, what specific CloudWatch metric would you check immediately, and what actions would you take if that metric was near zero?"
+Out-of-Band Access: "If SSH/RDP connectivity is completely lost, what AWS service or feature is your fallback mechanism for connecting to the OS to diagnose the issue?"
+Root Cause Indicators: "What are three key indicators (logs or metrics) you would examine to confirm that high traffic was the actual cause of the EC2 failure, rather than just correlation with a background task?"
+Architectural Shift: "How would you re-architect a single EC2 instance web server deployment to be resilient to this same traffic spike in the future? Name the AWS services you would add."
+Auto Scaling Configuration: "What scaling policy and metric would you use for an Auto Scaling Group to ensure new instances are launched before the existing instances reach $100\%$ CPU utilization?"
+Load Balancer Choice: "Would you use an Application Load Balancer (ALB) or a Network Load Balancer (NLB) for a typical HTTP/HTTPS web application, and why is that relevant in preventing EC2 overload?"
+Cost Optimization vs. Availability: "If you have a known, predictable daily traffic spike, would you prefer a Scheduled Scaling action or a Dynamic Scaling policy, and what is the cost/availability trade-off for each?"
+Non-Compute Solutions: "Other than adding more EC2 compute capacity, name two different architectural changes you could implement to reduce the load on your EC2 instance during a high-traffic event (think about caching and data flow)."
+
+

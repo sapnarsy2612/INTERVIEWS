@@ -175,5 +175,33 @@ Can you explain the core difference between Server-Side Encryption and Client-Si
 "How does S3's encryption in transit (data being uploaded/downloaded) relate to its encryption at rest?"
 "How can you enforce that all objects uploaded to an S3 bucket must be encrypted with a specific type, like SSE-KMS, using a Bucket Policy?"
 "What is Envelope Encryption, and how is it used in SSE-KMS?"
+What is the core problem that bucket versioning solves?
+How do objects get a unique identifier when versioning is enabled? (The answer is a Version ID.)
+What are the three possible versioning states for a bucket, and what is the default state? (The states are Unversioned (default), Versioning-Enabled, and Versioning-Suspended.)
+Can you disable versioning once it's been enabled? (No, you can only Suspend it.)
+How does a standard delete operation behave on an object in a versioning-enabled bucket? (It places a Delete Marker.)
+How do you permanently delete a specific version of an object?
+Explain the impact of bucket versioning on storage costs. (The cost increases because all versions of an object are stored and billed for.)
+How can you manage or mitigate the increased storage costs associated with versioning? (By using Lifecycle Policies to transition older non-current versions to cheaper storage classes or permanently delete them after a specific time.)
+What is the significance of the "null" Version ID? (It's typically assigned to objects that existed before versioning was enabled or objects uploaded/modified while the bucket was in the Versioning-Suspended state.)
+Describe a scenario where you would intentionally use the Versioning-Suspended state.
+How does Multi-Factor Authentication (MFA) Delete enhance the security of a versioned bucket?
+In the context of versioning, how does an object that was deleted (via a Delete Marker) get restored to its latest version?
+Scenario: Your company's data processing application accidentally overwrites a critical configuration file every night. How would you use versioning to prevent permanent data loss and quickly revert to a known good state?
+Integration: Explain how versioning works in conjunction with Cross-Region Replication (CRR). Are there any versioning requirements for CRR to function? (Yes, both source and destination buckets must have versioning enabled.)
+Integration: If you enable versioning and an S3 Lifecycle Policy that targets non-current versions, describe the two primary actions you can configure in that policy. (The two actions are Transition to a different storage class and Expiration (permanent deletion).)
+Security: A new developer accidentally deletes the current version of an object that is protected by a Delete Marker. Does the developer have enough permissions to perform the final, permanent deletion of the object's previous versions? What is the best practice to prevent this?
+Performance: Does versioning affect the performance of a typical GET request for the current version of an object? Why or why not? (It shouldn't, as the current version is retrieved by default.)
+Rollback: A major application deployment corrupted a set of key data files in your bucket. Outline the steps and the specific information you would need to quickly roll back to the files' state from 24 hours ago.
+Q: What are the retrieval tiers available for S3 Glacier Deep Archive, and what is the typical latency for each?
+Q: Explain the difference between restoring an object from S3 Glacier Deep Archive and permanently moving it to S3 Standard. How would you achieve the latter?
+Q: What is the mechanism S3 uses to make the restored object available? Does the storage class of the original object change?
+Q: If you have to restore millions of small objects from S3 Deep Archive, what is the most efficient and cost-effective method?
+Q: You initiated a 30-day Standard restore for an object. After 15 days, you decide you need to keep it in S3 Standard permanently. What is your next step?
+Q: Name and describe the primary use cases for at least four different Amazon S3 storage classes (e.g., S3 Standard, S3 Intelligent-Tiering, S3 Glacier Instant Retrieval).
+Q: Explain how an S3 Lifecycle Policy can be used to automatically transition data from S3 Standard to S3 Glacier Deep Archive.
+Q: What is S3 Intelligent-Tiering, and how does it compare to manually applying lifecycle rules for cost optimization?
+Q: What factors would you consider when deciding between S3 Glacier Flexible Retrieval and S3 Glacier Deep Archive?
+Q: How does S3 ensure the durability and availability of data, even in the archive classes?
 
 

@@ -43,5 +43,24 @@ Scenario: An instance in your ASG fails the ELB health check because the applica
 How would you design a health check for an ASG that runs batch processing jobs rather than a web application, where traditional ELB health checks aren't applicable?
 You notice a large volume of logs indicating an ASG is terminating and launching new instances frequently, but the average CPU utilization is low. What could be the issue, and how might it relate to health checks?
 Advanced: Can you configure an ASG to use health checks from multiple Application Load Balancers/Target Groups? If so, how does the ASG interpret the combined health status?
+What is a Spot Instance, and how does it differ from an On-Demand Instance? (Focus on pricing, availability, and interruption.)
+What kind of workloads are most suitable for running on Spot Instances? Give three examples.
+What are the key risks associated with using Spot Instances, and how do you mitigate them?
+Explain the interruption process for a Spot Instance (e.g., the notification mechanism and grace period).
+In an AWS context, what is the significance of the Spot Instance Interruption Notice?
+How do the interruption policies of AWS, Azure, and Google Cloud compare? (If the interviewer expects multi-cloud knowledge).
+How would you design a fault-tolerant, scalable application that utilizes Spot Instances to reduce costs?
+Describe how you would use a queueing mechanism (like SQS or Kafka) to ensure that work is not lost when a Spot Instance is terminated.
+What cloud services would you integrate with Spot Instances to manage a fleet of compute resources automatically (e.g., using a managed instance group or an auto-scaling group)?
+Explain Capacity Rebalancing (AWS) or a similar feature, and why it's a critical tool for using Spot Instances.
+How would you handle the persistence of data for a Spot Instance? Should you use local storage or external storage? Why?
+If a project requires Guaranteed Capacity but needs cost savings, what purchasing options (other than Spot) might you consider?
+How do you decide on the appropriate instance type and size when launching a Spot Instance request?
+What are Spot Fleets (AWS) or similar constructs, and when should you use them over single Spot Instance requests?
+How can you use pricing history or Spot Placement Score (AWS) to improve the chances of a Spot request being fulfilled and reduce the probability of interruption?
+Describe the trade-off between setting a low-bid maximum price and having a higher interruption rate. (Note: Bidding is less common now, focus more on the price limit vs. on-demand price).
+Beyond the core compute cost, what other costs should you factor in when calculating the total savings from using Spot Instances?
+You notice a particular Spot Instance type has a high interruption rate in a specific region/zone. What architectural changes would you recommend?
+
 
 

@@ -13,3 +13,8 @@ Create nlb using terraform .
 Create aws iam policy using terraform . 
 How to create ec2 instance using terraform . 
 How do you recover from deleted terraform state file 
+How do you use terraform in your env 
+How will you utilize Terraform modules and version upgrade in your environment?
+What security, autoscaling, and scalability approaches are you using in your environment?
+Can you give some instances of using Ansible?
+What are you doing for monitoring your resources?

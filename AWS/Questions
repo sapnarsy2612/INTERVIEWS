@@ -165,8 +165,15 @@ What are S3 Event Notifications, and how can you use them to trigger a serverles
 How can you use S3 Transfer Acceleration to improve data ingestion performance?
 Describe a situation where you would use an S3 Pre-Signed URL.
 What are S3 Batch Operations, and what is a practical use case for them?
-
-
-
+Can you explain the core difference between Server-Side Encryption and Client-Side Encryption in S3?"
+"What is the default encryption type for new S3 buckets, and what does it involve?"
+"In which encryption method do you, as the customer, provide the encryption key on every request, and what is the security responsibility with this method?
+"A security team requires auditing every single API call that uses an encryption key. Which S3 encryption option would you recommend and why?" (Answer: SSE-KMS, for CloudTrail logging of KMS key usage).
+"Compare and contrast SSE-S3 and SSE-KMS. When would you choose one over the other?"
+"Describe a use case where Client-Side Encryption would be mandatory." (Answer: strict regulatory/compliance requirement for the customer to have sole possession of the encryption key).
+"Explain the concept of S3 Bucket Keys and how they relate to SSE-KMS and cost optimization." (Answer: S3 Bucket Keys reduce KMS request costs by using a short-lived bucket-level key instead of calling KMS for every object operation).
+"How does S3's encryption in transit (data being uploaded/downloaded) relate to its encryption at rest?"
+"How can you enforce that all objects uploaded to an S3 bucket must be encrypted with a specific type, like SSE-KMS, using a Bucket Policy?"
+"What is Envelope Encryption, and how is it used in SSE-KMS?"
 
 

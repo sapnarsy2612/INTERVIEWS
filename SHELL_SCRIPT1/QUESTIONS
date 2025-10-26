@@ -10,3 +10,12 @@ chmod commands
 role of cron 
 runlevel in linux how do they affest system startup 
 secure linux server 
+What is the primary technical difference between a soft link (symlink) and a hard link in terms of their structure and how they point to data?
+If you have a file and three hard links pointing to it, what happens to the file data if you delete the original file? What if you delete only one of the hard links?
+Under what circumstances does a "dangling link" occur, and which type of link (soft or hard) is susceptible to this problem?
+Can you create a hard link to a directory? Why or why not?
+Which type of link is restricted to a single filesystem, and why is this limitation necessary for that link type?
+How can you determine how many hard links currently point to a file, and what Linux command and output field would you use to find this information?
+Is there a performance difference between accessing a file via a soft link versus a hard link, and if so, what causes it?
+When would you choose to use a soft link over a hard link, and vice-versa? Give a practical example for each.
+If you change the permissions or ownership of a file, how does that affect its soft links and hard links?

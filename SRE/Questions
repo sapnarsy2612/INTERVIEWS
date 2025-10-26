@@ -22,3 +22,6 @@ Describe a time you had to balance the need for quick feature delivery with the 
 How do you manage the stress and fatigue associated with being on-call? What steps can a team take to make the on-call rotation more sustainable?
 Tell me about a production incident you were involved in where you made a mistake. What did you learn, and what changes did you propose to prevent a recurrence?
 How do you decide when to use a managed cloud service (e.g., AWS RDS) versus deploying and managing an open-source equivalent (e.g., self-hosted PostgreSQL)?
+Suppose you want to host one application job on any cloud. How will you approach it?
+What will be your approach for creating a security group for the instance?
+How will you troubleshoot if a pod is in crash-loopbackoff condition?

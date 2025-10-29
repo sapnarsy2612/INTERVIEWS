@@ -16,3 +16,11 @@ Key principles of devops
 HOw cicd work in devops 
 Challenges in implementing devops 
 How would you use python in dockerised devops env . 
+Design infrastructure for a production-grade system. 
+How do you design unified observability across EC2, K8s, and on-prem?
+How do you build CI/CD with security gates (SAST, container scans, GitOps)?
+How do you balance autoscaling costs vs SLAs?
+How do you implement zero-trust access and K8s RBAC at scale?
+How do you architect multi-region DR with realistic RTO/RPO?
+How do you design network security (VPC, service mesh, egress control)?
+How do you migrate databases without downtime?

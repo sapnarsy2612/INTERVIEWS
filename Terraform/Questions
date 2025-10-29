@@ -18,3 +18,23 @@ How will you utilize Terraform modules and version upgrade in your environment?
 What security, autoscaling, and scalability approaches are you using in your environment?
 Can you give some instances of using Ansible?
 What are you doing for monitoring your resources?
+IaC Drift & State Management . Pitfall: editing infra manually = drift, destroy failure, and team chaos. 
+CI/CD Pipelines
+Secrets Management
+How to practice: terraform import a live resource, break it, run plan and explain the diff.
+How do you ensure one bad pipeline doesn’t block all others?”
+- How to practice: create a GitHub Actions matrix build with caching and concurrency control.
+Secrets don’t belong in Git repos - not even private ones. At least, use .env files
+Kubernetes Secrets are base64-encoded, not encrypted. Anyone with RBAC read access can see them.
+explain ClusterIP vs NodePort
+Pod A can’t reach Pod B — how do you debug it?”
+deploy a pod, run tcpdump, traceroute, and kubectl exec into it.
+deploy Prometheus + Grafana, add custom app metrics, break something, alert on it.
+- “It scales automatically” — until your pod keeps CrashLooping.
+set HPA on CPU and memory, simulate load with hey, watch scaling curve.
+NGINX, Traefik, or ALB — same goals, different trade-offs.
+How to practice: configure readiness vs liveness probes, misconfigure one, observe downtime.
+How would you test DR in prod?”
+snapshot an RDS, delete data, restore to a clone, verify checksum parity.
+- root in Docker ≠ root on host — but it’s close enough to burn you.
+- How to practice: run Trivy scan, fix CVEs, add non-root user to Dockerfile.

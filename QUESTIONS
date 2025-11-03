@@ -36,3 +36,15 @@ redeploy option for vm
 Core SRE principles . 
 Difference between observability and monitoring . 
 Incident response , itil process , P1 , P2 , P3 . 
+mttr - how to reduce this . 
+theres a scenario where - access denied to docker image but it works in next build - how to resolve this . 
+how to change dir permissions for all content within directory . 
+how to set access level in linux . 
+sla slo difference . 
+major use of slo . 
+how to secure k8s cluster . 
+how to plan 10x traffic to application , how to handle this . 
+grafana dashboard is not visible not showing metrics of 1 application . similar in kibana . 
+critical user journeys - how to plan monitoring . 
+recent automations . 
+list n tuple in python . 

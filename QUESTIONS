@@ -33,3 +33,6 @@ suppose vm is down what all things to check to troubleshooot
 where to check service availiabilty for azure services ?
 maintainence activity in azure how to check it 
 redeploy option for vm 
+Core SRE principles . 
+Difference between observability and monitoring . 
+Incident response , itil process , P1 , P2 , P3 . 

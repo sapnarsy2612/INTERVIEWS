@@ -64,3 +64,33 @@ What are the main stages in a CI/CD pipeline?
 What is Terraform and how do you use it?
 How do you recover an EC2 instance if the key pair is lost?
 What is Jenkins? How does it work? What are the key steps in a Jenkins pipeline?
+
+ 1️⃣ Technical Questions
+ • Do you know how to create an API? What tools or languages have you used?
+ • Have you worked on Nginx web servers? Can you explain your use cases?
+ • What has been the most challenging technical task in your career so far?
+ • Tell me a scenario where your planned solution did not work — what did you do next?
+ • Between CI and CD, which one are you more comfortable with, and why?
+ • Have you ever built an observability stack? (Prometheus, Grafana, Loki, Jaeger, ELK, etc.)
+ • Explain how you designed the monitoring, logging, and alerting for one of your projects.
+ Have you worked with Istio?
+ How pod to pod communication happens inside the Kubernetes cluster?
+ ⸻
+
+ 2️⃣ Behavioural & Leadership Questions
+ • If needed, will you be able to relocate or travel to Mumbai?
+ • What is your hometown and current working location?
+ • Give me two examples of situations where you took complete ownership of a problem.
+ • Share a moment where you handled a conflict within your team or across teams.
+ • Describe a time when you had to deliver under pressure or tight deadlines.
+ • How do you ensure continuous learning and upskilling in fast-changing DevOps technologies?
+ • What motivates you the most as a DevOps/SRE engineer?
+
+ ⸻
+
+ 3️⃣ Experience & Client/Project-Based Questions
+ • Can you walk me through some key clients or projects you have worked with?
+ • What was your role and ownership in those engagements?
+ • Describe one end-to-end DevOps pipeline you built — tools, workflow, and impact.
+ • Share an example of a cloud migration, modernization, or automation project you delivered.
+ • How do you ensure reliability, security, and cost efficiency in cloud environments?

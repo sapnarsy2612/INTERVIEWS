@@ -94,3 +94,49 @@ What is Jenkins? How does it work? What are the key steps in a Jenkins pipeline?
  • Describe one end-to-end DevOps pipeline you built — tools, workflow, and impact.
  • Share an example of a cloud migration, modernization, or automation project you delivered.
  • How do you ensure reliability, security, and cost efficiency in cloud environments?
+
+🔹 AWS Networking & VPC
+Difference between Public EC2 and Private EC2
+What is a NAT Gateway, where does it reside, and how is it used?
+Difference between NAT Gateway and Bastion Host
+How does routing work for NAT Gateway?
+What is an Internet Gateway?
+How to access S3 from a private subnet without using public internet
+Types of Load Balancers in AWS
+What is a VPC
+How to connect multiple VPCs together
+Alternatives to VPC Peering
+What is CIDR in AWS
+How to calculate IP addresses from CIDR
+How many IPs are reserved/blocked by AWS
+Which IP addresses are blocked by AWS
+
+🔹 Networking Fundamentals
+Difference between TCP and UDP
+Difference between HTTP and HTTPS
+What does ‘S’ stand for in HTTPS
+What is TLS/SSL
+Who issues SSL certificates
+How does the SSL/TLS Handshake work (high-level)
+
+🔹 Docker & Containers
+Explain Docker Architecture
+Difference between Containers and Virtual Machines
+How containers use OS resources
+How resource allocation works for containers
+Explain Dockerfile
+
+🔹 Kubernetes
+What are Services in Kubernetes
+Types of Kubernetes Services
+What is Ingress and Ingress Controller
+How do you set up an Ingress Controller
+How does traffic flow from domain → Ingress → Service → Pod
+Difference between LoadBalancer Service and Ingress
+
+🔹 Monitoring & Observability
+What monitoring tools have you used?
+What is Grafana and how do you configure it?
+What is Prometheus
+What are the components of Prometheus
+How did you configure Prometheus

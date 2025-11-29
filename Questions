@@ -179,3 +179,22 @@ How did you configure Prometheus
 18. Describe how you’d set up observability (logs, metrics, traces).
 19. What’s the difference between mutable and immutable infrastructure?
 20. Your service goes down at 2 AM. How do you approach troubleshooting?
+
+1.What are the core principles of SRE, and how does it differ from traditional Ops and DevOps?
+2.Can you explain SLIs, SLOs, and Error Budgets with a real-world example?
+3.How do you design a highly available and fault-tolerant system?
+4.When a service’s latency suddenly spikes, how would you troubleshoot it end-to-end?
+5.What’s the difference between Monitoring, Logging, and Observability?
+6.How do you set up alerts that avoid false positives and noise?
+7.Explain blue/green, canary, and rolling updates from an SRE perspective.
+8.What happens when a Kubernetes pod goes into CrashLoopBackOff? How do you resolve it?
+9.How would you configure auto-scaling for a critical service? HPA vs VPA vs cluster autoscaler?
+10.If CoreDNS fails in a cluster, what will you check first?
+11.How do you optimize microservices performance in production?
+12.What is a Post-Incident Review (PIR), and how do you conduct one?
+13.How would you design a scalable system to handle 5x sudden traffic spikes?
+14.Explain circuit breakers and rate-limiting patterns in microservices.
+15.What tools do you use for distributed tracing? How does tracing help in issue isolation?
+16.What are service meshes (e.g., Istio, Linkerd) and when would you use them?
+17.How do you handle production rollbacks safely in a microservices architecture?
+18.What is chaos engineering? Have you used tools like Chaos Monkey or Azure Chaos Studio?

@@ -282,3 +282,34 @@ How did you configure Prometheus
  👉 How do you manage identity using Azure AD Connect & Hybrid Join?
  👉 Explain Azure Policy, Blueprints, and governance best practices.
  👉 Describe your approach to migrating on-prem workloads to Azure (Lift & Shift vs Refactor).
+
+🔵 Docker Basics (1–12)
+ 1. What exactly is Docker and when should you use it?
+ 2. Define a Docker Image.
+ 3. What is a Docker Container in simple terms?
+ 4. Why do we rely on Dockerfiles?
+ 5. CMD vs ENTRYPOINT — what’s the real difference?
+ 6. COPY vs ADD — which should you choose and why?
+ 7. Docker Hub — what role does it play?
+ 8. What is a Docker Volume used for?
+ 9. Bind Mounts vs Volumes — how do they differ?
+ 10. What is a Docker Network?
+ 11. How do you view logs of a running container?
+ 12. What is a multi-stage build and when should you use it?
+
+⸻
+
+🔵 Intermediate Docker Concepts (13–25)
+ 13. Difference between an image and its layers.
+ 14. How to check live container resource usage.
+ 15. Why the .dockerignore file is important.
+ 16. Ways to pass environment variables to containers.
+ 17. ARG vs ENV — which one applies when?
+ 18. How port exposure actually works in Docker.
+ 19. What is Docker Compose and where is it used?
+ 20. Docker vs Virtual Machines — key differences.
+ 21. Techniques to reduce Docker image size.
+ 22. How to clean unused images/containers.
+ 23. How Docker provides isolation (under the hood).
+ 24. What is an entrypoint script and why use one?
+ 25. Steps to troubleshoot a failing container.

@@ -7,7 +7,8 @@ Tag the image ?
 What all env are there in your project ?
 Which branch is deployed in production ?
 in dev and uat which branhc is used ?
-SO in middle deployment if bug comes then ?
+What do you do if a bug occurs during deployment? 
+write a rollback strategy for Kubernetes and Ansible deployments?
 Explain CICD process ?
 Which pipelines written in jenkins ?
 Write hellowworld nodejs project for deployment using docker to kubernetes cluster using pipeline in jenkins?

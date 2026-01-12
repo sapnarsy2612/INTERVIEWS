@@ -13,3 +13,4 @@ how to integrate sonar in gitlab and jenkins cicd , and k8s .
 suppose oour application create artifact and it push to frog now in next stage how it will pull that artifact . its not able to pull artifact . 
 how to add sensitive data in gitlab and fetch it in gitlab cicd . 
 k8s archirecture , how to comfigure dns in k8s . 
+How is vault configured in your setup 

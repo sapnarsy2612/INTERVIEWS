@@ -360,3 +360,6 @@ DevOps pipelines.
 22. What are liveness and readiness probes? Give a practical example of how incorrect config can lead to downtime.
 
 23. How do you securely manage secrets and certificates in AKS using Azure Key Vault and CSI drivers?
+
+A developer reports a CrashLoopBackOff error. Walk me through your step-by-step process to diagnose and fix it.
+How do you achieve a zero-downtime deployment in Kubernetes? Explain the roles of ReadinessProbes, LivenessProbes, and maxSurge / maxUnavailable settings.

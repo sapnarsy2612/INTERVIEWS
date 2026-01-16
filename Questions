@@ -1,0 +1,35 @@
+introduce yourself . 
+if we have ec2 instance how to scrape metrics with promethues . how to monitor ec2 with prometheus . 
+default port for grafana node . 
+if we want to monitor ec2 metrics which port to use in prometheus . 
+how to monitor eks with prometheus 
+grafana use which db ?
+which db prometheus use , detail about that database . 
+how to check how many cpu allocated , ram allocated to linux . 
+lvm in linux ?
+2 processor taking high memory how to check and troubleshoot . 
+zombie process ? 
+how to destroy zombie process . 
+do zombie process have pid , if they r in stale state how it have pid 
+index in kibana . 
+suppose recycle policy need to be set in kibana then how to do that 
+shrads ? 
+types of nodes available in elasticsearch cluster . 
+source that we will use to push logs to kibana 
+how to push logs to otel 
+how to monitor health of elasticsearch nodes 
+how to push data from machine to dynatrace . 
+set cron schedule on ec2 so only updated data from s3 to be sync to ec2 . 
+how to copy files from s3 to ec2 only updated content . 
+public n private subnet difference 
+in my private network we need internet connection how to do that . 
+security groups . 
+in security groups can we add inbound and outbound . 
+firewall at subnet level ? 
+diffence btw nacl n security grps . 
+created 1 ec2 instance , i forgot to mention 1 thing due to that i m not able to login to instance . what can be issue 1 person able to login using same key but other person not able to login . 
+dns , route53 , 
+i m redirecting to 1 file just delete content of file not file . how to do that . 
+logs are contue ppushing to file , i want to delete content of file . 
+sed command in linux . 
+concat command . 

@@ -15,3 +15,16 @@ how to make sure reliable applications are build .
 make sure repetative issues are carved out . dr strategies . 
 multi agent deployment , scaled set deployment , load balancing types . 
 create proactive ticket and mitigate those as part of sre in azure . 
+Azure function want to connect to azure secret and want secret list permission what will you do
+What do app registration generate , what is app registration,
+Service primcipal
+Managed identity
+How to connect azure Devops to aks and other azure infra , how to use way of no key rotation.
+Explain about detailed sre metrics and why u use it .
+How is terraform segregateed in different folders for azure
+Create azure Devops pipeline , how to deploy in Ecs
+Rbac and roles how are attached to services , sps , identity , resources , 
+Federation services
+How to use information of prior created resources in next resources, resources are being created using same file .
+How to integrate app insights and where to integrate
+Write terraform code to deploy multiple services In Azure and in different env . Along with folder structure

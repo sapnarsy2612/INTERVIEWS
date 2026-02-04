@@ -1,0 +1,66 @@
+give basic description about your sre experience . 
+http protocol and how things work on internet . 
+different http status code that u have debugged . 
+debug - if someone asks to troubleshoot an endpoint . 
+what happens if u get 404 , is user able to access the application . 
+how internet works url works , what all things work in background . 
+tls handshake , where does it occur , how to resolve it . 
+advantage of using docker over monoliths . 
+difference between cmd and entrypoint . 
+y use cmd over entrypoint . 
+y r there 2 commands , 
+purpose of expose . 
+how to reduce size of images , 
+architecture of k8s , 
+1 process that continously run on loop does check based on etcd if everything is fine , what is that component in k8s , 
+affinity & antiaffinity , 
+taints & tolerations , 
+nodeselectors , where is it mentioned . 
+pod would be scheduled on node even if affinity is specified
+liveness probe , readiness probe - difference . 
+what situation pod will keep on failing . 
+status in case of memory failure in pods , will it still be crashbackloop in this case also 
+deployment & statefulset - difference . 
+situtations in which deployments are stuck . 
+planning node topology , how k8s cluster would look like . how should cluster be build so it will be more resilient . 
+service mesh . 
+how does ingress and load balancers work . 
+for every ingress would there be an external ip . 
+what linux systems you have worked . 
+system is having heavy load how to troubleshoot , you dont have top installed in production systems . 
+you find java application is taking heavy load then how would u debug load issue . 
+some sort of logging is happenning u want to search out error patterns how would u debug issue . , would u vi , is doing vi when server is in high load good practice . 
+file permissions in linux explain in detail , how r they organized . 
+links in linux explain in detail . purpose , softlink and hardlink . 
+inode in linux . 
+when i create hardlink i create new entry in inode . 
+What is inode . 
+What happens when we delete original file in hardlink . n what will happen if i delete hardlink in linux . 
+ansible inventory . 
+What sort or inventory u have worked with , 
+static inventory . 
+When u add new servers in env how to add it in ansible infra for server . 
+how does ansible knows about new server 
+what all playbooks wrote . 
+y to use roles , general structure of roles , dependency for the role to work with other role 
+what makes ansible agentless . 
+handlers in ansible 
+Write simple python program . 
+print list 
+print length of list 
+reverse the list 
+What all resources created in terraform . 
+statefile 
+what if someone delete statefile , we dont have backup , how do we recover . 
+how do u manage statefile 
+resources u have created in terraform . 
+difference between load balancer and api gateway 
+y we use api gateway 
+y we use api gateway instead of load balancer . 
+where do we attach waf policies in infra . 
+subnets , vpc , classes in terms of ip ranges . 
+difference between vpc in gcp and aws 
+storage buckets , objects , lifecycle management in buckets . 
+What is versioning . 
+ways in which we can save cost on bucket . 
+load balancers , l4 n l7 difference . 

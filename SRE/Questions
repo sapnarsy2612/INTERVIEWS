@@ -25,3 +25,16 @@ How do you decide when to use a managed cloud service (e.g., AWS RDS) versus dep
 Suppose you want to host one application job on any cloud. How will you approach it?
 What will be your approach for creating a security group for the instance?
 How will you troubleshoot if a pod is in crash-loopbackoff condition?
+explain about http status codes 
+How HTTP works step-by-step with a diagram
+Difference between HTTP and TCP
+HTTP headers
+REST APIs and HTTP
+HTTP request & response structure deeply
+How HTTP/2 and HTTP/3 improve performance
+How REST APIs use HTTP
+What happens inside a POST request with database
+TCP 3-way handshake with diagram
+Difference between TCP and UDP
+HTTP vs HTTPS vs TCP in interviews
+Real-world packet flow example 

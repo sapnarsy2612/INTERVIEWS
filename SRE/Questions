@@ -43,3 +43,16 @@ How YouTube streams videos
 How emails travel
 How hackers intercept traffic
 How cloud computing works
+How would you troubleshoot a failing endpoint?
+A real-world debugging scenario example
+Common production API failures
+How to debug 500 errors deeply
+How to debug slow endpoints
+Difference between 404 and 403
+Why APIs return 404 instead of 403 sometimes
+How to properly design 404 handling in application
+How Instagram works internally
+How YouTube streams video
+How WhatsApp messages travel
+How hackers intercept traffic
+How cloud + CDN improve speed

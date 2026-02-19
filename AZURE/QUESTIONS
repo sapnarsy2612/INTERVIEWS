@@ -8,3 +8,26 @@ azure sla
 types of instance in azure 
 azure resorce manager 
 client want front end of app to be hosted on azure but want db to be hosted on prem , how to handle this in azure 
+What is Microsoft Defender for Cloud, and how does it differ from the classic Azure Security Center?
+Explain the difference between CSPM (Cloud Security Posture Management) and CWP (Cloud Workload Protection) in Defender for Cloud.
+What types of resources and workloads can Defender for Cloud protect?
+How does secure score work, and why is it important for cloud security?
+Describe the threat detection capabilities of Microsoft Defender for Cloud.
+How does Defender for Cloud help with regulatory compliance?
+Explain the difference between agentless and agent-based protection in Defender for Cloud.
+What are the key pricing tiers for Microsoft Defender for Cloud, and what features do they include?
+Your organization has a mix of Azure VMs and AWS workloads. How can Defender for Cloud help secure this hybrid environment?
+You notice that the secure score is low. What steps would you take to improve it?
+A developer asks how to scan their Terraform templates before deployment. How can Defender for Cloud assist?
+You received an alert about a suspicious activity on a VM. How would you investigate and respond using Defender for Cloud?
+If a container registry is misconfigured, how can Defender for Cloud detect and remediate it?
+How would you configure Defender for Cloud to monitor multiple subscriptions in an enterprise environment?
+How do you enable Microsoft Defender for Cloud in the Azure Portal?
+What steps are involved in connecting AWS or GCP accounts to Defender for Cloud?
+How can you export security recommendations for reporting or compliance audits?
+Explain how alerts from Defender for Cloud can integrate with Microsoft Sentinel.
+How can you configure custom policies in Defender for Cloud?
+How do you monitor resource-specific vulnerabilities for virtual machines or containers?
+
+
+

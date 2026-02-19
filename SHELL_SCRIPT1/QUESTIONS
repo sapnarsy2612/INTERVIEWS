@@ -19,3 +19,5 @@ How can you determine how many hard links currently point to a file, and what Li
 Is there a performance difference between accessing a file via a soft link versus a hard link, and if so, what causes it?
 When would you choose to use a soft link over a hard link, and vice-versa? Give a practical example for each.
 If you change the permissions or ownership of a file, how does that affect its soft links and hard links?
+explain how $# behaves inside a function in Bash, which is slightly different from the script-level arguments.
+show a tricky example where a function overwrites $# and $@ and why that can cause bugs in scripts—it's a common pitfall.

@@ -1,0 +1,200 @@
+How did you reduce Liberty restart time from 2 hours to 1 hour?
+What challenges do you face when deploying applications on WAS/Liberty?
+How do you ensure zero downtime during Liberty deployments?
+Explain your Ansible pipeline structure.
+How do you handle rolling restarts using Ansible?
+How do you make Ansible playbooks idempotent?
+Why was the migration required?
+What were the risks during Jenkins OS migration?
+How did you migrate jobs, plugins, credentials?
+How did you ensure no downtime?
+What differences did you observe between CentOS and RHEL in enterprise setups?
+How did you integrate Okta SSO with GitLab?
+What is SAML authentication?
+How did you clean up admin access?
+How do you enforce least privilege in GitLab?
+Explain your full-stack observability architecture.
+How does OpenTelemetry work?
+Difference between push and pull monitoring?
+How does Prometheus store data?
+What is a PromQL query you wrote recently?
+How did you configure Alertmanager routing?
+How do you reduce alert noise?
+Logs vs Metrics vs Traces?
+How does Jaeger trace requests across microservices?
+What challenges did you face instrumenting WAS?
+Difference between ALB and NLB?
+Why use ALB + NLB together?
+How does target group health check work?
+What causes 502 errors in ALB?
+Explain your secure ingress design with Cloudflare.
+Why migrate to Graviton?
+Any compatibility issues?
+How did you test performance before migration?
+How do you encrypt an unencrypted EBS without downtime?
+Difference between CloudWatch and Prometheus?
+How did you automate SNS-based alerts?
+What are common ELB troubleshooting steps?
+Explain your Terraform folder structure in azure and aws . 
+Why Terragrunt?
+How do you manage remote state?
+How do you handle environment separation?
+What is Terraform state locking?
+What is drift detection?
+How does Checkov help in compliance?
+Explain Kubernetes architecture.
+How does etcd work?
+Deployment vs StatefulSet?
+What happens when a pod crashes?
+How do you debug CrashLoopBackOff?
+How do you secure AKS/EKS clusters?
+What is RBAC?
+How does Helm work internally?
+How do you upgrade Kubernetes clusters?
+Explain your JDK 8 → 17 migration challenges on AKS.
+How does AWS SSM Patch Manager work?
+How did you ensure compliance?
+How do you handle patch failures?
+How does AWS Config integrate with compliance?
+Jenkins vs GitLab CI — which is better and why?
+How do you design a scalable CI/CD pipeline?
+How do you implement rollback?
+What is blue-green vs canary?
+How did you automate SVN → GitLab for 5000 users?
+How did you mirror history during migration?
+How do you secure CI/CD pipelines?
+Describe a major production incident you handled.
+Target group unhealthy — what steps?
+Disk full on production — what immediate action?
+JVM memory leak detected — what next?
+Database latency increased suddenly — how to debug?
+Design highly available EKS architecture.
+Design centralized logging for hybrid cloud.
+Design DR for CI/CD platform.
+How would you reduce AWS cost by 25%?
+Design multi-account AWS strategy.
+How do you handle conflict with developers?
+How do you prioritize during outage?
+How do you convince teams to adopt observability?
+Example of automation that saved cost?
+How do you mentor juniors?
+What is CAP theorem?
+What is eventual consistency?
+How does Raft consensus work?
+How does Kubernetes networking work?
+How would you scale Prometheus?
+What is GitOps?
+How would you improve reliability of a payment system?
+OpenTelemetry implementation
+Liberty optimization
+RDS Graviton migration
+ALB + NLB + Cloudflare design
+Jenkins OS migration
+SVN → GitLab migration (5000 users is BIG)
+SSM Patch Manager strategy
+Full stack observability pipeline
+Checkov compliance implementation
+------------------------------------------------
+You are on call.
+At 2:10 AM, you receive an alert:
+ALB target group showing Unhealthy hosts
+Application latency increased from 200ms → 3s
+CPU & memory look normal
+It’s a production EKS-based microservices application
+Traffic is coming through Cloudflare → ALB → EKS
+❓ Walk me through:
+What will you check first?
+What commands / dashboards will you open?
+How will you isolate whether it’s ALB, EKS, app, or DB?
+What immediate mitigation steps might you take?
+----------------------------------------------
+
+Your production EKS application is intermittently failing. How would you troubleshoot it end-to-end?
+How would you design an SLA, SLO, and SLI for a payment application?
+You reduced Liberty restart time from 2 hours to 1 hour — what exactly was optimized?
+How do you handle certificate expiry in large distributed systems?
+What would you do if Prometheus stops scraping targets?
+Explain how you implemented OpenTelemetry across AWS + WAS + EKS.
+Difference between logs, metrics, and traces?
+How does Jaeger integrate with Prometheus?
+How do you reduce alert fatigue?
+Explain your AlertManager routing strategy.
+Infrastructure
+Difference between ALB and NLB? When would you use both together?
+Explain your ALB + NLB + Cloudflare ingress architecture.
+How does VPC peering differ from Transit Gateway?
+How did you migrate RDS to Graviton? Any compatibility challenges?
+Steps to convert unencrypted EBS to encrypted with zero downtime?
+Automation
+Explain your Terraform + Terragrunt folder structure.
+How do you manage remote state?
+How do you prevent Terraform drift?
+How do you handle secrets (SSM vs Secrets Manager)?
+How did you implement SSM Patch Manager strategy?
+Monitoring
+How do CloudWatch and Prometheus differ?
+How did you integrate SNS alerts?
+How do you debug ELB 502/503 errors?
+Explain Kubernetes architecture.
+Difference between Deployment vs StatefulSet?
+How does Helm work?
+How do you handle zero-downtime deployments?
+How do you debug CrashLoopBackOff?
+What happens when a node goes down?
+How did you extract image metadata from AKS pods?
+Explain RBAC implementation in Kubernetes.
+Difference between ClusterIP, NodePort, LoadBalancer?
+How do you secure Kubernetes clusters?
+Compare Jenkins vs GitLab CI.
+How did you migrate SVN → GitLab for 5000+ users?
+How do you secure Jenkins?
+How do you implement branching strategies?
+What is blue-green vs canary deployment?
+How do you rollback failed deployments?
+How did you integrate SonarQube?
+How do you build multi-stage pipelines?
+Explain JDK 8 → 17 migration challenges.
+Difference between Ansible roles and playbooks?
+How did you optimize Liberty restarts using Ansible?
+How do you make Ansible idempotent?
+How do you handle secrets in Ansible?
+Explain dynamic inventory.
+What is Checkov? How did you use it?
+Explain IAM least privilege principle.
+How did you integrate Okta SSO with GitLab?
+What are common AWS security misconfigurations?
+How do you secure Docker images?
+What is TLS handshake?
+Production is slow but CPU/memory is normal. What next?
+Database latency increased. How do you investigate?
+Prometheus shows high JVM heap usage. Actions?
+Target group unhealthy — possible reasons?
+Disk full on EC2 — immediate and long-term fix?
+Design a highly available CI/CD system on AWS.
+Design centralized logging for multi-cloud.
+Design DR strategy for Kubernetes.
+Design cost-optimized EKS architecture.
+Design secure multi-account AWS setup.
+Explain a major production incident you handled.
+How did you coordinate during SVN → Git migration?
+How do you convince dev teams to adopt DevOps best practices?
+Example of automation that saved cost/time?
+How do you prioritize tasks during outage?
+Explain CAP theorem.
+What is eventual consistency?
+How does Raft work in Kubernetes?
+Explain container networking (CNI).
+How would you scale Prometheus in large environments?
+What is GitOps? Have you used it?
+How would you reduce AWS bill by 30%?
+OpenTelemetry implementation
+Terraform + Terragrunt architecture
+Liberty optimization
+RDS Graviton migration
+SVN → GitLab migration
+AKS troubleshooting
+SSM patching strategy
+ALB + NLB architecture
+Jenkins CentOS → RHEL migration
+
+

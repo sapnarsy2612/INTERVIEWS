@@ -38,7 +38,59 @@ Why don’t Gateway Endpoints require an ENI attached to the EC2?
 Your private EC2 in a subnet with a Gateway Endpoint for S3 cannot access a bucket. What are the two most likely reasons?
 Explain why an EC2 can communicate with an Interface Endpoint without seeing any new ENIs attached.
 True or False: Seeing only the EC2’s own ENI means your VPC Endpoints are not in use.
-Setup geolocation based routing in AWS services 
+Setup geolocation based routing in AWS service 
+What is geolocation routing in Amazon Route 53?
+How is geolocation routing different from latency-based routing?
+Why is a default record mandatory in Route 53 geolocation routing?
+How does Route 53 determine a user’s location?
+What happens if a user’s country does not match any defined geolocation record?
+🔹 Scenario-Based Questions
+How would you route EU users to EU servers for GDPR compliance?
+How would you block traffic from specific countries using Route 53?
+How would you design geo-routing for a global e-commerce platform?
+What would you do if a regional endpoint goes down?
+How would you test geolocation routing from different countries?
+🔹 Architecture & Design Questions
+Design a highly available multi-region architecture using:
+Amazon EC2
+Elastic Load Balancing
+Route 53 geolocation routing
+How would you combine geolocation routing with health checks?
+When would you use Amazon CloudFront instead of Route 53 for geo-based behavior?
+Can you use geolocation routing with private hosted zones?
+How would you implement geo-based routing for APIs instead of websites?
+🔹 Advanced Questions
+How does geolocation routing differ from geoproximity routing?
+What is the difference between continent-level and country-level routing?
+How do you implement weighted + geolocation routing together?
+Can you fail over from one country to another automatically?
+What are the limitations of IP-based geolocation?
+🔹 CloudFront & Edge Logic Questions
+How can you use the CloudFront-Viewer-Country header?
+How would you redirect users to language-specific pages using:
+Amazon CloudFront
+AWS Lambda?
+How is geo-routing handled at the CDN level vs DNS level?
+What are the pros and cons of DNS-based vs CDN-based geo routing?
+How would you prevent users from bypassing geo restrictions?
+🔹 Troubleshooting Questions
+A user in Germany is hitting the US server. What could be wrong?
+Why might geolocation routing not work correctly behind VPNs?
+How do you debug Route 53 routing decisions?
+How do TTL values affect geolocation routing?
+How would you monitor geo-distributed traffic?
+🔹 DevOps & Automation Questions
+How do you configure geolocation routing using AWS CLI?
+How would you implement this using Infrastructure as Code (Terraform/CloudFormation)?
+How do you version-control DNS routing rules?
+How do you automate region expansion?
+How would you roll out a new region gradually?
+🔹 Real-World Case Study Questions
+Design geo-routing for a video streaming platform.
+Design geo-routing for a banking application with strict country isolation.
+How would you handle data residency requirements?
+How would you design disaster recovery with geo-routing?
+Compare geo-routing strategies for: SaaS product Media website Gaming backend
 how to check who create aws ec2
 Explain in detail about amazon workspaces & aws workpsace users . 
 explain about aws ad connector . 

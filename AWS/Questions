@@ -23,6 +23,21 @@ Your private EC2 needs to call the Secrets Manager API. What endpoint type is ne
 Your private EC2 needs to communicate with another VPC in a different AWS account. Which AWS component enables this?
 ✅ Optional Bonus Question
 16. Draw a tiny diagram showing private EC2 → S3 via Gateway Endpoint, other AWS services via Interface Endpoint, other VPCs via Transit Gateway.
+1. Basics of ENI
+What is an ENI (Elastic Network Interface) in AWS, and what is its role for an EC2 instance?
+True or False: Every EC2 instance must have at least one ENI.
+2. Gateway vs Interface Endpoints
+How does a Gateway Endpoint work with a private EC2? Does it create a new ENI?
+How does an Interface Endpoint work? Does your EC2 see the endpoint ENI attached directly?
+True or False: Traffic to an Interface Endpoint ENI is routed automatically through your EC2’s existing ENI.
+3. Connectivity & Routing
+If you only see your EC2’s ENI and no additional ENIs, does it mean the Interface or Gateway Endpoints are not working? Explain.
+Which two things must be correctly configured for a private EC2 to access AWS services via VPC Endpoints?
+Why don’t Gateway Endpoints require an ENI attached to the EC2?
+4. Scenario-based Questions
+Your private EC2 in a subnet with a Gateway Endpoint for S3 cannot access a bucket. What are the two most likely reasons?
+Explain why an EC2 can communicate with an Interface Endpoint without seeing any new ENIs attached.
+True or False: Seeing only the EC2’s own ENI means your VPC Endpoints are not in use.
 Setup geolocation based routing in AWS services 
 how to check who create aws ec2
 Explain in detail about amazon workspaces & aws workpsace users . 

@@ -1,0 +1,30 @@
+What is patch management in AWS?
+Which AWS service is primarily used for patch management?
+What is a patch baseline in AWS Systems Manager?
+What are the types of patch approvals available in AWS?
+How does AWS classify patches (e.g., critical, security, other)?
+Can AWS patch management be applied to both Linux and Windows instances?
+What is the difference between scanning for missing patches and deploying patches?
+Intermediate Level
+How do you schedule patching for production workloads in AWS?
+What is a patch group, and why is it useful?
+How can you automate patch compliance reporting in AWS?
+How does AWS Systems Manager Inventory help in patch management?
+Explain the difference between predefined and custom patch baselines.
+What happens if a patch deployment fails on an instance?
+How can AWS patch management handle instance reboots automatically?
+How do you prioritize which instances to patch first?
+Advanced Level
+How can AWS Config be integrated with patch management for compliance monitoring?
+How do auto-approval rules work in AWS patch management?
+Describe a phased rollout strategy for patch deployment and its benefits.
+Can AWS Systems Manager patch on-premises servers? How?
+How do you ensure minimal downtime during patching of critical systems?
+Explain the end-to-end patch management workflow in AWS.
+How would you design a hybrid environment patching strategy with AWS?
+Scenario-Based / Practical Questions
+If a critical security patch breaks your application, how would you handle it using AWS tools?
+How would you track and audit patch compliance for regulatory requirements?
+Your EC2 instances are in multiple regions. How do you standardize patching?
+How can you integrate notifications for patching failures?
+How would you test patch deployment before rolling it out to production instances?

@@ -1,1 +1,21 @@
-
+Conceptual Questions
+What OSI layer does a Layer 4 load balancer operate on, and what information does it use to route traffic?
+How does a Layer 7 load balancer differ in routing decisions compared to a Layer 4 load balancer?
+Why is an L7 load balancer slower than an L4 load balancer?
+Can a Layer 4 load balancer handle HTTP headers or URL paths for routing? Why or why not?
+What types of applications are better suited for L4 load balancing?
+Explain what SSL/TLS termination is and which load balancer layer typically supports it.
+What is “sticky session” (session persistence), and which type of load balancer uses it?
+If you have a microservices architecture with /api, /images, and /admin routes, which load balancer would be more appropriate?
+Practical / Scenario-Based Questions
+Your website receives millions of requests per minute. You need high throughput and minimal latency. Would you choose L4 or L7? Explain.
+You need to route traffic based on country of the client IP. Which layer is capable of this?
+Your company wants to offload SSL processing from the backend servers. Which load balancer layer would you implement?
+If a TCP database query needs to be balanced across multiple servers, should you use L4 or L7? Why?
+You have a hybrid application: some traffic is plain TCP and some is HTTP. How would you design the load balancing solution?
+Bonus Advanced Questions
+Can an L7 load balancer perform health checks? How does that differ from L4 health checks?
+How do L4 and L7 load balancers differ in handling sudden traffic spikes (DDoS scenarios)?
+Explain how “NAT” is related to L4 load balancing.
+Discuss the trade-offs between performance and routing flexibility for L4 vs L7.
+In a cloud environment (AWS, Azure, GCP), what services map to L4 and L7 load balancers?

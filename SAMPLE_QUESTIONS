@@ -28,3 +28,63 @@ How would you track and audit patch compliance for regulatory requirements?
 Your EC2 instances are in multiple regions. How do you standardize patching?
 How can you integrate notifications for patching failures?
 How would you test patch deployment before rolling it out to production instances?
+General Vulnerability Management
+
+What is the process for identifying vulnerabilities in a system?
+
+How do you prioritize which vulnerabilities to fix first?
+
+Can you explain the difference between a vulnerability, a threat, and a risk?
+
+How often should vulnerability scans be conducted?
+
+What are some common tools used for vulnerability assessment?
+
+Technical Remediation
+
+How would you apply a patch to a production system without causing downtime?
+
+What steps do you take if a critical vulnerability has no available patch?
+
+How do you handle zero-day vulnerabilities?
+
+Explain how configuration changes can mitigate vulnerabilities.
+
+How would you test that a vulnerability has been successfully fixed?
+
+Risk and Impact Assessment
+
+How do you measure the impact of a vulnerability on the business?
+
+What metrics do you use to prioritize vulnerabilities?
+
+How would you convince management to prioritize fixing a low-severity vulnerability?
+
+Can you explain CVSS and how it is used in risk assessment?
+
+How do you determine whether a vulnerability is exploitable in your environment?
+
+Policies, Procedures, and Best Practices
+
+What is your approach to creating a vulnerability management policy?
+
+How do you ensure compliance with industry standards (e.g., ISO 27001, NIST) when managing vulnerabilities?
+
+How would you educate employees to reduce vulnerabilities caused by human error?
+
+Explain the importance of asset inventory in vulnerability management.
+
+How do you continuously monitor for new vulnerabilities after initial remediation?
+
+Scenario-Based / Problem Solving
+
+A critical vulnerability is discovered in widely used software, but patching immediately could break your systems. What would you do?
+
+You find multiple vulnerabilities in a system—some critical, some medium severity. How do you plan your remediation steps?
+
+How would you handle a situation where the same vulnerability keeps recurring?
+
+During a penetration test, a vulnerability is discovered that wasn’t caught by scanners. How would you address it?
+
+You are notified of a publicly exploited vulnerability. How do you respond?
+

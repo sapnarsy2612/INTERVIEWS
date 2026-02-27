@@ -1,4 +1,8 @@
 Define and differentiate between SLI, SLO, and SLA. Provide an example set for a web service (e.g., latency, availability).
+How do you define and measure SLI, SLO, and SLA in your current project?
+You mentioned reducing Liberty restart time from 2 hours to 1 hour — what exactly was optimized?
+How do you handle certificate expiry proactively?
+Explain an incident where ELB/EC2/Target group failed. How did you debug it?
 Explain the concept of an Error Budget and how it is used to manage the trade-off between reliability and feature development.
 What is "toil" in SRE? Give an example of toil you've successfully automated and the tooling you used.
 Describe the key characteristics of a blameless post-mortem and why this approach is crucial. What elements must a good post-mortem include?

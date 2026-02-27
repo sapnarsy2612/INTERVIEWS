@@ -1,3 +1,6 @@
+Describe a time you migrated AWS RDS to Graviton. What were the challenges and performance benefits?
+How do you monitor and troubleshoot AWS services like EC2, ELB, or Target Groups?
+Explain your approach to securing cloud infrastructure, including encryption, IAM policies, and certificate management.
 An application in account A needs access to s3 bucket in account B . How to configure this . 
 Your ec2 instance in private subnet need to download packages without NAT gateway , what alternative exits 
 . Basics of Private Subnet

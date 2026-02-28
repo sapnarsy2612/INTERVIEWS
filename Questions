@@ -1,0 +1,11 @@
+brief intro about your current project .
+how to triage hybrid cloud to support business critical apps deployment . 
+systematic remediation for incident avoidance . 
+how to design zero downtime delivery . 
+how network service - dhcp , ntp , dns , provided on cloud 
+how to secure vms & containers . 
+how to optimize cloud usage . 
+how to build , safe & reliable pipelines to release cloud application. 
+metrics & dashboard we rely on when we have outages or to prenent 1 
+how to measure effectiveness of automation 
+how to design iam for centralized automation platform in multi team setup . 

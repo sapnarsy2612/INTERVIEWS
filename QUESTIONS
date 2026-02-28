@@ -48,3 +48,10 @@ grafana dashboard is not visible not showing metrics of 1 application . similar 
 critical user journeys - how to plan monitoring . 
 recent automations . 
 list n tuple in python . 
+tell about yourself 
+how many application deployment have you been involved in , let me know how you made deployment pipeline for stacks . 
+how u use helm for different env - dev prod - how to deploy in different env using same chart how will helm connect to different clusters . how to setup different deployment parts in pipeline for diff env , how u utilize different component of helm to be deplouyed in different env . 
+where to configure security - storing keys , secrets . 
+when we use helm chart , how to configure appsetting.json - based on diff env and use in helm . 
+how to do tls config in k8s . , where it will happen . 
+what kind of auto scaling do we need to do in k8 , pod level n node level 

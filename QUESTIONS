@@ -55,3 +55,12 @@ where to configure security - storing keys , secrets .
 when we use helm chart , how to configure appsetting.json - based on diff env and use in helm . 
 how to do tls config in k8s . , where it will happen . 
 what kind of auto scaling do we need to do in k8 , pod level n node level 
+what all resources used in azure 
+azure app service , functions , logic apps in azure 
+what all automation done using bash and python . 
+pipeline creation - which tool used for pipelines . 
+we creating a pipeline , we have certain steps , there r many steps - how utilize reusable pipeline templates to create multiple similar pipelines . we have tons of pipelines how to do that . 
+how to use github workflows for that . 
+how to use template , workflows to use it later on in pipelines . 
+for vulnerability scan what all tools used , how to integrate fortify and sonarqube , with cicd pipelines . 
+which tools for iac n how to segregarte infra for multi env setup . pipeline hit n automsatically create resources for multiple env . 

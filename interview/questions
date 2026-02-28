@@ -1,0 +1,13 @@
+about yourself roles & responsibility 
+difference devops & sre . 
+how we ensure system reliability . 
+iac 
+latency , how to reduce latency . 
+readiness & liveness probe difference . 
+how to autoscale workloads in k8s . 
+how to design high availability . 
+how to reduce mttr . what all strategy we have . 
+how you used star method in your project . elaborate that . 
+what kinf od scripting you used . 
+write a basic configuration management script in python & bash , ansible , terraform write script for each . 
+aws s3 command to copy buckets . 

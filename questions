@@ -41,7 +41,68 @@ best practices for docker ,
 why should we not use root user in dockerfile , 
 how to specify user in dockerfile , 
 what is podman , 
-
+What is Infrastructure as Code (IaC)?
+Explain Terraform lifecycle.
+How do you manage Terraform state securely?
+Difference between Terraform and Ansible?
+How do you handle a P1 production incident?
+How do you troubleshoot high CPU usage in Linux?
+What is CI/CD? Have you implemented it?
+What is OpenShift?
+What is ITIL? Difference between Incident & Problem?
+What is Observability?
+How do you automate routine tasks?
+ Disk space full in Linux server. What will you do?
+How do you ensure smooth shift handover?
+Why should we hire you for CloudOps role?
+What is Infrastructure as Code (IaC)? How have you used Terraform?
+Explain Terraform basics
+State file management
+Modules and reusable code
+Handling environment-specific deployments
+What is the difference between Terraform and Ansible?
+Provisioning vs configuration management
+Declarative vs procedural
+State management differences
+Explain your experience with Linux (RedHat 8/9) or Windows Server (2019/2022).
+User management
+Service management
+Log analysis
+Patch management
+Troubleshooting steps
+What is the follow-the-sun support model?
+24/7 global coverage
+Shift handover process
+Importance of documentation
+How do you handle a P1 production incident?
+Immediate acknowledgment
+Impact analysis
+Escalation matrix
+Communication to stakeholders
+Root Cause Analysis (RCA)
+What is your experience with VMware or OpenShift?
+VM provisioning
+Snapshots
+Resource allocation
+Container orchestration basics
+ Explain CI/CD pipelines. Which tools have you used?
+Jenkins / GitLab CI / GitHub Actions
+Pipeline stages (Build → Test → Deploy)
+Infrastructure deployment via pipeline
+What are observability tools? How is it different from monitoring?
+Monitoring → predefined metrics
+Observability → logs, metrics, traces
+Tools like Grafana / PowerBI
+What is ITIL? Have you worked with change and incident management?
+Incident management lifecycle
+Change approval process
+CAB (Change Advisory Board)
+SLA adherence
+How do you automate routine operational tasks?
+Python scripts
+Shell scripting
+PowerShell
+Cron jobs or scheduled tasks
 
 
 

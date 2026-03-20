@@ -45,3 +45,4 @@ how terraform handle dependency between resources
 i have resources created using terraform , few resource created manually , next apply giving conflicts how to resolve these . 
 azure private endpoints 
 what other resources you used in azure . 
+suppose i have cluster created n then i m trying to change controlplane key , will it change once cluster created . 

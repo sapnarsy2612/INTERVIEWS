@@ -1,0 +1,47 @@
+how many clusters you have managed . 
+what all modules created from scratch in terraform . 
+where do you store state files 
+how do you handle locks 
+what are providers 
+how you use providers in your terragrunt setup 
+how terragrunt identify versions of providers to use 
+have you used lock.hcl file - 
+have you used terraform.lock.hcl in your terragrunt setup . 
+how can i unlock the state file in s3 bucket . 
+in azure where you store state file . 
+similar to s3 what we have in azure 
+which cni you use for your clusters . 
+cluster upgrades managed by ? 
+command to format hcl file 
+pdbs in k8s 
+suppose i have cluster i need to use external storage whats the better approach 
+pv pvc storage class 
+can i delete the pvc if its bound to some pv based on claim policy 
+suppose i have pv in my cluster its not being deleted , whats the reason 
+finalizers in pv 
+suppose i have application n db service , my app want to connect to db service what address can we use in k8s 
+oom killed errors 
+crashloopbackoff 
+how k8s services helps communication between pods 
+hpa , vpa , 
+how to control resource usage of pods . 
+i want to do maintainence acticiy on my node what should i do . 
+cordon node , uncordon , how to prevent other pods from being scheduled on the node . 
+drain command 
+init containers 
+sidecar containers 
+i have k8s cluster which needs to handle sudden increase in traffic , whats the best way to handle 
+how you store secrets in cluster , 
+how you manage dependency in github action - between jobs 
+suppose if i have github actions workflow - output needed from 1st job , how github action manage these 
+suppose i have secrets which i accidently commit to gitlab what to do in this case 
+difference between for each count in terraform 
+if i want to create 10 ec2 with different name - then which loop to use 
+local exec in terraform . 
+how to handle passwords in terraform . 
+in my terraform plan , i dont want to make my variable appear in output logs 
+null resources in terraform 
+how terraform handle dependency between resources 
+i have resources created using terraform , few resource created manually , next apply giving conflicts how to resolve these . 
+azure private endpoints 
+what other resources you used in azure . 

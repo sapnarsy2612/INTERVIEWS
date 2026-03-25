@@ -17,6 +17,7 @@ pdbs in k8s
 suppose i have cluster i need to use external storage whats the better approach 
 pv pvc storage class 
 can i delete the pvc if its bound to some pv based on claim policy 
+can i delete pv if its in use by pvc 
 suppose i have pv in my cluster its not being deleted , whats the reason 
 finalizers in pv 
 suppose i have application n db service , my app want to connect to db service what address can we use in k8s 

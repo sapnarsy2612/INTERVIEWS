@@ -1,0 +1,14 @@
+Current roles and responsibilities . 
+what all aws services worked with . 
+you have 1 backend application n you have 1 frontend application - you want to design architecture based on this . which all aws service will you include for this n how will u deploy application . frontend is react or node , backend is python . 
+on what basis we decide if we want to deploy on ec2 or eks 
+you have eks setup n you have 2 node group - you have shift an application fron node group 1 to node group 2 without down time . 
+do blue green deployment or rolling update happen in same node group or different node groups . 
+you have 1 node group for linux n 1 for gpu - how to deploy service on gpu based bode group only . 
+how to update rds version without downtime . 
+for deployments what all tools used . 
+consider you have set jenkins pipeline - there r steps to build test deploy - all steps are done success but still application is failing how to resolve this . 
+write script to rotate iam keys  
+1 application deployed on k8s , dba team rotated secret but still its not picking up . 
+what all work done in cloudfront - 
+i have static application i want to deplo using s3 n cloudfront what all steps u use . 

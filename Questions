@@ -47,3 +47,30 @@ i have resources created using terraform , few resource created manually , next 
 azure private endpoints 
 what other resources you used in azure . 
 suppose i have cluster created n then i m trying to change controlplane key , will it change once cluster created . 
+what is your overall experience working with terraform , k8s and cloud providers . 
+what is benefit of using terragrunt over terrform , will folder distinguish cant be done with terragrunt .
+so we create resoirce in account a for aws , how many state file will we manage here . 
+how is terraform state configured in backend . 
+what all terraform modules created , write code for any . 
+where is your iac resides and how locks being managed . 
+how is states differenciated for accounts n envs . 
+how you run your day to day terraform using jenkins . 
+what standard you follow when you do application deployment 
+how do you deploy ansible and terraform 
+how you manage kuberestes with ansible . 
+how do you manage observability of kubernetes , how you observe how many nodes are in good state , memory cpu 
+other way of deploying applications in k8s . 
+what is your role after application deployment , you have particular application deployed on one cluster , what troubleshooting you do for application if it dont respond or if there is some trigger of alert . 
+you have an application on cluster which is running , you have to modify that application n currently that applicationhas volume mounted which save data locally on k8s cluster you have to change that volume from local cluster volume to storage account container so instead of saving data to local volume you now save that data into storage container , so in order to connect to storage container from your k8s cluster what will you require . 
+how to authenticate with storage account . 
+r you familiar with managed identity how you used in your work . 
+what all resources you have in on prem . 
+how your on prem n aws resources connect . 
+what kind of application being deployed . 
+where are your applications being hosted . 
+is any application exposed to user or front facing . like web page . 
+how are you exposing your applications how nginx urls is configured in ibm was , liberty n in cloud k8s also . 
+what security best practice you follow for k8s . 
+for docker image what are best practices . 
+copy n run n add get difference in docker
+what r best practice you follow in observability n what is importance of observability . 

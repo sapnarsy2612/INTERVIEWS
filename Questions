@@ -1,6 +1,19 @@
 What is the difference between sudo and su
 Which command would you use to find all files that were modified in the last 24 hours?
-How would you display the contents of a text file in reverse?
+How would you display the contents of a text file in reverse? 
+How would you display the contents of a text file in reverse with awk and tac . 
+what is awk 
 Which command creates an empty file?
 Write a Bash script to rename all .txt files in a directory to .bak.
 Write a script to parse a log file and extract specific information. 
+Change the permissions of any or all files 
+Change the runlevel of the system
+Alter user accounts
+Mount or unmount filesystems
+Remove or install software
+Create, remove, and alter file systems
+sudo full form , su full form 
+/etc/sudoers what setting to add for sudoers 
+dnf is for which system 
+command to install nginx package in linux 
+sudo -i 

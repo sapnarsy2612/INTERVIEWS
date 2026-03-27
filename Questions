@@ -17,3 +17,42 @@ sudo full form , su full form
 dnf is for which system 
 command to install nginx package in linux 
 sudo -i 
+system initialization process
+UNIX SysV standard.
+init daemon 
+daemons on the system
+Systemd.
+sysv replacement 
+advantage and limitation of sysv 
+Boot process summary
+/etc/inittab
+/etc/rcX.d/
+/etc/init.d/
+/sbin/init
+the Initialization Process
+three popular initialization process
+Systemd full form 
+sysv fullform 
+systemd unit 
+systemd target 
+/etc/passwd
+/etc/shadow
+/etc/login.defs
+/etc/group
+/etc/gshadow
+/etc/sudoers
+/etc/skel
+/var/log/uth.log
+file management 
+process management 
+/etc/fstab entries.
+cgroup, sysfs
+type of the filesystem
+mount options
+lsblk
+fdisk -l
+dmesg
+Mounting NFS
+fuser -m DIRECTORY
+mount a directory to another directory
+find the device name of a connected drive

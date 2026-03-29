@@ -8,6 +8,8 @@ setting up jenkins
 upgrade jenkins 
 version of jenkins used ? 2.452
 deployment method in jenkins ?
+set fact , slurp , register , debug , msg , var , loop , when , include_tasks , import_tasks , in ansible 
+how are static sites deployed with s3 , cloudfront , jenkins pipelines . 
 jenkins agents 
 how to add agent in jenkins 
 types of way to authenticate and add jenkins agent / connection 

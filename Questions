@@ -1,0 +1,12 @@
+1. what was your work, what understand the last project what you were working on that 
+2. explain the CICD Pipeline your company
+3. I have a development pre-production and production environment, okay, and also I have a disaster recovery environment. So I need production and the disaster recovery should be in sync. In that case, how would you set the pipeline?
+4. How would you handle the drifting in Terraform?
+5. I'm launching in a created sub-resource And, on the console, I go and make some changes on the VCD server. so in that case what you do
+6. explain Terraform state file
+7. for remote back end setup in terraform stateloking, why do we need to use a DynamoDB? Why can't we use an Oracle or MongoDB?
+8. how would you scale in Kubernetes?
+9. Can you explain like the scale, how to design the scaling, how to design the scaled architecture? So I need the architecture should be load balanced and auto-scaled. so how would you design?
+10. if that image unless you might have been created or someone might have created, so that the image is to be put in the registry, So how would you validate whether that image is there is no vulnerability or not? So if you want to validate the status of the image or I would say the vulnerability check on that image, so how would you do it?
+11. so how would you integrate with the AWS? Through Trivy
+12. So we are running with my project in a Roman. So at the primary, I want to synchronize production and the disaster recovery. And our repository is synced. Now, if I make any changes in the production, it should be synced on the DR as well. So how do you do that?

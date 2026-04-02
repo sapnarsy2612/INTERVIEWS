@@ -8,7 +8,30 @@ setting up jenkins
 upgrade jenkins 
 version of jenkins used ? 2.452
 deployment method in jenkins ?
-set fact , slurp , register , debug , msg , var , loop , when , include_tasks , import_tasks ,ignore_errors , set_fact ,  in ansible 
+set fact , slurp , register , debug , msg , var , loop , when , include_tasks , import_tasks ,ignore_errors , set_fact , serial , command ,file , get_url connection delegate_to , package , wait_for , template , unarchive , copy ,   in ansible 
+with_items , import_playbook , uri , in ansible 
+/wlp/bin/server status
+/wlp/bin/server stop  
+nginx update conf . - nginx.conf internal.conf status.conf 
+nginx -s reload
+
+what is defaults folder in ansible roles . 
+
+how to view config file in k8s 
+get deplpyment in kubectl 
+get pod logs in k8s 
+get nodes , get ingress
+get hpa , get endpoints 
+describe pod , describe node , describe ingress , 
+
+canary deployments. 
+sudo systemctl restart network
+how to check exit code in jenkinsfile and make pipeline fail using try catch blocks . 
+
+net-tools , 
+netstat -plten | grep java
+sudo netstat -tulpn | grep LISTEN
+
 how are static sites deployed with s3 , cloudfront , jenkins pipelines . 
 jenkins agents 
 how to add agent in jenkins 

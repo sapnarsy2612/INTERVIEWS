@@ -34,3 +34,4 @@ How do you migrate databases without downtime?
 8. Why do deployments succeed but users still see errors?
 9. How do you decide between rollback vs hotfix during an incident?
 10. What’s the difference between metrics, logs, and traces, and when do you start with each?
+best practices followed and things used in ansible to optimize processes . 

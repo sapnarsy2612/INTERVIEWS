@@ -9,13 +9,39 @@ upgrade jenkins
 version of jenkins used ? 2.452
 deployment method in jenkins ?
 set fact , slurp , register , debug , msg , var , loop , when , include_tasks , import_tasks ,ignore_errors , set_fact , serial , command ,file , get_url connection delegate_to , package , wait_for , template , unarchive , copy ,   in ansible 
-with_items , import_playbook , uri , in ansible 
+with_items , import_playbook , uri , ping , stat , args , package , systemd , firewalld ,  in ansible 
 /wlp/bin/server status
 /wlp/bin/server stop  
 nginx update conf . - nginx.conf internal.conf status.conf 
 nginx -s reload
-
+/etc/nginx/locations/
+/etc/nginx/upstreams
+nginx -t
+nginx-add-new-zone-folder
+NGINX Prometheus Exporter
+systemd service for nginx exporter
+Add SELinux fcontext rule for nginx exporter binary
+semanage fcontext -a -t bin_t /usr/local/bin/nginx-prometheus-exporter
+/etc/selinux/targeted/contexts/files/file_contexts.local
+Apply SELinux context to exporter binary
+restorecon -v /usr/local/bin/nginx-prometheus-exporter
+Open firewall port for Prometheus to scrape exporter
+nginx_proxy_ssl_multiple_zones
 what is defaults folder in ansible roles . 
+install nginx 
+blacklist ips nginx 
+iptables -A INPUT -s {{ item }} -j DROP"
+nginx proxy 
+alb_ingress_certificate
+external_alb_ingress_certificate
+aws eks update-kubeconfig
+aws ecr get-login-password 
+.splitlines()
+lookup('file', 'configmaps/files/configmaps-list.txt').splitlines() 
+k8s , docker_image , docker_image_info , k8s_info , kubernetes.core.k8s_info , in ansible 
+configmap 
+kubectl create secret 
+secret_type: Opaque
 
 how to view config file in k8s 
 get deplpyment in kubectl 

@@ -24,3 +24,13 @@ How do you implement zero-trust access and K8s RBAC at scale?
 How do you architect multi-region DR with realistic RTO/RPO?
 How do you design network security (VPC, service mesh, egress control)?
 How do you migrate databases without downtime?
+1. What’s the real difference between CPU bottleneck vs I/O bottleneck, and how do you identify each?
+2. Why do systems fail even when CPU and memory look fine?
+3. What actually happens when a Kubernetes Pod restarts?
+4. Difference between readiness and liveness probes, and how each can break production.
+5. What problem does infrastructure as code solve, and when can it become dangerous?
+6. How does Terraform state work, and what happens when it drifts?
+7. What’s the difference between horizontal and vertical scaling, and when should you avoid autoscaling?
+8. Why do deployments succeed but users still see errors?
+9. How do you decide between rollback vs hotfix during an incident?
+10. What’s the difference between metrics, logs, and traces, and when do you start with each?

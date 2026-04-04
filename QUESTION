@@ -10,6 +10,9 @@ version of jenkins used ? 2.452
 deployment method in jenkins ?
 set fact , slurp , register , debug , msg , var , loop , when , include_tasks , import_tasks ,ignore_errors , set_fact , serial , command ,file , get_url connection delegate_to , package , wait_for , template , unarchive , copy ,   in ansible 
 with_items , import_playbook , uri , ping , stat , args , package , systemd , firewalld ,  in ansible 
+idempotent meaning 
+delegate_to , fetch in ansible 
+args , creates , removes 
 /wlp/bin/server status
 /wlp/bin/server stop  
 nginx update conf . - nginx.conf internal.conf status.conf 
@@ -42,22 +45,18 @@ k8s , docker_image , docker_image_info , k8s_info , kubernetes.core.k8s_info , i
 configmap 
 kubectl create secret 
 secret_type: Opaque
-
 how to view config file in k8s 
 get deplpyment in kubectl 
 get pod logs in k8s 
 get nodes , get ingress
 get hpa , get endpoints 
 describe pod , describe node , describe ingress , 
-
 canary deployments. 
 sudo systemctl restart network
 how to check exit code in jenkinsfile and make pipeline fail using try catch blocks . 
-
 net-tools , 
 netstat -plten | grep java
 sudo netstat -tulpn | grep LISTEN
-
 how are static sites deployed with s3 , cloudfront , jenkins pipelines . 
 jenkins agents 
 how to add agent in jenkins 

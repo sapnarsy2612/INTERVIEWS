@@ -12,3 +12,42 @@ write script to rotate iam keys
 1 application deployed on k8s , dba team rotated secret but still its not picking up . 
 what all work done in cloudfront - 
 i have static application i want to deplo using s3 n cloudfront what all steps u use . 
+give your introduction . 
+what all application you support , 3rd party applications , 
+manifest files , write manifest files highlighting deployments n commands , add scaling policy to manifest min max nodes , hpa , service yamls . 
+write dockerfile to run any application n make it run n explain each step , what is dockerfile what all steps to include explain all . , how to ensure dependency are met . config.xml in dockerfile . you have to run on specific code , if we want to run on certain port ? 
+how to run it as background process n i want to associate domain name n certificate . how to make it work with load balancers n reverse proxy , target group as well . 
+lets say you r running this in k8s cluster , how app reach what ingress setting required for communication purpose . give whole worflow how it flows . 
+eg of path based n host based routing in ingress with configurations with examples. 
+if u have 2 domains how will you reach to separate sites for applicatio . 
+what configuration you have to do in ingress for multiple endpoints . 
+how will u reach to 2 separate endpoints for which u manage applications . 
+you have webserver , if i want to have domain name associated so site run safely what all configs we need to do . webserver should be on https , what changes we have to make in webservers and load balancers both . 
+jks tool for certificates 
+openssl explain 
+cicd deployment - suppose there is deployment happened n it did not went through proper health checks , n then again ur application has gone down , suppose it is deployed in ec2 or ec2 or k8s - how to revert deployment in all cases . 
+if u want to revert to previous commit , you use commit ids or tags - what is benefit of using commit id . 
+git rebase 
+cherrypick 
+you have env where frontend is deployed - what is it that end user r experiencing from ui - how to know that as an sre - what all things we will check n measure . 
+page load , latency 
+suppose you navigating page n you check specific api call is taking more than 10 secs , as an sre what diagnosis will you do to troubleshoot . 
+theres an increase in total number of users , n you observe your frontend work fine but your backend is failing . how will you troubleshoot . things were working fine when there were small set of users but it started failing as users increased , 
+vertical scaling and horizontal scaling , what all techniques are available today , 
+you are running very critical site n ur application should not go offline , how to implement this where your application should not have any outage , 
+can we add specific type of instances as part of autoscaling , higher capacity instances , 
+write terraform code that launch instance in private subnet you need to make it modular 
+how does modular based approach helps , 
+when we do terraform init what all files gets created 
+if someone has not committed the state file n it is 3 to 4 versions behind your current setup , if you try to change it might delete infrastructure , what all steps to perform . state file is missing n you dont have backup of that 
+what all aws services you have worked with , api gateway , sqs , sms , etc 
+what is steps functions and lambda used for explain for what purpose you used it . 
+scrpts to list images from aks , give me more insights about this . , if thers any dependency on images how u ensure that , what were u patching . 
+opentelemtry - how you deployed grafana n prometheus , 
+what kind of logs you were fetching n sending to promethues , how to configued with alertmanager n what were you fetching with that . what if container itself is offline . 
+use case of ansible how many servers managed via ansible , 
+y you use ansible for cloudfront 
+with ansible what all you managed , 
+y u use ansible for k8s . 
+what you do to enhance your skill if we put u in larger role , whats the next role you have thought about your career , 
+how you upskill yourself 

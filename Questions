@@ -1,3 +1,24 @@
 path based routing and host based routing 
 how ansible setup is done with jenkins . 
-how terraform pipeline looks like . 
+how terraform pipeline looks like in jenkins and azure devops 
+what is terraform module , how u use it , what all use cases have you used it . 
+you are getting issue like resource already created in terraform how to resolve this 
+how are secrets handled in all env in k8s , monoliths , terraform all . 
+what happens in bakcend when we run kubectl command . 
+what all dashboards you have created what metrics used how exposed the metrics . 
+how we collect data from each targets in prometehus 
+how can we collect data from application without exported for prometehus 
+nlb and alb difference . 
+private endpoints in azure 
+what all branching strategy you have used . 
+git cherrypick , give practical example . 
+security and vulnerability scaning how is it integrated in cicd toolchain . 
+how to do images scanning . 
+how have you worked in disaster recovery . 
+how you configure alerts in prometehus , how you integrate alerts of prometehus to diffenet tool , how you integrate teams to prometehus . 
+how is alerting configured in prometehus . 
+deployment strategy for all microservices and monoliths . 
+what happens when release goes wrong , how you rollback the change how to fix the release , 
+how you manage dependeny of applications in k8s and other applications . 
+how you manage security in vnets . 
+how to deploy an api and database application in cloud - what architecture will you select its just 1 api application . 
